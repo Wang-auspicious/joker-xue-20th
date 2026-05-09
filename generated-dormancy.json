@@ -1,0 +1,5239 @@
+{
+  "generatedAt": "2026-05-09T08:36:08.796Z",
+  "sourceCsv": "C:/Users/zjz65/PycharmProjects/Homework2/output/xue_comments.csv",
+  "rowsSeen": 6735667,
+  "summary": {
+    "songCount": 45,
+    "topCommentAfter5YearsCount": 4,
+    "anyTop10After5YearsCount": 6,
+    "medianDormancyAcrossSongs": 0,
+    "longestDormancySong": {
+      "song": "认真的雪",
+      "dormancyMedianYears": 9,
+      "maxDormancyYears": 10
+    },
+    "quote": "45 首歌里，有 4 首的最高赞评论，写在发行 5 年以后。"
+  },
+  "songs": [
+    {
+      "song": "认真的雪",
+      "album": "未完成的歌",
+      "releaseYear": 2006,
+      "commentCount": 187325,
+      "topCommentYearsAfterRelease": 9,
+      "dormancyMedianYears": 9,
+      "dormancyP75Years": 10,
+      "maxDormancyYears": 10,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 10
+      },
+      "topComments": [
+        {
+          "commentId": "8302654",
+          "user": "emonday",
+          "likes": 303521,
+          "date": "2015-01-06 23:03",
+          "commentYear": 2015,
+          "yearsAfterRelease": 9,
+          "content": "当年读小学，现在念大学，时间算你绝～"
+        },
+        {
+          "commentId": "135640946",
+          "user": "几婷几婷几",
+          "likes": 260597,
+          "date": "2016-03-30 08:27",
+          "commentYear": 2016,
+          "yearsAfterRelease": 10,
+          "content": "那一年薛之谦最火的歌是认真的雪，那一年林俊杰唱着曹操，吴克群唱着将军令，周杰伦唱着听妈妈的话，潘玮柏在反转地球。那一年是2006年，而今年是2016年。"
+        },
+        {
+          "commentId": "123788022",
+          "user": "没见过你的人不会明了--",
+          "likes": 132009,
+          "date": "2016-02-26 10:27",
+          "commentYear": 2016,
+          "yearsAfterRelease": 10,
+          "content": "微博上有个也叫薛之谦的冒充你，每天发段子，你也不管管"
+        },
+        {
+          "commentId": "25627924",
+          "user": "虚度了你的虚度",
+          "likes": 82401,
+          "date": "2015-07-09 12:04",
+          "commentYear": 2015,
+          "yearsAfterRelease": 9,
+          "content": "那年认真过的雪…如今精分中的薛…他的心愿是…世界和平……[心碎]"
+        },
+        {
+          "commentId": "49451320",
+          "user": "阿武隈爱上五十铃",
+          "likes": 59315,
+          "date": "2015-11-26 23:06",
+          "commentYear": 2015,
+          "yearsAfterRelease": 9,
+          "content": "尼玛，你们的故事真他的多，劳资23，除了牵过我妈的手。。。"
+        },
+        {
+          "commentId": "7021344",
+          "user": "装睡的人怎么也叫不醒",
+          "likes": 55472,
+          "date": "2014-12-12 19:56",
+          "commentYear": 2014,
+          "yearsAfterRelease": 8,
+          "content": "这首歌别人唱不来，除了薛之谦"
+        },
+        {
+          "commentId": "6696928",
+          "user": "简亦之",
+          "likes": 42693,
+          "date": "2014-12-04 23:56",
+          "commentYear": 2014,
+          "yearsAfterRelease": 8,
+          "content": "记得初三某天下午，课间趴在栏杆上，看着楼下的同学，忽然的，天空飘下了雪，一片片的。当时，心里不停的回响着这首歌。所以，每次听到这首歌，总会回想起过去的美好，那些我们再也回不去的美好岁月。真的希望，时光不老，我们不散。"
+        },
+        {
+          "commentId": "5634811",
+          "user": "曼煊",
+          "likes": 33141,
+          "date": "2014-11-10 02:05",
+          "commentYear": 2014,
+          "yearsAfterRelease": 8,
+          "content": "是不是怀旧的人，即使不爱了也还是会怀念"
+        },
+        {
+          "commentId": "125290899",
+          "user": "西西里不美丽丶",
+          "likes": 28654,
+          "date": "2016-03-02 18:07",
+          "commentYear": 2016,
+          "yearsAfterRelease": 10,
+          "content": "高一的时候问喜欢的一个女生喜欢什么歌，她说《认真的雪》，于是这首歌我一直听了5年，也追了她5年。今年的2月14号她谈恋爱了，没错，那个男的不是我。我知道我再也没有机会了，可是我真的舍不得删这首歌。"
+        },
+        {
+          "commentId": "71619188",
+          "user": "Silver丶",
+          "likes": 25695,
+          "date": "2016-02-18 09:36",
+          "commentYear": 2016,
+          "yearsAfterRelease": 10,
+          "content": "妈的开头老想检查耳机插好没"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "135640946",
+        "user": "几婷几婷几",
+        "likes": 260597,
+        "date": "2016-03-30 08:27",
+        "commentYear": 2016,
+        "yearsAfterRelease": 10,
+        "content": "那一年薛之谦最火的歌是认真的雪，那一年林俊杰唱着曹操，吴克群唱着将军令，周杰伦唱着听妈妈的话，潘玮柏在反转地球。那一年是2006年，而今年是2016年。"
+      }
+    },
+    {
+      "song": "苏黎世的从前",
+      "album": "你过得好吗",
+      "releaseYear": 2007,
+      "commentCount": 9335,
+      "topCommentYearsAfterRelease": 7,
+      "dormancyMedianYears": 8,
+      "dormancyP75Years": 9,
+      "maxDormancyYears": 9,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 10
+      },
+      "topComments": [
+        {
+          "commentId": "7824604",
+          "user": "小贝的海",
+          "likes": 9811,
+          "date": "2014-12-29 11:00",
+          "commentYear": 2014,
+          "yearsAfterRelease": 7,
+          "content": "苏黎世，真的很美的名字。异域是我的向往，即使很遥远，但我坚信在某个地方，一定也有我的故事，像这样的，或美丽或哀伤。"
+        },
+        {
+          "commentId": "17383877",
+          "user": "西古森",
+          "likes": 8634,
+          "date": "2015-05-06 15:44",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "个人感觉这是薛之谦所有歌里最美的一首歌。"
+        },
+        {
+          "commentId": "47119940",
+          "user": "东北小学霸",
+          "likes": 6739,
+          "date": "2015-11-16 08:02",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "老薛出道前去过瑞士学酒店管理，才有了这首苏黎世的从前，歌词真美，8年前就觉得美，现在依然觉得美"
+        },
+        {
+          "commentId": "166480818",
+          "user": "日四又王木木",
+          "likes": 4073,
+          "date": "2016-06-09 01:36",
+          "commentYear": 2016,
+          "yearsAfterRelease": 9,
+          "content": "因为这首歌特地去了苏黎世，去了瑞士看少女峰 去了列支顿士登盖了纪念章"
+        },
+        {
+          "commentId": "12333218",
+          "user": "Double丶Egg",
+          "likes": 3600,
+          "date": "2015-03-10 22:11",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "为什么你们关注的是苏黎世，而我关注的重点是少女峰……[大笑]"
+        },
+        {
+          "commentId": "194011256",
+          "user": "小糖葫芦_",
+          "likes": 3131,
+          "date": "2016-08-05 07:34",
+          "commentYear": 2016,
+          "yearsAfterRelease": 9,
+          "content": "这首歌写的是他在瑞士的前女友。当时他要回国了，女生去火车站送她。两个人都知道那是彼此最后一次见面了。但两个人就静静的对望着没有说话，好久。然后他上了车，看到她追着火车跑了好久。没有人说分手，却还是分开了。（以上来自大学生来了）"
+        },
+        {
+          "commentId": "31052353",
+          "user": "账号已注销",
+          "likes": 2673,
+          "date": "2015-08-14 17:25",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "耳机里全是他的深情[爱心]"
+        },
+        {
+          "commentId": "9975070",
+          "user": "Tae豆豆",
+          "likes": 2424,
+          "date": "2015-02-03 17:26",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "再听这首歌时，已经将近八年。那年初三，偷偷攒钱买了薛之谦的写真，最后还是被老爸发现。已经过去很久了呢"
+        },
+        {
+          "commentId": "177312878",
+          "user": "清风夜雨Jacky",
+          "likes": 2144,
+          "date": "2016-07-02 14:00",
+          "commentYear": 2016,
+          "yearsAfterRelease": 9,
+          "content": "《苏黎世的从前》，这源于谦谦以前在瑞士苏黎世上酒店管理专业，每年学费很贵20万，家里的钱只够一年，因此他每天乘坐苏黎世最后一班的免费火车到兼职的地方，一直等到早上开始工作，这首歌就是写这段在苏黎世从前的故事。"
+        },
+        {
+          "commentId": "23939492",
+          "user": "staralways",
+          "likes": 1759,
+          "date": "2015-06-27 22:10",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "感觉是一个人从一开始低吟到最后哭出来的状态"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "166480818",
+        "user": "日四又王木木",
+        "likes": 4073,
+        "date": "2016-06-09 01:36",
+        "commentYear": 2016,
+        "yearsAfterRelease": 9,
+        "content": "因为这首歌特地去了苏黎世，去了瑞士看少女峰 去了列支顿士登盖了纪念章"
+      }
+    },
+    {
+      "song": "深深爱过你",
+      "album": "深深爱过你",
+      "releaseYear": 2008,
+      "commentCount": 9969,
+      "topCommentYearsAfterRelease": 7,
+      "dormancyMedianYears": 7,
+      "dormancyP75Years": 8,
+      "maxDormancyYears": 8,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 10
+      },
+      "topComments": [
+        {
+          "commentId": "46339184",
+          "user": "阳多秋",
+          "likes": 9122,
+          "date": "2015-11-12 15:18",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "前世版最后一句歌词：请相信我们最后会在一起。 今生版最后一句歌词：哪怕我们最后不能在一起。"
+        },
+        {
+          "commentId": "23396545",
+          "user": "Effy___",
+          "likes": 8788,
+          "date": "2015-06-24 10:06",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "记得好几年前初中的时候，当时我最好的朋友总是唱这首歌给我听，当时她喜欢周杰伦，喜欢李易峰，当时周杰伦还没遇到昆凌，当的李易峰只是加油好男儿里刚刚出来的国民校草。而现在周董结婚了，李易峰彻底火了……可是，我们散了，曾经的友情也跟着消失了。再次听到这首歌竟然还是忍不住难过。"
+        },
+        {
+          "commentId": "9470076",
+          "user": "HatelessOo",
+          "likes": 3647,
+          "date": "2015-01-26 14:16",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "虽然很久很久以前听过这首歌，可是今天听到却被深深地感动了。 [爱心][爱心]"
+        },
+        {
+          "commentId": "22809581",
+          "user": "陌影成觞",
+          "likes": 3062,
+          "date": "2015-06-19 22:13",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "封面第一眼看成了大张伟[汗]"
+        },
+        {
+          "commentId": "16319223",
+          "user": "翟向远",
+          "likes": 2696,
+          "date": "2015-04-26 01:25",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "那年。她拿起话筒在灯红酒绿的霓虹灯中唱起这首歌。那时的她是唱给我听。。歌还在。我还在。而她搁浅在回忆里。"
+        },
+        {
+          "commentId": "24653716",
+          "user": "有梦人生不觉寒",
+          "likes": 2326,
+          "date": "2015-07-02 17:02",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "很赞的声线。一首很温暖但是孽人的歌。款款深情孽了我好多次。虽然我根本不知道什么叫编曲但是我就是感觉这歌曲编曲简直不明觉厉！以前从第一个喜欢的女生身上想到了未来的一切可能。现在想起来觉得很好笑，过去已经成了美好的回忆。但是我还是想说：请记得，我曾深深地爱过你。"
+        },
+        {
+          "commentId": "17409744",
+          "user": "耒阳",
+          "likes": 2062,
+          "date": "2015-05-06 20:22",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "薛志谦的歌总让人有一种念旧"
+        },
+        {
+          "commentId": "169246030",
+          "user": "你是年少的欢喜ZZZZZ",
+          "likes": 1991,
+          "date": "2016-06-15 16:07",
+          "commentYear": 2016,
+          "yearsAfterRelease": 8,
+          "content": "前世比今生俏皮 今生比前世深情。同意的请点赞~~~"
+        },
+        {
+          "commentId": "128914298",
+          "user": "不爱塔塔有点难",
+          "likes": 1653,
+          "date": "2016-03-13 00:05",
+          "commentYear": 2016,
+          "yearsAfterRelease": 8,
+          "content": "今天上海来福士广场碰到薛之谦[可爱][可爱]"
+        },
+        {
+          "commentId": "204654703",
+          "user": "Miracle-fsj",
+          "likes": 1406,
+          "date": "2016-08-24 23:40",
+          "commentYear": 2016,
+          "yearsAfterRelease": 8,
+          "content": "最终你会一个人拖着行李箱离开 没人相送也没人等待 一个人带着清冷的空气走过泥泞穿过小巷 路上走着人来来往往 下雨了没人撑伞就只能狼狈躲雨 走累了没人依靠就找个墙角歇息 天气冷了没人叮嘱那自己要裹好大衣 别总等别人来疼你 边走边爱反正人山人海"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "169246030",
+        "user": "你是年少的欢喜ZZZZZ",
+        "likes": 1991,
+        "date": "2016-06-15 16:07",
+        "commentYear": 2016,
+        "yearsAfterRelease": 8,
+        "content": "前世比今生俏皮 今生比前世深情。同意的请点赞~~~"
+      }
+    },
+    {
+      "song": "我的雅典娜",
+      "album": "未完成的歌",
+      "releaseYear": 2009,
+      "commentCount": 6966,
+      "topCommentYearsAfterRelease": 5,
+      "dormancyMedianYears": 6.5,
+      "dormancyP75Years": 7,
+      "maxDormancyYears": 17,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 1,
+        "late": 9
+      },
+      "topComments": [
+        {
+          "commentId": "6950060",
+          "user": "backtoamy",
+          "likes": 8049,
+          "date": "2014-12-11 00:23",
+          "commentYear": 2014,
+          "yearsAfterRelease": 5,
+          "content": "其实。。。这歌词。。。挺二的。。。[口罩]"
+        },
+        {
+          "commentId": "130683922",
+          "user": "Gabure",
+          "likes": 7061,
+          "date": "2016-03-17 15:39",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "记得薛老师在一个电台访谈里说过想烧掉这首歌[大哭]"
+        },
+        {
+          "commentId": "43434672",
+          "user": "账号已注销",
+          "likes": 6860,
+          "date": "2015-10-28 23:48",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "中二少年你还好吗，小薛不堪回首的往事系列hhhh"
+        },
+        {
+          "commentId": "52967666",
+          "user": "净化里比多",
+          "likes": 4099,
+          "date": "2015-12-11 18:59",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "就没人觉得封面很帅吗?果然大家的注意力都被中二歌词吸引了[大哭]"
+        },
+        {
+          "commentId": "124111179",
+          "user": "草坪修剪员",
+          "likes": 3319,
+          "date": "2016-02-27 13:25",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "卧槽我觉得这首歌很好听啊！！！！！！！！！！！"
+        },
+        {
+          "commentId": "19640055",
+          "user": "看了场烟火",
+          "likes": 3282,
+          "date": "2015-05-26 19:35",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "这歌适合圣斗士们唱……"
+        },
+        {
+          "commentId": "68944410",
+          "user": "苏望路",
+          "likes": 3011,
+          "date": "2016-02-08 19:36",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "从此“雅典娜”这三个字自带音调和节奏……"
+        },
+        {
+          "commentId": "55730222",
+          "user": "月亮忘记吧",
+          "likes": 2910,
+          "date": "2015-12-22 22:35",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "我就说嘛，中二与深刻一线之差。"
+        },
+        {
+          "commentId": "165846252",
+          "user": "Ooooooneday",
+          "likes": 2881,
+          "date": "2016-06-07 17:26",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "薛大大说这首歌走不出他家小区。[大哭]"
+        },
+        {
+          "commentId": "9494897807",
+          "user": "浪漫难消磨",
+          "likes": 2337,
+          "date": "2026-03-22 03:12",
+          "commentYear": 2026,
+          "yearsAfterRelease": 17,
+          "content": "听完四巡直接爱上这首歌"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "9494897807",
+        "user": "浪漫难消磨",
+        "likes": 2337,
+        "date": "2026-03-22 03:12",
+        "commentYear": 2026,
+        "yearsAfterRelease": 17,
+        "content": "听完四巡直接爱上这首歌"
+      }
+    },
+    {
+      "song": "未完成的歌",
+      "album": "未完成的歌",
+      "releaseYear": 2009,
+      "commentCount": 12479,
+      "topCommentYearsAfterRelease": 6,
+      "dormancyMedianYears": 6,
+      "dormancyP75Years": 7,
+      "maxDormancyYears": 7,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 2,
+        "late": 8
+      },
+      "topComments": [
+        {
+          "commentId": "16397705",
+          "user": "屿田啊",
+          "likes": 23201,
+          "date": "2015-04-26 22:36",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "其实一直觉得薛之谦特别有才，为什么不能大火大热，记得以前百听不厌认真的雪，每年冬天下雪的时候他就开玩笑说自己会比较火。早知道自己就写认真的初夏秋冬好了，真的是萌萌哒"
+        },
+        {
+          "commentId": "20179900",
+          "user": "谭小怪咖",
+          "likes": 16755,
+          "date": "2015-05-31 09:35",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "突然又再次爱上了薛之谦，虽然他的情歌总结起来就是：论一个备胎的自我修养~~"
+        },
+        {
+          "commentId": "43713721",
+          "user": "你是水果味儿的",
+          "likes": 14528,
+          "date": "2015-10-30 15:23",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "离个婚他去了半壁江山，净身出户，都快破产了。给房给钱还给写歌！男人做到这份上，够好了！薛之谦，“一个二线段子手，四线歌手，十八线演员”出道十几年，微博上过两次热门，第一次，”薛之谦精分“，第二次，”薛之谦离婚”。主持人问他：“你怎么跑去演戏了？“我想红，这样就有更多人听我的歌\"。"
+        },
+        {
+          "commentId": "6700853",
+          "user": "偏见的bongbong熊",
+          "likes": 7461,
+          "date": "2014-12-05 10:42",
+          "commentYear": 2014,
+          "yearsAfterRelease": 5,
+          "content": "这小子长得真像我高中暗恋的男生。高二下他转学去广州了[流泪]"
+        },
+        {
+          "commentId": "124468213",
+          "user": "innatu1_",
+          "likes": 6549,
+          "date": "2016-02-28 14:30",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "看了他择偶标准，肤白不需要，家境好不需要，知识渊博不需要，门当户对不需要，身材火辣不需要等等，因为他都有。他只要单纯，善良，爱小动物…这么一来，情敌多好多…"
+        },
+        {
+          "commentId": "170913537",
+          "user": "婠音",
+          "likes": 6106,
+          "date": "2016-06-19 08:06",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "火星情报局《薛之谦被讽人红歌不红》那期 应采儿说了一句“你好好一个歌手怎么变成这样” 这句话我看到真的特别难受 薛这十年所经历的 他为了挣钱做音乐去做谐星 为了让观众笑像个小丑一样 他为音乐付出了多少不了解他的人却只奇怪他好好一个歌手怎么变成了这样[心碎]"
+        },
+        {
+          "commentId": "7983165",
+          "user": "山的海的那边有一只小洛卡",
+          "likes": 4699,
+          "date": "2014-12-31 23:30",
+          "commentYear": 2014,
+          "yearsAfterRelease": 5,
+          "content": "真的是被埋没的歌！！好听。"
+        },
+        {
+          "commentId": "10019601",
+          "user": "_zeelom",
+          "likes": 3696,
+          "date": "2015-02-04 11:38",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "他的歌有种能够重复的魅力。"
+        },
+        {
+          "commentId": "8705373",
+          "user": "小小小个",
+          "likes": 3134,
+          "date": "2015-01-13 22:12",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "为什么听他的歌会莫名的感动，总会一遍又一遍的重复，舍不得，，，"
+        },
+        {
+          "commentId": "124499777",
+          "user": "脑不饿",
+          "likes": 2603,
+          "date": "2016-02-28 20:15",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "当年才气逼人的才子到处都是，如今遍地左手右手慢动作"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "124468213",
+        "user": "innatu1_",
+        "likes": 6549,
+        "date": "2016-02-28 14:30",
+        "commentYear": 2016,
+        "yearsAfterRelease": 7,
+        "content": "看了他择偶标准，肤白不需要，家境好不需要，知识渊博不需要，门当户对不需要，身材火辣不需要等等，因为他都有。他只要单纯，善良，爱小动物…这么一来，情敌多好多…"
+      }
+    },
+    {
+      "song": "其实",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 266273,
+      "topCommentYearsAfterRelease": 3,
+      "dormancyMedianYears": 3,
+      "dormancyP75Years": 4,
+      "maxDormancyYears": 9,
+      "delayBuckets": {
+        "instant": 1,
+        "mid": 7,
+        "late": 2
+      },
+      "topComments": [
+        {
+          "commentId": "68532588",
+          "user": "Yurmoi",
+          "likes": 235100,
+          "date": "2016-02-06 21:10",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "那年夏天，因为一些事吵得很凶，分手，删了一切却始终想知道她最近怎么样，好还是坏，后来，我在她的红心找到这首歌，我知道，她还爱着我，于是开学又死皮赖脸的找去，现在打算结婚了[可爱][可爱]"
+        },
+        {
+          "commentId": "136139029",
+          "user": "阿a女神",
+          "likes": 215440,
+          "date": "2016-03-31 12:10",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "后来，我再也不敢把谁规划在未来里。"
+        },
+        {
+          "commentId": "4830425",
+          "user": "Joannawanwan",
+          "likes": 205402,
+          "date": "2014-10-11 14:16",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "不知道现在还有多少人听薛之谦 他是我曾经的男神 唱歌深情又不做作 但每次听他的歌都会抱怨耳机不够好 感觉他的声音比我听到的好的多[亲亲]"
+        },
+        {
+          "commentId": "39848930",
+          "user": "心弦为君鸣",
+          "likes": 91908,
+          "date": "2015-10-09 17:53",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "薛式情歌是毒药，薛的微博是解药[大哭]"
+        },
+        {
+          "commentId": "10735147",
+          "user": "-特别的人",
+          "likes": 74424,
+          "date": "2015-02-14 09:01",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "失恋难过时心态不好听薛之谦的歌就是找虐！"
+        },
+        {
+          "commentId": "61523523",
+          "user": "绵绵___",
+          "likes": 60519,
+          "date": "2016-01-13 21:10",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "想起一段话”我又不是圣人，怎么会希望你过的很好很幸福，我巴不得你过的贫穷孤独，每到深夜时，都是想着我的好。"
+        },
+        {
+          "commentId": "631056133",
+          "user": "避风塘焖蟹",
+          "likes": 54928,
+          "date": "2017-12-03 10:47",
+          "commentYear": 2017,
+          "yearsAfterRelease": 4,
+          "content": "懒得重新认识一个人 再问名字 再问年龄 再聊天 再了解对方 再磨合 一想就烦"
+        },
+        {
+          "commentId": "8392574",
+          "user": "叫我是神经吧",
+          "likes": 28596,
+          "date": "2015-01-08 16:57",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "薛之谦，张敬轩，古巨基都是这两年发现的歌手，很多很多都唱到了心底里。"
+        },
+        {
+          "commentId": "5781792628",
+          "user": "账号已注销",
+          "likes": 25721,
+          "date": "2022-11-02 23:58",
+          "commentYear": 2022,
+          "yearsAfterRelease": 9,
+          "content": "我才十九，应该打的过癌症吧"
+        },
+        {
+          "commentId": "3233022312",
+          "user": "无望_无言",
+          "likes": 24202,
+          "date": "2020-03-30 13:07",
+          "commentYear": 2020,
+          "yearsAfterRelease": 7,
+          "content": "“我妈说 人家放弃你的时候 一定是经过深思熟虑的 那一刻他觉得没有你 他会更好 而那一刻一辈子也不值得原谅” 所以我开始慢慢放下了"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5781792628",
+        "user": "账号已注销",
+        "likes": 25721,
+        "date": "2022-11-02 23:58",
+        "commentYear": 2022,
+        "yearsAfterRelease": 9,
+        "content": "我才十九，应该打的过癌症吧"
+      }
+    },
+    {
+      "song": "意外",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 153726,
+      "topCommentYearsAfterRelease": 3,
+      "dormancyMedianYears": 3,
+      "dormancyP75Years": 3,
+      "maxDormancyYears": 4,
+      "delayBuckets": {
+        "instant": 3,
+        "mid": 7,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "191429332",
+          "user": "风pdd",
+          "likes": 258340,
+          "date": "2016-07-31 15:04",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "薛之谦：专辑你就不要买啦，网上都可以免费听，买了也没什么意义…许嵩：新专辑在各大平台都可以免费听，实体唱片的话可以不买阿…搞得跟是电视销售节目推销一样…海蝶音乐：我特么招谁惹谁了签了这俩败家玩意儿！[大哭][大哭]"
+        },
+        {
+          "commentId": "5641383",
+          "user": "Double___two",
+          "likes": 214608,
+          "date": "2014-11-10 12:30",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "会写歌，能逗比，会做生意，能开店，人也帅。[色]"
+        },
+        {
+          "commentId": "131358133",
+          "user": "黑白薄荷",
+          "likes": 131989,
+          "date": "2016-03-19 10:12",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "Stay here，很是意外，方圆几里一半是认真的雪，一半是黄色枫叶。突然我想起你了，我知道你都知道，为了遇见你，我甘愿做个绅士的演员，做个深深爱过你的丑八怪，不管世上有几个你，其实，我们爱过就好。你过的好吗只是句敷衍，我终于成了别人的女人，你还要我怎样。下雨了小孩，等我回家。"
+        },
+        {
+          "commentId": "6750215",
+          "user": "wongtian",
+          "likes": 98756,
+          "date": "2014-12-06 14:37",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "薛之谦是个努力有梦想又帅的好歌手。 快火起来"
+        },
+        {
+          "commentId": "8780064",
+          "user": "幻梦_",
+          "likes": 70663,
+          "date": "2015-01-15 12:21",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "薛之谦唱歌这么好听为什么不红[流感]"
+        },
+        {
+          "commentId": "127209059",
+          "user": "Mobuuuuu",
+          "likes": 63533,
+          "date": "2016-03-08 00:06",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "薛之谦擅长写旋律，但是编曲弱，很多时候编曲不求出彩只求不拖后腿，这首歌或者说这整张专辑的编曲难得很赞，弦乐很出彩，非常抓耳。很多人都觉得开火锅写段子来维持自己的音乐梦想很可悲，殊不知多少人庸庸碌碌一生，依旧不得梦想两个字的真意。愿薛之谦继续享受音乐，享受追求梦想的过程。"
+        },
+        {
+          "commentId": "129840013",
+          "user": "会告别吗",
+          "likes": 53534,
+          "date": "2016-03-15 12:22",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "我知道我丑，同学门都嘲笑我，但我没想到我妈也并不疼爱我，晚上我起床开灯小解，她竟然在嘴里哼唱着：“丑八怪伊啊伊啊啊啊，能否别把灯打开。”"
+        },
+        {
+          "commentId": "5475031",
+          "user": "fire-four",
+          "likes": 48799,
+          "date": "2014-11-05 00:55",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "光棍节前收获了爱情，真是一场意外～"
+        },
+        {
+          "commentId": "578847396",
+          "user": "崔春亮",
+          "likes": 43052,
+          "date": "2017-10-07 16:56",
+          "commentYear": 2017,
+          "yearsAfterRelease": 4,
+          "content": "你嫁人时候也请给我一张请柬，你所有的样子我都见过，我只是想去看看你不属于我的样子，对不起，我还爱你。"
+        },
+        {
+          "commentId": "638400213",
+          "user": "再见不到那片海-",
+          "likes": 33723,
+          "date": "2017-12-11 11:09",
+          "commentYear": 2017,
+          "yearsAfterRelease": 4,
+          "content": "他现在变得高冷了 他现在不疯了 他现在不嚷嚷着“世界和平”了 他现在不会在发新歌的时候写段子了 他现在不会染头发了 他现在不会像个小孩子那样活蹦乱跳了 他现在不会和他的谦友互怼了 他现在节目接的少了 现在的他发新歌时候，微博只有短短的“感谢聆听”这四个字 让我心疼原来的他"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "578847396",
+        "user": "崔春亮",
+        "likes": 43052,
+        "date": "2017-10-07 16:56",
+        "commentYear": 2017,
+        "yearsAfterRelease": 4,
+        "content": "你嫁人时候也请给我一张请柬，你所有的样子我都见过，我只是想去看看你不属于我的样子，对不起，我还爱你。"
+      }
+    },
+    {
+      "song": "伏笔",
+      "album": "几个薛之谦",
+      "releaseYear": 2012,
+      "commentCount": 11460,
+      "topCommentYearsAfterRelease": 3,
+      "dormancyMedianYears": 3,
+      "dormancyP75Years": 4,
+      "maxDormancyYears": 4,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 10,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "22485621",
+          "user": "亲到无可亲密后",
+          "likes": 27400,
+          "date": "2015-06-17 13:48",
+          "commentYear": 2015,
+          "yearsAfterRelease": 3,
+          "content": "创作者郭顶和演唱者薛之谦 两个都是好听却不火没道理 不过也没关系 他们都不知道还有这样的好歌 我知道 他们都不知道还有这样认真做音乐没有放弃的人 我知道"
+        },
+        {
+          "commentId": "24096893",
+          "user": "是你爹别看了",
+          "likes": 13934,
+          "date": "2015-06-29 00:42",
+          "commentYear": 2015,
+          "yearsAfterRelease": 3,
+          "content": "每次听完哥的情歌都得去看他的微博才能平复我的心情[撇嘴][撇嘴]"
+        },
+        {
+          "commentId": "9115052",
+          "user": "安工大电车男",
+          "likes": 11161,
+          "date": "2015-01-20 16:15",
+          "commentYear": 2015,
+          "yearsAfterRelease": 3,
+          "content": "很多时候，你对一件失去的东西念念不忘，废寝忘食，魂不守舍，大部分原因并非出于深爱。而是因为回到彼时彼地，让你重新做一些选择，你本可以避免这次失去。人最难释怀的，是自己的过错。又因为百般回避，才骗自己爱得执着。"
+        },
+        {
+          "commentId": "38334034",
+          "user": "寻声暗问弹者谁",
+          "likes": 9043,
+          "date": "2015-09-29 17:16",
+          "commentYear": 2015,
+          "yearsAfterRelease": 3,
+          "content": "昨天还在听你唱的《伏笔》，今天就看到新闻爆出你离婚了[哀伤]，又突然想起了你唱的那句“谁不是唱过细水长流最后变卑微”，愿你今后一切顺利～"
+        },
+        {
+          "commentId": "37951199",
+          "user": "远离热爱",
+          "likes": 6231,
+          "date": "2015-09-27 01:22",
+          "commentYear": 2015,
+          "yearsAfterRelease": 3,
+          "content": "一边听他的歌，一边翻他的微博，尼玛，第一次让我有了种人格分裂的感觉！[大哭][大哭]"
+        },
+        {
+          "commentId": "4917207",
+          "user": "飞飞是诺维茨基",
+          "likes": 5786,
+          "date": "2014-10-15 19:28",
+          "commentYear": 2014,
+          "yearsAfterRelease": 2,
+          "content": "这么好的歌却不红"
+        },
+        {
+          "commentId": "154543347",
+          "user": "kikiyome",
+          "likes": 4418,
+          "date": "2016-05-14 17:01",
+          "commentYear": 2016,
+          "yearsAfterRelease": 4,
+          "content": "真心觉得郭顶和我薛都是歌坛的遗珠。两个用心做音乐的人还不如某些炒作的人红。我薛现在好点了，但想起靠火锅店养音乐的他还是会心疼。希望郭顶也越来越好。[爱心]"
+        },
+        {
+          "commentId": "167087044",
+          "user": "oozeandooze",
+          "likes": 2888,
+          "date": "2016-06-10 13:21",
+          "commentYear": 2016,
+          "yearsAfterRelease": 4,
+          "content": "你们都没发现那一句“从奋不顾身到全身而退”吗？[心碎]多少人都是嚷嚷着不管怎样都要在一起，轰轰烈烈之后最终还是被生活的巨浪打散。"
+        },
+        {
+          "commentId": "160849014",
+          "user": "爸爸好萌",
+          "likes": 2802,
+          "date": "2016-05-27 15:27",
+          "commentYear": 2016,
+          "yearsAfterRelease": 4,
+          "content": "死党说我薛没有唱功只是歌词好，已经一周没和他说话了[禁止][禁止]"
+        },
+        {
+          "commentId": "177218804",
+          "user": "Wendy_zpii",
+          "likes": 2043,
+          "date": "2016-07-02 09:29",
+          "commentYear": 2016,
+          "yearsAfterRelease": 4,
+          "content": "前几天看到老薛微博…这个笨蛋…北京「初学者」首唱居然免费…心疼他对音乐这么纯粹的态度[哀伤]"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "154543347",
+        "user": "kikiyome",
+        "likes": 4418,
+        "date": "2016-05-14 17:01",
+        "commentYear": 2016,
+        "yearsAfterRelease": 4,
+        "content": "真心觉得郭顶和我薛都是歌坛的遗珠。两个用心做音乐的人还不如某些炒作的人红。我薛现在好点了，但想起靠火锅店养音乐的他还是会心疼。希望郭顶也越来越好。[爱心]"
+      }
+    },
+    {
+      "song": "丑八怪",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 78108,
+      "topCommentYearsAfterRelease": 3,
+      "dormancyMedianYears": 3,
+      "dormancyP75Years": 3,
+      "maxDormancyYears": 3,
+      "delayBuckets": {
+        "instant": 3,
+        "mid": 7,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "126734368",
+          "user": "艾琳艾德勒丶",
+          "likes": 134001,
+          "date": "2016-03-06 18:15",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "想对早起的室友说，丑八怪啊啊啊，能否别把灯打开[大哭]"
+        },
+        {
+          "commentId": "5858328",
+          "user": "为你噗噗olu",
+          "likes": 99110,
+          "date": "2014-11-16 13:45",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "这唱腔这曲子简直了李荣浩"
+        },
+        {
+          "commentId": "41222963",
+          "user": "按时微醺",
+          "likes": 85676,
+          "date": "2015-10-17 10:53",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "为什么网易云音乐每天都坚持不懈地向我推荐这首《丑八怪》，难道是在对我暗示什么吗。。不敢往下想了。。[惊恐]"
+        },
+        {
+          "commentId": "126747442",
+          "user": "叫我斯斯欧尼",
+          "likes": 63851,
+          "date": "2016-03-06 18:45",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "李克勤的歌下面都是薛之谦，薛之谦的歌下面都是李荣浩，李荣浩的歌下面都是周杰伦……世界和平[爱心]"
+        },
+        {
+          "commentId": "70273076",
+          "user": "隔壁楼下丶小黑",
+          "likes": 55539,
+          "date": "2016-02-13 21:11",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "我正唱到：丑八怪，能否别把灯打开。领导把KTV的灯打开了........"
+        },
+        {
+          "commentId": "5007612",
+          "user": "张阿嚏-",
+          "likes": 44738,
+          "date": "2014-10-19 20:16",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "总觉得薛之谦把这首歌的味道完全唱出来了"
+        },
+        {
+          "commentId": "72403053",
+          "user": "陪我去吃汉堡",
+          "likes": 41395,
+          "date": "2016-02-20 12:23",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "薛说他在李荣浩还没红之前就买了几首他的歌..都是挑最好听的..那时候还比较便宜..现在就要涨价了...[大笑]机智的薛老板..[奸笑]"
+        },
+        {
+          "commentId": "131333101",
+          "user": "埃米纳杰",
+          "likes": 28846,
+          "date": "2016-03-19 09:30",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "说像李荣浩的其实并没有什么恶意，说白了只是近几年李荣浩比薛之谦更红更让人知道而已，相反如果李荣浩没有出现红的是薛之谦那么当李荣浩出现时人们肯定说这唱法声音像极了薛之谦，两人都是歌手，都是优秀的华语歌手，其实收益的是我们！"
+        },
+        {
+          "commentId": "126280126",
+          "user": "拍拍虾崽",
+          "likes": 26105,
+          "date": "2016-03-05 12:10",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "薛之谦，打广告买衣服开火锅店赚的钱都拿去做音乐，调侃说大家都去听听看我的歌嘛反正又不要钱，辛酸又心疼。他在很认真地坚持自己的音乐，热爱着音乐，他的努力与坚持会换来成功的。[爱心]"
+        },
+        {
+          "commentId": "5563395",
+          "user": "stashshadow",
+          "likes": 20608,
+          "date": "2014-11-07 18:54",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "最近发现好多以前听过的歌是李荣浩作曲的[大哭]"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "126734368",
+        "user": "艾琳艾德勒丶",
+        "likes": 134001,
+        "date": "2016-03-06 18:15",
+        "commentYear": 2016,
+        "yearsAfterRelease": 3,
+        "content": "想对早起的室友说，丑八怪啊啊啊，能否别把灯打开[大哭]"
+      }
+    },
+    {
+      "song": "你还要我怎样",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 224182,
+      "topCommentYearsAfterRelease": 1,
+      "dormancyMedianYears": 2.5,
+      "dormancyP75Years": 3,
+      "maxDormancyYears": 3,
+      "delayBuckets": {
+        "instant": 4,
+        "mid": 6,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "4941765",
+          "user": "L洄游的鱼",
+          "likes": 357413,
+          "date": "2014-10-16 23:48",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "开始慢慢懂爱情，却开始害怕听情歌。"
+        },
+        {
+          "commentId": "26191719",
+          "user": "MS表哥",
+          "likes": 260723,
+          "date": "2015-07-13 16:01",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "他和某主持对话，他说唱片行业不景气，公司拿不出太多资金为他做唱片宣传，11年他卖掉一套房子凑了200万投资火锅店，只为赚钱养音乐，主持人问他：你去演戏是为什么。他回答：想红，这样就有更多人听我的歌。这样一个认真做音乐的人不多了，其他的不想评价，不是他的粉丝，但尊重他的认真。"
+        },
+        {
+          "commentId": "5413063",
+          "user": "怀氧",
+          "likes": 214770,
+          "date": "2014-11-02 21:05",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "有一天晚上 梦一场 你白发苍苍 说带我流浪 我还是没犹豫 就随你去天堂"
+        },
+        {
+          "commentId": "71197165",
+          "user": "沙发上的bai日梦",
+          "likes": 168545,
+          "date": "2016-02-16 22:19",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "男生就像洋葱，因为你想探知，于是就剥，边剥边哭，后来发现没心。 可其实，你一直剥的，就是他的心。他一开始把心给你了，你却不相信。"
+        },
+        {
+          "commentId": "7088489",
+          "user": "奋起的夏亦绵丶",
+          "likes": 108977,
+          "date": "2014-12-14 07:04",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "听了很多遍也没有经心，下的时候也是因为一些啼笑皆非的理由，只是昨天在自习室背书的时候觉得旋律很合适，就单曲循环了起来，直到听到那一句【有一天晚上 梦一场 你白发苍苍 说带我流浪 我还是没犹豫 就随你去天堂 】一个激灵抓起手机仔仔细细的看歌词，趴在没有人的自习室痛哭出声。"
+        },
+        {
+          "commentId": "134458112",
+          "user": "醋酸钠0624",
+          "likes": 100840,
+          "date": "2016-03-26 21:17",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "结婚的时候给我一张请帖吧，你开心的，难过的，温柔的样子我看过，最后我就想看看你不属于我的样子。"
+        },
+        {
+          "commentId": "5603508",
+          "user": "忽而又夏523",
+          "likes": 85631,
+          "date": "2014-11-09 01:33",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "后来，我再也没有遇到对我那么好的人。"
+        },
+        {
+          "commentId": "124088824",
+          "user": "一我见青山多妩媚一",
+          "likes": 79001,
+          "date": "2016-02-27 15:33",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "取自薛之谦的微博：我最害怕的事 就是当你和你的朋友聊到音乐的时候 你说你喜欢薛之谦大家会投来质疑的眼光...我不想让你丢脸...所以我一直认为这是我的义务.... 希望这个自嘲为四线歌手的歌手能够真正的被更多人喜欢。"
+        },
+        {
+          "commentId": "127994689",
+          "user": "初见琉璃",
+          "likes": 61942,
+          "date": "2016-03-10 15:08",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "幸好我丑，没经历过那么多的爱恨纠缠"
+        },
+        {
+          "commentId": "131801006",
+          "user": "王千源是我男神",
+          "likes": 48120,
+          "date": "2016-03-20 13:55",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "“你会等一个人很久吗？” “不会” “为什么？” “凭什么？”"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "71197165",
+        "user": "沙发上的bai日梦",
+        "likes": 168545,
+        "date": "2016-02-16 22:19",
+        "commentYear": 2016,
+        "yearsAfterRelease": 3,
+        "content": "男生就像洋葱，因为你想探知，于是就剥，边剥边哭，后来发现没心。 可其实，你一直剥的，就是他的心。他一开始把心给你了，你却不相信。"
+      }
+    },
+    {
+      "song": "违背的青春",
+      "album": "怪咖",
+      "releaseYear": 2018,
+      "commentCount": 29747,
+      "topCommentYearsAfterRelease": 2,
+      "dormancyMedianYears": 2,
+      "dormancyP75Years": 2,
+      "maxDormancyYears": 5,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 10,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "3223282850",
+          "user": "sacai_s",
+          "likes": 30047,
+          "date": "2020-03-25 10:53",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "你要接受这世界上突如其来失去 洒了的牛奶 丢失的钱包 走散的爱情 破裂的友情 当你做什么都于事无补的时 唯一能做的就是让自己过得好一点 丢都丢了 就别再难过了"
+        },
+        {
+          "commentId": "3223300067",
+          "user": "在雨里盛开",
+          "likes": 21325,
+          "date": "2020-03-25 11:14",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "薛之谦教会我\"不能让的咬着牙也不放掉\""
+        },
+        {
+          "commentId": "3223295991",
+          "user": "xkbfesdkkr",
+          "likes": 15221,
+          "date": "2020-03-25 11:08",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "这一路走来，也许没人看好你，也许总有声音劝你放弃，但只有你自己知道，你的坚持，无可替代。——薛之谦"
+        },
+        {
+          "commentId": "3598892821",
+          "user": "-满-心-欢-喜-",
+          "likes": 11539,
+          "date": "2020-11-07 16:50",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "班里要选一个歌 励志的，我提了“违背的青春”，大家一听直接说这个不是励志的，是关于爱情的……最后班主任也diss这首歌，当时我就眼泪差点出来，一下午都不搭理班里。怎么？不懂就开始瞎议论，对老薛的歌的风格有固有的偏见…他明明就是励志的，周围所有人都不喜欢我也会一直喜欢，一直听下去"
+        },
+        {
+          "commentId": "5208862559",
+          "user": "恰到好处的力竭",
+          "likes": 10441,
+          "date": "2021-01-15 20:02",
+          "commentYear": 2021,
+          "yearsAfterRelease": 3,
+          "content": "“你不认识我 却贯穿了我整个青春”"
+        },
+        {
+          "commentId": "3223313838",
+          "user": "海浪在发愁-S",
+          "likes": 6769,
+          "date": "2020-03-25 11:10",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "2019年6月7日，进考场的前半小时，学校响起这首歌的时候，鼻子酸酸的，多少个睡不着的晚上，薛薛真的给了我很大很大的力量，坚持是多么难能可贵的事情，不是吗？你永远想不到人的极限在哪里。2020高考加油！你们会赢的！"
+        },
+        {
+          "commentId": "3223286240",
+          "user": "几万笔",
+          "likes": 6434,
+          "date": "2020-03-25 11:13",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "“原每个人心中的炽热在妥协后还没有死去”"
+        },
+        {
+          "commentId": "3469886450",
+          "user": "冷酷杀手谢俞",
+          "likes": 5917,
+          "date": "2020-10-04 23:15",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "薛之谦你可真行啊，毛不易，胡宇桐，廖俊涛，钟易轩，你真会选人啊"
+        },
+        {
+          "commentId": "5862402068",
+          "user": "Dugky",
+          "likes": 5089,
+          "date": "2023-02-26 20:20",
+          "commentYear": 2023,
+          "yearsAfterRelease": 5,
+          "content": "记得上学时买不起演唱会门票，只买了音乐节的门票，薛之谦压轴出场唱了这首违背的青春。回家的路上骑着共享电动车在大街上边走边唱这首歌，同路的谦友听到会一起合唱，真好，夏天的晚风好，青春的疯狂更好，时隔两年终于要去演唱会啦"
+        },
+        {
+          "commentId": "3223150711",
+          "user": "你快请我吃麦当劳",
+          "likes": 4306,
+          "date": "2020-03-25 10:10",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "你在追赶青春的时候，我却连时间的影子都抓不到了"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5862402068",
+        "user": "Dugky",
+        "likes": 5089,
+        "date": "2023-02-26 20:20",
+        "commentYear": 2023,
+        "yearsAfterRelease": 5,
+        "content": "记得上学时买不起演唱会门票，只买了音乐节的门票，薛之谦压轴出场唱了这首违背的青春。回家的路上骑着共享电动车在大街上边走边唱这首歌，同路的谦友听到会一起合唱，真好，夏天的晚风好，青春的疯狂更好，时隔两年终于要去演唱会啦"
+      }
+    },
+    {
+      "song": "方圆几里",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 98371,
+      "topCommentYearsAfterRelease": 3,
+      "dormancyMedianYears": 2,
+      "dormancyP75Years": 3,
+      "maxDormancyYears": 3,
+      "delayBuckets": {
+        "instant": 2,
+        "mid": 8,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "136112069",
+          "user": "烟花慢",
+          "likes": 163358,
+          "date": "2016-03-31 09:21",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "“想让你吃醋，又怕你祝我幸福。”"
+        },
+        {
+          "commentId": "5092321",
+          "user": "账号已注销",
+          "likes": 152721,
+          "date": "2014-10-23 13:54",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "之前听着这歌时S4被偷了，真的要注意方圆几里！！！"
+        },
+        {
+          "commentId": "7066364",
+          "user": "陈北词717",
+          "likes": 74521,
+          "date": "2014-12-13 18:15",
+          "commentYear": 2014,
+          "yearsAfterRelease": 1,
+          "content": "薛之谦真的是业界良心！！每一首歌都好好听[大笑]比较坑的是怎样他都不红 微博上的他也是够了"
+        },
+        {
+          "commentId": "19019083",
+          "user": "lifenotsS",
+          "likes": 69709,
+          "date": "2015-05-21 14:24",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "这个歌手唱备胎歌好专业~[流泪]"
+        },
+        {
+          "commentId": "154793856",
+          "user": "Egoist-我祈",
+          "likes": 49487,
+          "date": "2016-05-15 09:54",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "最泪点的是薛说的那句话：你们来听我的歌吧，不要钱的。"
+        },
+        {
+          "commentId": "17872719",
+          "user": "原重楼",
+          "likes": 49165,
+          "date": "2015-05-10 21:20",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "觉得不红很可惜，又不想被埋没，又不想喜欢的人太多，又不想他的歌烂大街。。。能红当然更好啊，现在这样虽然很不错，你当段子手当的风生水起，知道你开店卖衣服都是为了做唱片，不容易啊 。但是我真的想看到你给更多的人唱歌，更多的人认识你。你值得更大的更好的舞台。"
+        },
+        {
+          "commentId": "9638645",
+          "user": "浪漫的简简",
+          "likes": 35173,
+          "date": "2015-01-29 09:36",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "曾经遇见一个男孩，他对我说:\"我爱你就好，你爱不爱我都可以\"跟歌词一样的话，他确实默默付出他的爱，只是我已是别人的爱人，对不起，我无法回应，还有一句你不让我说的谢谢！"
+        },
+        {
+          "commentId": "9070999",
+          "user": "阿夏32",
+          "likes": 26081,
+          "date": "2015-01-20 11:07",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "《论段子手也要会唱歌的重要性》"
+        },
+        {
+          "commentId": "16467679",
+          "user": "SeveralOfYou",
+          "likes": 17119,
+          "date": "2015-04-27 18:40",
+          "commentYear": 2015,
+          "yearsAfterRelease": 2,
+          "content": "如果，有一天，你也得了脸盲症，我也会一直在你方圆几里，不求每天你重新认识我，让我看见你就好，，，"
+        },
+        {
+          "commentId": "145701723",
+          "user": "钟爱的橘子",
+          "likes": 14642,
+          "date": "2016-04-24 21:47",
+          "commentYear": 2016,
+          "yearsAfterRelease": 3,
+          "content": "“我推了三个通告，连夜赶来无锡，只是为了借极限挑战这么火的节目红一下，没想到在牢里关了一天”[大哭]"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "136112069",
+        "user": "烟花慢",
+        "likes": 163358,
+        "date": "2016-03-31 09:21",
+        "commentYear": 2016,
+        "yearsAfterRelease": 3,
+        "content": "“想让你吃醋，又怕你祝我幸福。”"
+      }
+    },
+    {
+      "song": "顽疾",
+      "album": "顽疾",
+      "releaseYear": 2025,
+      "commentCount": 11753,
+      "topCommentYearsAfterRelease": 1,
+      "dormancyMedianYears": 1,
+      "dormancyP75Years": 1,
+      "maxDormancyYears": 1,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "9507837809",
+          "user": "Ppppppa_o",
+          "likes": 4938,
+          "date": "2026-04-10 00:00",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "哥哥舞台上的你已是足够耀眼 任何发色的你都是独一无二 身体才是最重要的 我们明天见 一直见"
+        },
+        {
+          "commentId": "9507839868",
+          "user": "向秋__",
+          "likes": 3694,
+          "date": "2026-04-10 00:02",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "一起给老薛种头发吧😭😭😭老薛你一定要健健康康的 后面场次什么发色我依然爱你😭😭"
+        },
+        {
+          "commentId": "9507844479",
+          "user": "一个超-",
+          "likes": 3067,
+          "date": "2026-04-10 00:00",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "顽疾本不是病，是清醒的执念，明知该放下，却偏偏不肯好。不过是假装治疗，舍不得断了最后那一点联系。"
+        },
+        {
+          "commentId": "9507844776",
+          "user": "lone_zyf",
+          "likes": 1486,
+          "date": "2026-04-10 00:04",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "这个版本的比音乐缘计划的那版更平静了许多"
+        },
+        {
+          "commentId": "9508488249",
+          "user": "心事总难平",
+          "likes": 1111,
+          "date": "2026-04-10 22:19",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "我想要一个全是“老薛身体健康”的评论区"
+        },
+        {
+          "commentId": "9507834957",
+          "user": "柚之谦",
+          "likes": 826,
+          "date": "2026-04-10 00:00",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "有人把疼痛当作症状 有人把忘记当作药方 而回忆 才是迟迟无法痊愈"
+        },
+        {
+          "commentId": "9507831292",
+          "user": "TS_Scarlett",
+          "likes": 733,
+          "date": "2026-04-10 00:02",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "录音室版感觉都是遗憾啊"
+        },
+        {
+          "commentId": "9507855656",
+          "user": "阿迪素质低",
+          "likes": 711,
+          "date": "2026-04-10 00:10",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "薛之谦 我考上研究生了 我抵抗住了这段压力"
+        },
+        {
+          "commentId": "9507840999",
+          "user": "淮海路的灯牌",
+          "likes": 439,
+          "date": "2026-04-10 00:05",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "右边四巡原价票👉"
+        },
+        {
+          "commentId": "9507857396",
+          "user": "自愿的喜爱很珍贵",
+          "likes": 414,
+          "date": "2026-04-10 00:04",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "你是突如其来的惊喜 也是无药可解的顽疾"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "9507837809",
+        "user": "Ppppppa_o",
+        "likes": 4938,
+        "date": "2026-04-10 00:00",
+        "commentYear": 2026,
+        "yearsAfterRelease": 1,
+        "content": "哥哥舞台上的你已是足够耀眼 任何发色的你都是独一无二 身体才是最重要的 我们明天见 一直见"
+      }
+    },
+    {
+      "song": "湖泊",
+      "album": "湖泊",
+      "releaseYear": 2025,
+      "commentCount": 6127,
+      "topCommentYearsAfterRelease": 1,
+      "dormancyMedianYears": 1,
+      "dormancyP75Years": 1,
+      "maxDormancyYears": 1,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "9469207452",
+          "user": "LY-TO",
+          "likes": 5417,
+          "date": "2026-02-14 00:02",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "唱片版跟节目版果然不一样，点了老薛四巡都能抢到票🤓👉"
+        },
+        {
+          "commentId": "9469194101",
+          "user": "KFCvivo648",
+          "likes": 2148,
+          "date": "2026-02-14 00:18",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "我一开始还在想这首歌为什么叫湖泊 后来知道了 湖泊既指的是help 也指hope"
+        },
+        {
+          "commentId": "9469155237",
+          "user": "柚之谦",
+          "likes": 1769,
+          "date": "2026-02-14 00:00",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "沉溺于湖泊 善与不善的救赎"
+        },
+        {
+          "commentId": "9469215489",
+          "user": "-雾与晴-",
+          "likes": 1466,
+          "date": "2026-02-14 00:06",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "他用“湖泊”作隐喻，描写一个人在舆论漩涡中被围观、被指责、被起哄的处境🥹 旁观者的冷漠，当所有声音都在评判，却没有人真正伸手，受害者只能被动承受； 不过，我觉得网暴不是一个人的恶，而是众声喧哗中逐渐失去同理心的社会…"
+        },
+        {
+          "commentId": "9469714805",
+          "user": "沐白凇",
+          "likes": 1207,
+          "date": "2026-02-14 14:57",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "点赞好高级，居然是奶龙诶😜😜"
+        },
+        {
+          "commentId": "9469241309",
+          "user": "--洲---",
+          "likes": 903,
+          "date": "2026-02-14 01:27",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "最扎心的不是溺水，而是全世界都在围观你沉没"
+        },
+        {
+          "commentId": "9469207740",
+          "user": "打羽球的大少爷",
+          "likes": 831,
+          "date": "2026-02-14 00:11",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "在座的绝对都是薛总的骨灰级粉丝，谁同意，谁反对！"
+        },
+        {
+          "commentId": "9469150285",
+          "user": "千里共婵娟Vain",
+          "likes": 738,
+          "date": "2026-02-14 00:01",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "躺这的万兽之王都有票[爱心]"
+        },
+        {
+          "commentId": "9469400955",
+          "user": "上官白羊mm",
+          "likes": 717,
+          "date": "2026-02-14 08:53",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "希望妈妈能够战胜癌症"
+        },
+        {
+          "commentId": "9469169013",
+          "user": "薛三岁10后的小谦友ZJY",
+          "likes": 638,
+          "date": "2026-02-14 00:02",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "少年 我在有可能影响你之前 我会反复确认 我至少不会误人子弟 不然我在你的生命中 没有必要出现 许我汹涌而来 你原地等我[哭哭]"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "9469207452",
+        "user": "LY-TO",
+        "likes": 5417,
+        "date": "2026-02-14 00:02",
+        "commentYear": 2026,
+        "yearsAfterRelease": 1,
+        "content": "唱片版跟节目版果然不一样，点了老薛四巡都能抢到票🤓👉"
+      }
+    },
+    {
+      "song": "绅士",
+      "album": "绅士",
+      "releaseYear": 2015,
+      "commentCount": 183426,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0.5,
+      "dormancyP75Years": 1,
+      "maxDormancyYears": 3,
+      "delayBuckets": {
+        "instant": 9,
+        "mid": 1,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "19005794",
+          "user": "安略其",
+          "likes": 456019,
+          "date": "2015-05-21 13:39",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "一个人能有多不正经就能有多深情。"
+        },
+        {
+          "commentId": "23875623",
+          "user": "账号已注销",
+          "likes": 202063,
+          "date": "2015-06-27 12:39",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "[呆]更正：这首歌讲的是男女本来相爱，细微的动作比如拥抱，摸头发，下雨天送你回家，作为情侣之间可以做到小事。到分开以后，这些细微的动作却再也不能做，明明心里还爱，再次相见却只能打扮得体假装感情上的绅士，才能跟对方说话，见面。心里却还抑制着那些相爱时的冲动和情节。所以才称为感情的绅士"
+        },
+        {
+          "commentId": "122873335",
+          "user": "沃斯真德秀",
+          "likes": 110956,
+          "date": "2016-02-23 13:39",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "喜欢一个人的第一感觉竟然是自卑。"
+        },
+        {
+          "commentId": "123182022",
+          "user": "鲨鱼辣椒iz",
+          "likes": 85902,
+          "date": "2016-02-24 14:36",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "“睡眠的拼音是什么？”“shuimian”“失眠的拼音是什么？”“shimian”“他们有什么不同？”你会懂的。"
+        },
+        {
+          "commentId": "25389680",
+          "user": "甘甜lovely",
+          "likes": 80260,
+          "date": "2015-07-07 21:43",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "刚看他和某主持对话，他说唱片行业不景气，公司拿不出太多资金为他做唱片宣传，11年他卖掉一套房子凑了200万投资火锅店，只为赚钱养音乐，主持人问他：你去演戏是为什么。他回答：想红，这样就有更多人听我的歌。这样一个认真做音乐的人不多了，其他的不想评价，不是他的粉丝，但尊重他的认真。"
+        },
+        {
+          "commentId": "18965052",
+          "user": "晚晚难安",
+          "likes": 63758,
+          "date": "2015-05-20 23:02",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦 喜欢了七年 离上首歌有了555天 其实我就想 你们能听到他的歌的时候 想起我 无论谁 就当用这种方式怀念我吧 你退半步的动作认真的吗"
+        },
+        {
+          "commentId": "127063979",
+          "user": "最美是你的梦",
+          "likes": 62229,
+          "date": "2016-03-07 21:17",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "最心酸的一句话。薛之谦：听听我的专辑吧，不要钱。"
+        },
+        {
+          "commentId": "64249435",
+          "user": "小北在坚持",
+          "likes": 46336,
+          "date": "2016-01-23 11:10",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "有些歌真好，但是听不懂是一辈子的福气。"
+        },
+        {
+          "commentId": "18962591",
+          "user": "原重楼",
+          "likes": 37439,
+          "date": "2015-05-20 23:37",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "终于想起副业的段子手"
+        },
+        {
+          "commentId": "1061676945",
+          "user": "喜感ing",
+          "likes": 35447,
+          "date": "2018-03-22 19:37",
+          "commentYear": 2018,
+          "yearsAfterRelease": 3,
+          "content": "给大家讲个笑话吧 昨天我进她空间忘记删除浏览记录 今天就进不去了 哈哈 好笑吗"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "1061676945",
+        "user": "喜感ing",
+        "likes": 35447,
+        "date": "2018-03-22 19:37",
+        "commentYear": 2018,
+        "yearsAfterRelease": 3,
+        "content": "给大家讲个笑话吧 昨天我进她空间忘记删除浏览记录 今天就进不去了 哈哈 好笑吗"
+      }
+    },
+    {
+      "song": "陪你去流浪",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 176310,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 4,
+      "delayBuckets": {
+        "instant": 9,
+        "mid": 1,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "2043423862",
+          "user": "长夜看海",
+          "likes": 192257,
+          "date": "2019-12-09 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“不要星河滚烫，不用柔情满腔。这都不及你在身旁，都不如陪你流浪。”"
+        },
+        {
+          "commentId": "2043446422",
+          "user": "像风一样030",
+          "likes": 133798,
+          "date": "2019-12-09 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "每次听薛之谦唱歌就好像在听他讲述一个悲伤的故事，悲伤却也被治愈着，在他的歌里总能找到一丝共鸣，却不会让你对生活对感情失去希望，谁都在感情里跌爬滚打过，但总要整理好衣襟向前看，你可以对遇到的错的人失望但请别对爱情失望，愿每一个深夜还在听薛之谦的人都能找到属于自己的那束光❤"
+        },
+        {
+          "commentId": "2043449414",
+          "user": "pretty_09",
+          "likes": 73427,
+          "date": "2019-12-09 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "她把头发剪短了，现在好像又长了一点，脾气还是老样子，身边的人走了又走，她还是那么爱笑，但没人知道她究竟有多难过，她开始穿着不同风格的衣服，喝不同口味的饮料，放弃当初最爱的东西，她变了好多，身边的异性也多了不少，以前的她不见了，再也不见了，她好像过得很好但又好像不那么好，我只知道我"
+        },
+        {
+          "commentId": "2043426025",
+          "user": "江山如画又怎能比拟你送我的风景",
+          "likes": 63045,
+          "date": "2019-12-09 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "后来躺进你黑名单里的那个人，最开始也是踏着七色云彩，照亮过你整个世界的人。"
+        },
+        {
+          "commentId": "2043488302",
+          "user": "永远太漫长了我只想活在现在",
+          "likes": 44122,
+          "date": "2019-12-09 22:03",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "放弃我是对的，我也想放弃我自己。 ​"
+        },
+        {
+          "commentId": "2043403098",
+          "user": "疴ke",
+          "likes": 37483,
+          "date": "2019-12-09 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "地北天南，日出日落，只愿有你在旁，不论近处或远方。"
+        },
+        {
+          "commentId": "2043439587",
+          "user": "初秋之叶",
+          "likes": 31683,
+          "date": "2019-12-09 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我想陪着你去流浪，直到天荒地老"
+        },
+        {
+          "commentId": "2043456324",
+          "user": "盼你温柔",
+          "likes": 26311,
+          "date": "2019-12-09 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“陪你去流浪，流浪到浪漫。”"
+        },
+        {
+          "commentId": "2043411953",
+          "user": "WLee_x",
+          "likes": 24499,
+          "date": "2019-12-09 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "想陪你去流浪 不管多远的远方 想跟你追月光 哪怕月光会冰凉 只要你在身旁❤️"
+        },
+        {
+          "commentId": "6003131663",
+          "user": "最不苦的苦瓜",
+          "likes": 22563,
+          "date": "2023-11-08 16:35",
+          "commentYear": 2023,
+          "yearsAfterRelease": 4,
+          "content": "这首歌真的给我一种“求你骗我”的感觉，只要你说，我就会信。只要你点头，我就跟你走。可是你连骗都不愿意骗我了"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "6003131663",
+        "user": "最不苦的苦瓜",
+        "likes": 22563,
+        "date": "2023-11-08 16:35",
+        "commentYear": 2023,
+        "yearsAfterRelease": 4,
+        "content": "这首歌真的给我一种“求你骗我”的感觉，只要你说，我就会信。只要你点头，我就跟你走。可是你连骗都不愿意骗我了"
+      }
+    },
+    {
+      "song": "野心",
+      "album": "天外来物",
+      "releaseYear": 2020,
+      "commentCount": 65764,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 2,
+      "maxDormancyYears": 4,
+      "delayBuckets": {
+        "instant": 7,
+        "mid": 3,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5180167145",
+          "user": "现在梦醒啦",
+          "likes": 58673,
+          "date": "2020-12-11 20:31",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "野心不大 你和天下 一生一世 仅此而已"
+        },
+        {
+          "commentId": "5179389752",
+          "user": "关月风_CBJ",
+          "likes": 56683,
+          "date": "2020-12-11 00:03",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "别赶不上野心 又辜负了自己"
+        },
+        {
+          "commentId": "5179342240",
+          "user": "s1iy",
+          "likes": 37295,
+          "date": "2020-12-11 00:01",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "“别让生活磨平了你的风情万种”"
+        },
+        {
+          "commentId": "5179567183",
+          "user": "WangDC_",
+          "likes": 33357,
+          "date": "2020-12-11 09:46",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "老薛的歌似乎总是围绕着这3个话题: 遗憾的爱情 畸形的社会 逝去的青春。"
+        },
+        {
+          "commentId": "5179323248",
+          "user": "酱鱼轩",
+          "likes": 26241,
+          "date": "2020-12-11 00:00",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "人在低谷时 勿扰人 人在高处时 勿戏人 人在相遇时 勿算人 人在离别时 勿毁人 人在争取时 要像人 人在放下时 才是人 —薛随笔 ​​​"
+        },
+        {
+          "commentId": "5179297567",
+          "user": "Revolter",
+          "likes": 24011,
+          "date": "2020-12-11 00:01",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "生活里一半的烦恼源于 不够狠心"
+        },
+        {
+          "commentId": "5940710984",
+          "user": "红色白桦林",
+          "likes": 23211,
+          "date": "2023-07-14 00:33",
+          "commentYear": 2023,
+          "yearsAfterRelease": 3,
+          "content": "nb的很，一首能代餐我百分之九十cp的歌"
+        },
+        {
+          "commentId": "5179410842",
+          "user": "Tides乐队I",
+          "likes": 22685,
+          "date": "2020-12-11 00:17",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "人生最大的悲剧就是：配不上自己的野心，还辜负了一路走来伴随的痛苦。"
+        },
+        {
+          "commentId": "5757538677",
+          "user": "Destiny________-_",
+          "likes": 17044,
+          "date": "2022-09-27 21:35",
+          "commentYear": 2022,
+          "yearsAfterRelease": 2,
+          "content": "“没有人知道这个年轻人有一颗被毒枭重金悬赏的项上头颅和曾经深渊屠龙的少年肝胆。”——《破云Ⅱ吞海》"
+        },
+        {
+          "commentId": "6041640021",
+          "user": "盈鹃",
+          "likes": 16101,
+          "date": "2024-01-17 21:36",
+          "commentYear": 2024,
+          "yearsAfterRelease": 4,
+          "content": "“跟本科时楼道里背书的自己说声对不起” “楼道里的你知道了也会说：‘嘿，我就知道，你还是我。”———11名硕博生的绝望"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "6041640021",
+        "user": "盈鹃",
+        "likes": 16101,
+        "date": "2024-01-17 21:36",
+        "commentYear": 2024,
+        "yearsAfterRelease": 4,
+        "content": "“跟本科时楼道里背书的自己说声对不起” “楼道里的你知道了也会说：‘嘿，我就知道，你还是我。”———11名硕博生的绝望"
+      }
+    },
+    {
+      "song": "小尖尖",
+      "album": "天外来物",
+      "releaseYear": 2020,
+      "commentCount": 92115,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 1,
+      "maxDormancyYears": 3,
+      "delayBuckets": {
+        "instant": 8,
+        "mid": 2,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "3433382966",
+          "user": "盼你多添一笔",
+          "likes": 59030,
+          "date": "2020-08-25 10:39",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "我们习惯擦肩， 月亮的角尖， 我踮起脚尖， 我们谁都触摸不到谁， 从此互念一生，也互不打扰。"
+        },
+        {
+          "commentId": "3433325822",
+          "user": "沉默的小秒针",
+          "likes": 50184,
+          "date": "2020-08-25 10:14",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "零宣传真高产！！！！"
+        },
+        {
+          "commentId": "3444393959",
+          "user": "_子璇啊",
+          "likes": 42979,
+          "date": "2020-09-04 20:58",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "“我口袋只剩玫瑰一片，此行又山高路远。” 这句话的意思大概是说，我已经不剩多少爱了，但我把我仅存的爱意都给你，此番爱你前途未卜，但我还是要爱你。"
+        },
+        {
+          "commentId": "3433319802",
+          "user": "薛之谦还爱我我是似拟人的掌声",
+          "likes": 42630,
+          "date": "2020-08-25 10:09",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "突然出现的新歌！！！"
+        },
+        {
+          "commentId": "5956087968",
+          "user": "9261024",
+          "likes": 25958,
+          "date": "2023-08-07 14:21",
+          "commentYear": 2023,
+          "yearsAfterRelease": 3,
+          "content": "小尖尖不是任何虐文的附属品"
+        },
+        {
+          "commentId": "5453290177",
+          "user": "想想c--",
+          "likes": 21673,
+          "date": "2021-11-06 23:34",
+          "commentYear": 2021,
+          "yearsAfterRelease": 1,
+          "content": "其实我个人会觉得：我口袋只剩玫瑰一片，此行又山高路远。这句歌词就像是我对你仅存的爱意不多了，而前路慢慢又漫漫，我可能坚持不下去了，迷茫的前路让我带着不多的爱意望而生畏，我会走下去，不快不慢但也不确定还会走多久。"
+        },
+        {
+          "commentId": "3433789089",
+          "user": "好想爱这个世界啊Zzzz",
+          "likes": 19689,
+          "date": "2020-08-25 16:27",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "仲于心尖，鑫之所向❤️"
+        },
+        {
+          "commentId": "5770172866",
+          "user": "不是小鹿的小露",
+          "likes": 18328,
+          "date": "2022-10-17 16:25",
+          "commentYear": 2022,
+          "yearsAfterRelease": 2,
+          "content": "救命！！韩红声音一出来我突然好爱那种感觉！！！！！！！！"
+        },
+        {
+          "commentId": "3434542900",
+          "user": "歌事人",
+          "likes": 17608,
+          "date": "2020-08-26 05:03",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "搭配黑白的封面发布在七夕这一天，叙述的是现代感情的阴暗面，隐喻暗讽存于字里行间，值得细细深思品鉴。"
+        },
+        {
+          "commentId": "3465443174",
+          "user": "范觀樂_",
+          "likes": 14521,
+          "date": "2020-09-30 18:06",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "“我口袋只剩玫瑰一片，此行又山高路远” 为什么只剩玫瑰一片 是浪费太多，只剩一片时才倍感珍惜吗？ 我想不是的 我从千里之外奔赴前来 只为送你一朵玫瑰花 无奈路上坎坷太多 风吹散了几片，雨又淋落了几片 眼看着只剩一片 可离你的路程依旧很远 我还在路上 心意依旧满满 但快要变得不实际了"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5956087968",
+        "user": "9261024",
+        "likes": 25958,
+        "date": "2023-08-07 14:21",
+        "commentYear": 2023,
+        "yearsAfterRelease": 3,
+        "content": "小尖尖不是任何虐文的附属品"
+      }
+    },
+    {
+      "song": "演员",
+      "album": "绅士",
+      "releaseYear": 2015,
+      "commentCount": 318502,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 1,
+      "maxDormancyYears": 2,
+      "delayBuckets": {
+        "instant": 9,
+        "mid": 1,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "21283183",
+          "user": "Coco金桔希子_",
+          "likes": 629222,
+          "date": "2015-06-08 11:05",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "一个人能有多不正经，就能有多深情。"
+        },
+        {
+          "commentId": "126130094",
+          "user": "大脸饼子52hz",
+          "likes": 242641,
+          "date": "2016-03-04 20:29",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "南有薛之谦，北有大张伟，他们都是被唱歌事业所耽误的青年相声演员"
+        },
+        {
+          "commentId": "123469921",
+          "user": "Regorge-",
+          "likes": 219978,
+          "date": "2016-02-25 15:57",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "李荣浩给古巨基写了怪物，给薛之谦写了丑八怪，给自己写了模特。hhhhhhhhhhhh"
+        },
+        {
+          "commentId": "21304087",
+          "user": "执伞提灯与君行",
+          "likes": 114270,
+          "date": "2015-06-08 13:55",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "越來越走心了！其实感情最怕的就是拖着……好戳心[心碎]"
+        },
+        {
+          "commentId": "21288661",
+          "user": "YouTube热门日推",
+          "likes": 92720,
+          "date": "2015-06-08 12:50",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦的创作越来越成熟了，好喜欢😍"
+        },
+        {
+          "commentId": "126188439",
+          "user": "朵拉Z蒙",
+          "likes": 86207,
+          "date": "2016-03-05 00:07",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "最心酸的话，薛之谦:听听我的新专辑吧，不要钱"
+        },
+        {
+          "commentId": "22474358",
+          "user": "沐影冰熙",
+          "likes": 65538,
+          "date": "2015-06-17 12:40",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "最近被薛之谦的《演员》沦陷了，每天追忆着单曲着各种薛之谦曾经的精品之作，也是我曾经的最爱～新歌榜第一的成绩是你努力用心呈现给我们好的作品的结果，我很开心，我想很多被你音乐打动的人也很开心，替你高兴，希望你好好做音乐，做你真正想做的事～十年不易～真心希望你有王子归来的结剧"
+        },
+        {
+          "commentId": "21286879",
+          "user": "几米向左走向右走-",
+          "likes": 47100,
+          "date": "2015-06-08 13:21",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "终于上新了，先去看可MV，谦谦越来越帅了，依旧那么深情，看到这么多的人依然对他不离不弃感觉好欣慰，有时候看他微博里说自己不红就觉得好心疼。不过没关系，你只管好好唱，我们慢慢听[亲亲][亲亲]"
+        },
+        {
+          "commentId": "21275543",
+          "user": "晚晚难安",
+          "likes": 36565,
+          "date": "2015-06-08 11:50",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "可以当初那么爱我干嘛演出细节 薛之谦"
+        },
+        {
+          "commentId": "622620079",
+          "user": "何斌焘",
+          "likes": 35200,
+          "date": "2017-11-24 06:08",
+          "commentYear": 2017,
+          "yearsAfterRelease": 2,
+          "content": "红时不追，难时不黑，只赏其作，不问是非。"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "622620079",
+        "user": "何斌焘",
+        "likes": 35200,
+        "date": "2017-11-24 06:08",
+        "commentYear": 2017,
+        "yearsAfterRelease": 2,
+        "content": "红时不追，难时不黑，只赏其作，不问是非。"
+      }
+    },
+    {
+      "song": "怪咖",
+      "album": "怪咖",
+      "releaseYear": 2018,
+      "commentCount": 140818,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 2,
+      "delayBuckets": {
+        "instant": 8,
+        "mid": 2,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "1163522582",
+          "user": "yiilliangg",
+          "likes": 178531,
+          "date": "2018-06-29 00:00",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "很多时候，我们总在搞笑，想通过搞笑去换来在你面前的存在感。像小丑一样给别人的带来了欢乐的背后，却是自己独自承受的孤独。我不畏惧孤独，我只怕有一天我用尽全身解数也不能把你逗笑…感情里的怪咖手里也没筹码…感情里的怪咖再难过也笑着说吧…"
+        },
+        {
+          "commentId": "1163525534",
+          "user": "冰镇西瓜甜酒",
+          "likes": 103465,
+          "date": "2018-06-29 00:00",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "我一直觉得…这首歌是极具舞台表现力的 听着歌，就能对上无限里薛和杨迪的很多细节…也一直觉得，怪咖不止爱情，至少不仅爱情… Joker是舞台上最疯狂快乐的人，因为脸上画着厚厚的油彩，但同时他也可能是灯光阴影处最孤独悲伤的存在…因为过分疯狂，所以极致悲伤"
+        },
+        {
+          "commentId": "1163504464",
+          "user": "王冠程_",
+          "likes": 80061,
+          "date": "2018-06-29 00:14",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "退步以后是取悦 取悦也需要个称谓 失去喜怒的怪咖们 有序离场吧"
+        },
+        {
+          "commentId": "1163492472",
+          "user": "温差感",
+          "likes": 50531,
+          "date": "2018-06-29 00:02",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "在你面前，我像是个怪咖 可没人知道夜深人静时 我卸下面具后哭泣的样子"
+        },
+        {
+          "commentId": "1163542862",
+          "user": "一个超-",
+          "likes": 36218,
+          "date": "2018-06-29 00:27",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "不取悦你了，那些曾经我们以为的，你终究没来过…"
+        },
+        {
+          "commentId": "1163802509",
+          "user": "谈无涯",
+          "likes": 34702,
+          "date": "2018-06-29 10:01",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "我们都是怪咖，我们都爱谎话"
+        },
+        {
+          "commentId": "1163522277",
+          "user": "账号已注销",
+          "likes": 28490,
+          "date": "2018-06-29 00:24",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "别去当感情里的怪咖，不值得，别总取悦别人，多爱自己一些吧"
+        },
+        {
+          "commentId": "1163505476",
+          "user": "薛汐屿",
+          "likes": 26965,
+          "date": "2018-06-29 00:16",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "感情里的怪咖，卑微到尘埃里。为你摘心治疗，为你刨骨献药。如果你向往的光亮诱燃变完美，他宁愿孤身扑火以示无坚不摧。戴上小丑的面具上场，只为取悦你而迷失自己，最后的结局可能也不尽如意… 在盛大而华丽的故事里，隐约上演着“哗众取宠”的角色设定，大家有着不同的假面，却有着相同的悲哀。"
+        },
+        {
+          "commentId": "3216303704",
+          "user": "黛戏-",
+          "likes": 18532,
+          "date": "2020-03-21 12:01",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "薛之谦是我见过抑郁症中最乐观的一个。"
+        },
+        {
+          "commentId": "3370535511",
+          "user": "李语佳ya",
+          "likes": 16062,
+          "date": "2020-07-08 23:01",
+          "commentYear": 2020,
+          "yearsAfterRelease": 2,
+          "content": "某天，女孩终于鼓起勇气对男孩说：\"我们分手吧\"。 男孩问：为什么？ 女孩说：倦了，就不需要理由了。 一个晚上，男孩只抽烟不说话，女孩的心也越来越凉\"连挽留都不会表达的情人能给我什么样的快乐？\" 过了许久，男孩终忍不住说：\"怎么做你才能留下来？\" 女孩慢慢地说：\"回答一个问题，如果你能答到我心"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "3216303704",
+        "user": "黛戏-",
+        "likes": 18532,
+        "date": "2020-03-21 12:01",
+        "commentYear": 2020,
+        "yearsAfterRelease": 2,
+        "content": "薛之谦是我见过抑郁症中最乐观的一个。"
+      }
+    },
+    {
+      "song": "迟迟",
+      "album": "天外来物",
+      "releaseYear": 2020,
+      "commentCount": 66738,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 1,
+      "maxDormancyYears": 2,
+      "delayBuckets": {
+        "instant": 9,
+        "mid": 1,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5196265952",
+          "user": "殷昌祺",
+          "likes": 43656,
+          "date": "2020-12-31 00:05",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "是你让我开始听薛之谦，是你让我爱上了石家庄，你离开我走向人海，原来，你始终属于人海"
+        },
+        {
+          "commentId": "5196283809",
+          "user": "s1iy",
+          "likes": 26251,
+          "date": "2020-12-31 00:02",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "岁岁年年我都会在你身边"
+        },
+        {
+          "commentId": "5196205990",
+          "user": "xxx小赵同学",
+          "likes": 25344,
+          "date": "2020-12-31 00:00",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "我对着日出日落许愿 希望你永远在我身边."
+        },
+        {
+          "commentId": "5196285735",
+          "user": "WorldPeacessss",
+          "likes": 15187,
+          "date": "2020-12-31 00:00",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "迟迟不收场，对自己撒谎；余生已散场，哪里敢奢望。"
+        },
+        {
+          "commentId": "5196231971",
+          "user": "加粥Jerry",
+          "likes": 10631,
+          "date": "2020-12-31 00:00",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "已经寻你好几次 而你却 迟迟未至"
+        },
+        {
+          "commentId": "5214847170",
+          "user": "想睡饱饱安稳觉",
+          "likes": 10602,
+          "date": "2021-01-22 19:17",
+          "commentYear": 2021,
+          "yearsAfterRelease": 1,
+          "content": "“微博很乱，超话很烦，但我不能把薛之谦一个人扔在那儿。”"
+        },
+        {
+          "commentId": "5196209231",
+          "user": "小韩明天见",
+          "likes": 10116,
+          "date": "2020-12-31 00:13",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "朝朝辞暮 尔尔辞晚 迟迟亦痴痴"
+        },
+        {
+          "commentId": "5501470938",
+          "user": "日想乐多",
+          "likes": 9457,
+          "date": "2022-01-09 13:34",
+          "commentYear": 2022,
+          "yearsAfterRelease": 2,
+          "content": "我始终不明白连迟迟这种歌都不火，它的词，曲都那么绝，带起耳机听简直了。坐等它大火，一定会的"
+        },
+        {
+          "commentId": "5206503996",
+          "user": "易只烊的廿四帧",
+          "likes": 7672,
+          "date": "2021-01-12 14:30",
+          "commentYear": 2021,
+          "yearsAfterRelease": 1,
+          "content": "“我真的很后悔向某些人坦诚过心扉.\""
+        },
+        {
+          "commentId": "5196206070",
+          "user": "NJ子逸",
+          "likes": 7188,
+          "date": "2020-12-31 00:02",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "迟迟等到你，迟迟你没有来，你知道吗，你迟到了，我也迟到了 2021 没有迟到，但我好想你"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5501470938",
+        "user": "日想乐多",
+        "likes": 9457,
+        "date": "2022-01-09 13:34",
+        "commentYear": 2022,
+        "yearsAfterRelease": 2,
+        "content": "我始终不明白连迟迟这种歌都不火，它的词，曲都那么绝，带起耳机听简直了。坐等它大火，一定会的"
+      }
+    },
+    {
+      "song": "下雨了",
+      "album": "绅士",
+      "releaseYear": 2015,
+      "commentCount": 63374,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 1,
+      "maxDormancyYears": 2,
+      "delayBuckets": {
+        "instant": 9,
+        "mid": 1,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "21305687",
+          "user": "几米向左走向右走-",
+          "likes": 81044,
+          "date": "2015-06-08 15:41",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "我不管你是火锅店老板还是逗比段子手，或者网店老板，我只知道你一直都是认真做音乐的薛之谦，只要你认真唱我就会认真听，哪怕你的段子我也爱，这不是任性。[爱心]"
+        },
+        {
+          "commentId": "21401799",
+          "user": "账号已注销",
+          "likes": 52787,
+          "date": "2015-06-09 12:58",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "看完绅士和演员的mv，我觉得这张专辑就是再讲一个故事，薛之谦喜欢上了裴涩琪，裴有男友，为了能陪伴在裴身边而一直做个绅士，裴男友出车祸去世了，裴接受不了打击得了精神病，薛一直不离不弃的照顾裴，在她面前当演员扮演她的前男友，裴最后清醒了认出薛选择了离开，下一个故事就是下雨了。"
+        },
+        {
+          "commentId": "21716343",
+          "user": "几米向左走向右走-",
+          "likes": 38464,
+          "date": "2015-06-11 18:47",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "谦，你知不知道演员在网易云新歌谤位居榜首啊！！好开心啊，你早就应该被世人温柔对待了[爱心]"
+        },
+        {
+          "commentId": "21282155",
+          "user": "拌面要有花生酱",
+          "likes": 28278,
+          "date": "2015-06-08 10:59",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "自从出了这歌，雨就没停过[呆]"
+        },
+        {
+          "commentId": "67829445",
+          "user": "_cengjing",
+          "likes": 27508,
+          "date": "2016-02-04 13:19",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "“你好像瘦了，头发也变长了，背影陌生到让我觉得，见你是上个世纪的事，然后你开口叫我名字，我就想笑，好像自己刚刚放学，只在校门口等了你五分钟而已。”"
+        },
+        {
+          "commentId": "72871704",
+          "user": "我才不叫立秋",
+          "likes": 20784,
+          "date": "2016-02-21 21:38",
+          "commentYear": 2016,
+          "yearsAfterRelease": 1,
+          "content": "最美的三行情诗 作词：薛之谦 作曲：薛之谦 演唱：薛之谦"
+        },
+        {
+          "commentId": "21305768",
+          "user": "再给我加一片哎",
+          "likes": 17194,
+          "date": "2015-06-08 15:54",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "去年今天。考完英语。宿舍四个出去喝酒。结果用我的名义赊账了。晚上回到收拾完的宿舍。四个人，有一个哭了。真的，那种感觉。说都没有说话。只是默默的自己喝酒。不知道什么时候睡着了。第二天，坐着长途，回到了离开一年的家。那天晚上，给她发的短信，和她发的短信，我都记着。可现在心酸。"
+        },
+        {
+          "commentId": "22551834",
+          "user": "沐影冰熙",
+          "likes": 10101,
+          "date": "2015-06-17 22:12",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "我想我中毒了，近日各种单曲循环你往日精品之作。每一首 被你深情用心的歌声而触动，每一句 被你深沉心疼的声音而感动。虽不句句走心，但声声入心。"
+        },
+        {
+          "commentId": "21282985",
+          "user": "-不要叫我全名",
+          "likes": 8835,
+          "date": "2015-06-08 13:20",
+          "commentYear": 2015,
+          "yearsAfterRelease": 0,
+          "content": "待会去考英语，现在听首歌放松一下。。"
+        },
+        {
+          "commentId": "566821044",
+          "user": "jiyuu7",
+          "likes": 8237,
+          "date": "2017-09-25 14:10",
+          "commentYear": 2017,
+          "yearsAfterRelease": 2,
+          "content": "她离开的那天下雨了，今天她生日也下雨了，想着凌晨给她发句生日快乐的，但想想还是算了，已经没必要了。毕竟我们在彼此心里的位置不同，有些事过去了就过去了，放不下也得让时间放下。下雨了，你应该过得还好吧。"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "566821044",
+        "user": "jiyuu7",
+        "likes": 8237,
+        "date": "2017-09-25 14:10",
+        "commentYear": 2017,
+        "yearsAfterRelease": 2,
+        "content": "她离开的那天下雨了，今天她生日也下雨了，想着凌晨给她发句生日快乐的，但想想还是算了，已经没必要了。毕竟我们在彼此心里的位置不同，有些事过去了就过去了，放不下也得让时间放下。下雨了，你应该过得还好吧。"
+      }
+    },
+    {
+      "song": "无数",
+      "album": "无数",
+      "releaseYear": 2022,
+      "commentCount": 41097,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 2,
+      "delayBuckets": {
+        "instant": 9,
+        "mid": 1,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5752767546",
+          "user": "Bruce梁博",
+          "likes": 24416,
+          "date": "2022-09-20 00:00",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "找一个和我一样凌晨等薛之谦新专辑的女孩！"
+        },
+        {
+          "commentId": "5752769279",
+          "user": "良子亮",
+          "likes": 15909,
+          "date": "2022-09-20 00:00",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "我也始终不明白坚持梦想的意义何在，没有回响，应该是孤芳自赏。嘲笑也罢，质疑也好；早已习惯了失落，和解了孤独。"
+        },
+        {
+          "commentId": "5761397375",
+          "user": "一首港竹辞",
+          "likes": 13781,
+          "date": "2022-10-03 22:14",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "我生而以悦我 而非为他人所困"
+        },
+        {
+          "commentId": "5752785011",
+          "user": "厦门小恶魔-",
+          "likes": 13626,
+          "date": "2022-09-20 00:04",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "猝不及防的惊喜专辑！你可以永远相信薛之谦 “我拿什么证明我存在，能看肉眼禁锢的色彩。” “他们终将用一句活该，来概括我们所有的无奈”"
+        },
+        {
+          "commentId": "6034360964",
+          "user": "言楚",
+          "likes": 11521,
+          "date": "2024-01-05 21:33",
+          "commentYear": 2024,
+          "yearsAfterRelease": 2,
+          "content": "“所以少年 等你长大了 有机会 记得拯救世界”"
+        },
+        {
+          "commentId": "5756807091",
+          "user": "回忆的尼莫点",
+          "likes": 10861,
+          "date": "2022-09-26 13:24",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "在b站看到一个up主将这首歌与共产国际事业的发展历史放在了一起，绝了！"
+        },
+        {
+          "commentId": "5752864424",
+          "user": "李易鹿",
+          "likes": 8622,
+          "date": "2022-09-20 02:39",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "我幻想过无数次你还在。"
+        },
+        {
+          "commentId": "5756498441",
+          "user": "孤星寻雪",
+          "likes": 7728,
+          "date": "2022-09-25 22:06",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "这首真的很像共产主义历史的浓缩"
+        },
+        {
+          "commentId": "5753871066",
+          "user": "吴一凡的舅舅",
+          "likes": 7523,
+          "date": "2022-09-21 17:04",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "哥 这歌我不太好在KTV唱啊"
+        },
+        {
+          "commentId": "5765665411",
+          "user": "成七乐",
+          "likes": 6473,
+          "date": "2022-10-10 18:54",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "在人们无数次沉没里，怎么还有条船不远万里？这条船上搭载着薛之谦骨子里的信仰。昨天我们沉没无数，明天你的船又将驶向何方呢？"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "6034360964",
+        "user": "言楚",
+        "likes": 11521,
+        "date": "2024-01-05 21:33",
+        "commentYear": 2024,
+        "yearsAfterRelease": 2,
+        "content": "“所以少年 等你长大了 有机会 记得拯救世界”"
+      }
+    },
+    {
+      "song": "我好像在哪见过你",
+      "album": "初学者",
+      "releaseYear": 2016,
+      "commentCount": 301762,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 1,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "172778389",
+          "user": "四格格_",
+          "likes": 458257,
+          "date": "2016-06-23 00:00",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "多少人等到了零点！"
+        },
+        {
+          "commentId": "172800316",
+          "user": "-Cutehoney-",
+          "likes": 362934,
+          "date": "2016-06-23 00:01",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "一个初学者，都沦为丑八怪了， 你还要我怎样呢，我不是个演员。 其实只为让自己的歌被更多人听见， 毫无意外的是，方圆几里内， 总有人会欣赏你喜欢你支持你的。 外面下雨了没关系，我们绅士一点。在这一切都刚刚好的场景里 ， 我好像在哪见过你。"
+        },
+        {
+          "commentId": "172785400",
+          "user": "榴莲阿九",
+          "likes": 326890,
+          "date": "2016-06-23 00:03",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "3分钟999+，红的阔怕"
+        },
+        {
+          "commentId": "172834537",
+          "user": "账号已注销",
+          "likes": 245246,
+          "date": "2016-06-23 00:31",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "在听歌付费的年代 免费听你的歌是多大的荣幸[爱心]"
+        },
+        {
+          "commentId": "172810406",
+          "user": "能撑多久AAA",
+          "likes": 138248,
+          "date": "2016-06-23 00:06",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "海蝶最明智的抉择就是签了薛之谦和许嵩！"
+        },
+        {
+          "commentId": "172780389",
+          "user": "Allen-Strong",
+          "likes": 122428,
+          "date": "2016-06-23 00:02",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "始于颜值，陷于才华，忠于人品。好像在哪见过你，遇见最好的薛之谦。[大笑][大笑][大笑]"
+        },
+        {
+          "commentId": "172771398",
+          "user": "安溥Zurich",
+          "likes": 115724,
+          "date": "2016-06-23 00:01",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "与你有关 观后有感 你的故事总有离散 我们只能旁观 围绕着所有伤感 我听着你的声音在深夜里释放所有真心 你听不到我的声音 每字每句都是关于你 无论深爱等待 还是晚爱刚来 此刻 爱意难言 只剩一句 薛之谦从未让我们失望过 [爱心]"
+        },
+        {
+          "commentId": "172781407",
+          "user": "可不可以给我个眼罩",
+          "likes": 73615,
+          "date": "2016-06-23 00:03",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦，你知道等你的歌有多么幸福吗。从来不会让我失望的你，多久都值得。"
+        },
+        {
+          "commentId": "631727223",
+          "user": "影响作息",
+          "likes": 72027,
+          "date": "2017-12-03 22:50",
+          "commentYear": 2017,
+          "yearsAfterRelease": 1,
+          "content": "我一直认为， 听陈奕迅的人都很寂寞， 听薛之谦的人都不快乐，"
+        },
+        {
+          "commentId": "655997115",
+          "user": "英国梨与苍兰",
+          "likes": 61518,
+          "date": "2017-12-30 18:08",
+          "commentYear": 2017,
+          "yearsAfterRelease": 1,
+          "content": "曾经在《火星情报局》 汪涵问粉丝们“你们会喜欢薛之谦多久”粉丝们都大喊“一辈子” 当时的薛之谦就笑着说“你们骗人”结果，你们真的骗人。"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "631727223",
+        "user": "影响作息",
+        "likes": 72027,
+        "date": "2017-12-03 22:50",
+        "commentYear": 2017,
+        "yearsAfterRelease": 1,
+        "content": "我一直认为， 听陈奕迅的人都很寂寞， 听薛之谦的人都不快乐，"
+      }
+    },
+    {
+      "song": "霸王别姬",
+      "album": "霸王别姬",
+      "releaseYear": 2025,
+      "commentCount": 11566,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 1,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "7734045618",
+          "user": "8lass",
+          "likes": 13116,
+          "date": "2025-09-20 00:02",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "万人血书 《爱好》！！！！！！！！！"
+        },
+        {
+          "commentId": "7734076688",
+          "user": "Leo欧0",
+          "likes": 9810,
+          "date": "2025-09-20 00:31",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "原来叫霸王别姬，搜了两分钟的霸王茶姬"
+        },
+        {
+          "commentId": "7734026057",
+          "user": "米苏_Y",
+          "likes": 5305,
+          "date": "2025-09-20 00:01",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦的声线似墨色浸透帛书，一笔一划书写着霸王的苍凉 张靓颖的音色如釉彩碎裂青瓷，一唱一念刻录着虞姬的决绝"
+        },
+        {
+          "commentId": "7734022986",
+          "user": "木偶人的内心救赎",
+          "likes": 3650,
+          "date": "2025-09-20 00:00",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "像洛城 那年大雪封城 像垓下 那年悲从心起 那是我一段 小有遗憾的成长时光 我将永远记得 大雪透过昏黄的灯光散落天际 不知道 后来好像突然就长大了 在这之前的每一次大雪 都是一次蝉蜕 听到这段旋律的时候恍惚了一下 “是我对你不起” “落得霸王别姬” 楚歌四起 又快到冬天了"
+        },
+        {
+          "commentId": "7734027906",
+          "user": "_iYuu_",
+          "likes": 3101,
+          "date": "2025-09-20 00:00",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "薛老师总能满足同学的需求 我要爱你一辈子了"
+        },
+        {
+          "commentId": "7734258128",
+          "user": "今天什么心情_",
+          "likes": 2177,
+          "date": "2025-09-20 10:15",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "我发现薛之谦，李荣浩两个人还怪有意思的。 薛之谦《哑巴》 李荣浩《耳朵》 《你还要我怎样》 《就这样》 《丑八怪》 《模特》 《动物世界》 《野生动物》 《我知道你全都知道》 《我知道是你》"
+        },
+        {
+          "commentId": "7735634000",
+          "user": "freexx_",
+          "likes": 2088,
+          "date": "2025-09-21 19:53",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "谁懂“请你在地府里等我一下 迎我与白骨战马。”这句"
+        },
+        {
+          "commentId": "7734029998",
+          "user": "何摆摆-",
+          "likes": 2012,
+          "date": "2025-09-20 00:02",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "祝在座的各位 四巡都能抢到票～我们万兽之王见！"
+        },
+        {
+          "commentId": "7734290068",
+          "user": "小懒iiov7",
+          "likes": 1450,
+          "date": "2025-09-20 10:58",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "哈哈哈哈哈 少喝点霸王茶姬吧"
+        },
+        {
+          "commentId": "9499945814",
+          "user": "ofqin",
+          "likes": 1430,
+          "date": "2026-03-29 16:48",
+          "commentYear": 2026,
+          "yearsAfterRelease": 1,
+          "content": "感谢单一怡让我发现这首歌"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "9499945814",
+        "user": "ofqin",
+        "likes": 1430,
+        "date": "2026-03-29 16:48",
+        "commentYear": 2026,
+        "yearsAfterRelease": 1,
+        "content": "感谢单一怡让我发现这首歌"
+      }
+    },
+    {
+      "song": "天外来物",
+      "album": "天外来物",
+      "releaseYear": 2020,
+      "commentCount": 442057,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "3387409111",
+          "user": "薛之谦",
+          "likes": 409306,
+          "date": "2020-07-22 16:38",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "你有这种期待 我有这种打算 但是 天外来物 不算大招吗..."
+        },
+        {
+          "commentId": "3387419303",
+          "user": "薛之谦",
+          "likes": 334991,
+          "date": "2020-07-22 16:54",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "“世界上终有一个人能降服你 妖怪”大概这个意思"
+        },
+        {
+          "commentId": "3387359288",
+          "user": "薛之谦",
+          "likes": 261031,
+          "date": "2020-07-22 16:14",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "看灵感了 疫情 mv也不好拍 看情况吧"
+        },
+        {
+          "commentId": "3380317774",
+          "user": "加粥Jerry",
+          "likes": 230188,
+          "date": "2020-07-17 00:39",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "老薛717生日快乐...谢谢你 写了这么多好歌... 谢谢你 唱歌时那么深情..."
+        },
+        {
+          "commentId": "3380275299",
+          "user": "退役熬夜选手717号",
+          "likes": 221872,
+          "date": "2020-07-17 00:00",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "“世人皆论你风趣幽默 却未曾见你手捧星辰对我说我们互相拯救”"
+        },
+        {
+          "commentId": "3387325415",
+          "user": "薛之谦",
+          "likes": 215465,
+          "date": "2020-07-22 16:13",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "这个我同意 哈哈"
+        },
+        {
+          "commentId": "3387386803",
+          "user": "薛之谦",
+          "likes": 196809,
+          "date": "2020-07-22 16:13",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "弄到好 不好不出门的心情"
+        },
+        {
+          "commentId": "3380272386",
+          "user": "长大后就来找你",
+          "likes": 194342,
+          "date": "2020-07-17 00:00",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "漫漫宇宙是世界浪漫的起源"
+        },
+        {
+          "commentId": "3387362688",
+          "user": "薛之谦",
+          "likes": 172947,
+          "date": "2020-07-22 16:35",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "说明你心里有这个人的 只是还没得到 是好事 有目标就是好事 不管是爱情还是工作 没有目标了我们就完蛋了"
+        },
+        {
+          "commentId": "3387347260",
+          "user": "薛之谦",
+          "likes": 155778,
+          "date": "2020-07-22 16:08",
+          "commentYear": 2020,
+          "yearsAfterRelease": 0,
+          "content": "早上好哦大家"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "3387409111",
+        "user": "薛之谦",
+        "likes": 409306,
+        "date": "2020-07-22 16:38",
+        "commentYear": 2020,
+        "yearsAfterRelease": 0,
+        "content": "你有这种期待 我有这种打算 但是 天外来物 不算大招吗..."
+      }
+    },
+    {
+      "song": "像风一样",
+      "album": "渡",
+      "releaseYear": 2017,
+      "commentCount": 223243,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "603763492",
+          "user": "程愫",
+          "likes": 339778,
+          "date": "2017-11-03 10:04",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "像风行了八千里 不问归期"
+        },
+        {
+          "commentId": "603771661",
+          "user": "powerfulname",
+          "likes": 243389,
+          "date": "2017-11-03 10:21",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "如果形容一个人像风一样 那是一种最无可奈何的比喻"
+        },
+        {
+          "commentId": "603793197",
+          "user": "球球真没吃饱",
+          "likes": 180093,
+          "date": "2017-11-03 10:33",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "上课看到老薛发了新歌，举手：老师我要上厕所！现在我在厕所听新歌🌚"
+        },
+        {
+          "commentId": "603756714",
+          "user": "困了睡_",
+          "likes": 107273,
+          "date": "2017-11-03 10:03",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "你是我梁山下的楚河 无舟难自渡亦是我楚辞里的汉歌 无解不疯魔"
+        },
+        {
+          "commentId": "603800504",
+          "user": "欧维还在唱",
+          "likes": 102906,
+          "date": "2017-11-03 10:50",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "你本无意穿堂风 偏偏孤倨引山洪"
+        },
+        {
+          "commentId": "603799765",
+          "user": "赵大雄_",
+          "likes": 76058,
+          "date": "2017-11-03 10:58",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "如果像风一样，那么这样的人生该有多轻松，老薛的新歌要学会很容易，要唱好，需要经历！全世界最好的老薛"
+        },
+        {
+          "commentId": "603837972",
+          "user": "别来BB我有没有前途爷就要做说唱",
+          "likes": 71213,
+          "date": "2017-11-03 11:50",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦啊，最近真的能感觉到你身上的负担有多重，有多累，还是喜欢那个每天给我带来欢笑的你，希望世界和平，你也安好[憨笑][憨笑][憨笑]"
+        },
+        {
+          "commentId": "604838492",
+          "user": "祀酒欢",
+          "likes": 65164,
+          "date": "2017-11-04 10:19",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "前一天晚上跟她说第二天早上六点寝室楼下见 我等了她半个小时快冻僵了也没见她下来 八点她电话来说一起去吃早餐 出去跟她一起去吃了早餐 期间她说出了分手 她头也不回的往外走 我不欠你分毫 现在我一遍一遍听着这首歌 眼泪止不住往下掉 是啊 你卷起千层海浪我躲也不躲往里闯"
+        },
+        {
+          "commentId": "603781695",
+          "user": "李祎先森",
+          "likes": 57886,
+          "date": "2017-11-03 10:33",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "你的歌对我的情歌创作的影响 让我也把自己的故事 写进了歌里 去缅怀 去纪念 去遗忘... 久违了的薛之谦🎤。久违了的薛氏情歌🎹 而你还是和以前一样，说到了心里❤️❤️"
+        },
+        {
+          "commentId": "603795858",
+          "user": "太史婧雯",
+          "likes": 51825,
+          "date": "2017-11-03 10:56",
+          "commentYear": 2017,
+          "yearsAfterRelease": 0,
+          "content": "听到前奏眼泪一下就下来了 想起妈妈去世后爸爸有多难过 为他们写的歌《失散》里有一句歌词说：“有些爱 要一生才能忘怀” 谢谢薛之谦的“你竟然能做到带走阳光，你卷起千层海浪我躲也不躲往里闯。”✨"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "603763492",
+        "user": "程愫",
+        "likes": 339778,
+        "date": "2017-11-03 10:04",
+        "commentYear": 2017,
+        "yearsAfterRelease": 0,
+        "content": "像风行了八千里 不问归期"
+      }
+    },
+    {
+      "song": "刚刚好",
+      "album": "初学者",
+      "releaseYear": 2016,
+      "commentCount": 197915,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "165844062",
+          "user": "风月善变",
+          "likes": 266019,
+          "date": "2016-06-07 16:47",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "刚刚好的三行情书💌 作词：薛之谦 作曲：薛之谦 演唱：薛之谦"
+        },
+        {
+          "commentId": "165825732",
+          "user": "DoshineLee",
+          "likes": 197521,
+          "date": "2016-06-07 16:48",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "四年前今天数学考完出来，我和她约定好我们去同一所大学我们就在一起，一个月后成绩出来，刚刚好我和她分数一样，但是她却有了男朋友"
+        },
+        {
+          "commentId": "166856692",
+          "user": "账号已注销",
+          "likes": 126520,
+          "date": "2016-06-10 00:32",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "今晚是毕业晚会。为了拥抱她，我拥抱了整个班级。"
+        },
+        {
+          "commentId": "165836477",
+          "user": "我想喝酸奶qwq",
+          "likes": 78237,
+          "date": "2016-06-07 17:02",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "这是所有歌里最无力无奈的一首，没有演员的决裂冷淡，没有绅士的进退有度，没有方圆几里的执着，没有其实的歇斯底里，没有……有种后知后觉的撕心裂肺，连唱腔都隐隐作痛，我们的爱情到这刚刚好，不够我们拥抱就挽回不了。by微博谦友评论"
+        },
+        {
+          "commentId": "165774927",
+          "user": "薛之洁",
+          "likes": 61562,
+          "date": "2016-06-07 16:45",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "“因为我们的感情里都有遗憾，我不想看到很多人再有遗憾。” 没有刻骨铭心的爱情，却被你的音乐伤到体无完肤，薛之谦，如果一句歌词可以换一滴泪，那么多离人的悲伤，你要怎样才能收集完全。"
+        },
+        {
+          "commentId": "165787885",
+          "user": "山河应久",
+          "likes": 38737,
+          "date": "2016-06-07 16:58",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "段子界的偶像派，刚刚好；歌手界的实力派，刚刚好！"
+        },
+        {
+          "commentId": "178270269",
+          "user": "玲儿0209",
+          "likes": 38071,
+          "date": "2016-07-04 13:25",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦帮助过癌症女孩，他说“哥哥没有太大能力，因为我不红，出场费没有几百万，但我把我的出场费都给你，你要相信这个世界有奇迹” 他真的是全世界最善良的薛之谦[爱心][爱心][爱心]"
+        },
+        {
+          "commentId": "165867405",
+          "user": "爱哭的桃子宝贝srljK",
+          "likes": 32833,
+          "date": "2016-06-07 18:30",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "我上午把你写进作文了。@薛之谦 [奸笑]"
+        },
+        {
+          "commentId": "165815747",
+          "user": "NULL-NAME15",
+          "likes": 25487,
+          "date": "2016-06-07 16:50",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "刚刚好的时间，刚刚好的地点，我听你刚刚好的旋律配刚刚好的词[爱心]"
+        },
+        {
+          "commentId": "165906273",
+          "user": "有自野",
+          "likes": 23915,
+          "date": "2016-06-07 18:49",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "三年前你说 有一天晚上 梦一场 你白发苍苍 说带我流浪 我还是没犹豫 就随你去天堂 现在你说 我们的流浪到这刚刚好 趁我们还没到天涯海角 我也不是非要去那座城堡 我们都成长了 那就好。@薛之谦"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "165844062",
+        "user": "风月善变",
+        "likes": 266019,
+        "date": "2016-06-07 16:47",
+        "commentYear": 2016,
+        "yearsAfterRelease": 0,
+        "content": "刚刚好的三行情书💌 作词：薛之谦 作曲：薛之谦 演唱：薛之谦"
+      }
+    },
+    {
+      "song": "木偶人",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 186347,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "1535996916",
+          "user": "q_7x",
+          "likes": 243937,
+          "date": "2019-06-26 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "喜欢薛之谦不是因为他有多特别，而是因为他把平凡的努力做到了极致。“他的生活里有我想要的不死不休。"
+        },
+        {
+          "commentId": "1535987056",
+          "user": "Roystero",
+          "likes": 190912,
+          "date": "2019-06-26 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "你今天好吗被人左右情绪了吗"
+        },
+        {
+          "commentId": "1544921142",
+          "user": "楼下都是我孙子诶",
+          "likes": 91251,
+          "date": "2019-07-04 11:58",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我不是木偶人也不是木头人，但我喜欢薛之谦。"
+        },
+        {
+          "commentId": "1541172230",
+          "user": "李小楚",
+          "likes": 82250,
+          "date": "2019-06-30 18:53",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "她安静地像傀儡一样活着,也许,她只是一个木偶人..."
+        },
+        {
+          "commentId": "1536017662",
+          "user": "王_囧囧",
+          "likes": 76283,
+          "date": "2019-06-26 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "渐渐喜欢了现在的生活，没有惊喜，也没有意外！"
+        },
+        {
+          "commentId": "1535966483",
+          "user": "嗯是要睡了",
+          "likes": 75496,
+          "date": "2019-06-26 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "今天我生日"
+        },
+        {
+          "commentId": "1535973390",
+          "user": "山橘秋月_",
+          "likes": 58034,
+          "date": "2019-06-26 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "三年前，中考后的我第一次听到你的歌，于是，你的歌陪我度过了最美好的高中三年，如今高考结束了，却又仿佛回到了那个夏天。三年时光，感谢有你，未来可期！"
+        },
+        {
+          "commentId": "1536001878",
+          "user": "文科复读生",
+          "likes": 54476,
+          "date": "2019-06-26 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我愿意带上面具在生活的考场上舞弊， 放弃做人的权利和你上演一场人偶戏。"
+        },
+        {
+          "commentId": "1536193996",
+          "user": "云村精神病三院",
+          "likes": 48289,
+          "date": "2019-06-26 01:54",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "[多多比耶]2019首支全新单曲《木偶人》回归十指缝间十页事，这十年音乐，第十张《尘》拉起布幕，让我们从《木偶人》第一首歌开始！ 木偶看着多少爱情在安静来去，不笑，不哭，不乐，不苦。听薛之谦深情演绎🧡🥰❤️"
+        },
+        {
+          "commentId": "1536835486",
+          "user": "文文的狗",
+          "likes": 44345,
+          "date": "2019-06-26 18:47",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "哈哈，你一定不知道吧。我真的有那么喜欢你"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "1535996916",
+        "user": "q_7x",
+        "likes": 243937,
+        "date": "2019-06-26 00:00",
+        "commentYear": 2019,
+        "yearsAfterRelease": 0,
+        "content": "喜欢薛之谦不是因为他有多特别，而是因为他把平凡的努力做到了极致。“他的生活里有我想要的不死不休。"
+      }
+    },
+    {
+      "song": "那是你离开北京的生活",
+      "album": "怪咖",
+      "releaseYear": 2018,
+      "commentCount": 170462,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "1142494755",
+          "user": "djenaq",
+          "likes": 376634,
+          "date": "2018-06-08 18:05",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "十年前 五岁半的我 耳朵有血管瘤 手术后右耳失聪 十年后 十五岁半的我高一 病情复发明天就手术了 从小到大手术室进过四次 所以我不怕 我也抱怨过绝望过 总觉得不公平 薛老师说过“小时候觉得这个世界不公平 后来发现这个世界就是不公平 但不公平是好事 它会让你更努力”很幸运 还有左耳可以听你的歌💗"
+        },
+        {
+          "commentId": "1142492654",
+          "user": "今天你向学习低头了吗",
+          "likes": 131966,
+          "date": "2018-06-08 18:02",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "习惯了两份早餐，两把椅子，两套餐具，那是你离开了北京的生活，哪有这么容易改变？"
+        },
+        {
+          "commentId": "1142575621",
+          "user": "Lizonkk",
+          "likes": 125546,
+          "date": "2018-06-08 19:05",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "经此一别，各自珍重。"
+        },
+        {
+          "commentId": "1142485898",
+          "user": "吃太空人长大的喜之郎",
+          "likes": 82681,
+          "date": "2018-06-08 18:04",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "后来，我爱的人都有了你的影子，连我也活成了你的影子，你奔向明天，而我留在了昨天，希望再次遇见不负再见。"
+        },
+        {
+          "commentId": "1142496899",
+          "user": "故人從此不在",
+          "likes": 65401,
+          "date": "2018-06-08 18:09",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "你走后我继续一个人不吃早饭，喜欢狂吃冰激凌到深夜里胃痛，踢被子到感冒，生病了不去看医生，你看，我就是没了你而已，没什么大不了，只不过回到了原来的生活而已，真的没什么 我想你，但我一个人真的很很好，你和她要幸福"
+        },
+        {
+          "commentId": "1142495755",
+          "user": "尋找死亡真相",
+          "likes": 55364,
+          "date": "2018-06-08 18:06",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "“我活成了你的影子，你奔向光，奔向未来，而我，守着你的往事回忆，眼望人海十万里，却再也无法出现在你的明天里。”"
+        },
+        {
+          "commentId": "1142549930",
+          "user": "轻松成",
+          "likes": 50441,
+          "date": "2018-06-08 18:56",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "我近两年最大的体会就是做人要识趣，对方已经表了态就不要再纠缠了。"
+        },
+        {
+          "commentId": "1142490384",
+          "user": "刘沄",
+          "likes": 37520,
+          "date": "2018-06-08 18:18",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "那么我祝你幸福，永远。"
+        },
+        {
+          "commentId": "1143207358",
+          "user": "一个山腰人罢了",
+          "likes": 31148,
+          "date": "2018-06-09 10:19",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "于千万人之中遇见你所要遇见的人 于千万年之中 时间的无涯的荒野里 没有早一步 也没有晚一步 刚巧赶上了 那也没有别的话可说 惟有轻轻地问一声： “噢，你也在这里.”"
+        },
+        {
+          "commentId": "1142820830",
+          "user": "龙吴路公主",
+          "likes": 27700,
+          "date": "2018-06-08 22:33",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "“我永远都不可能死缠烂打，哪怕我说了那些不给自己留后路的话。哪怕我跟全世界说，我最喜欢你了。”"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "1142494755",
+        "user": "djenaq",
+        "likes": 376634,
+        "date": "2018-06-08 18:05",
+        "commentYear": 2018,
+        "yearsAfterRelease": 0,
+        "content": "十年前 五岁半的我 耳朵有血管瘤 手术后右耳失聪 十年后 十五岁半的我高一 病情复发明天就手术了 从小到大手术室进过四次 所以我不怕 我也抱怨过绝望过 总觉得不公平 薛老师说过“小时候觉得这个世界不公平 后来发现这个世界就是不公平 但不公平是好事 它会让你更努力”很幸运 还有左耳可以听你的歌💗"
+      }
+    },
+    {
+      "song": "这么久没见",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 132708,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "1583930265",
+          "user": "香伞",
+          "likes": 176263,
+          "date": "2019-08-06 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我们总是在错误的时间，错误的地点，懵懵然就爱上那个人，然后，不得不用尽一生遗忘。"
+        },
+        {
+          "commentId": "1583953988",
+          "user": "yyyyyyz_w",
+          "likes": 71901,
+          "date": "2019-08-06 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“我们多久没见了” “会见的。”"
+        },
+        {
+          "commentId": "1584097112",
+          "user": "音未音乐",
+          "likes": 68360,
+          "date": "2019-08-06 01:12",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "假如这么久没见，你还依然是我的薛之谦。 新说唱有双押，我还是爱听《哑巴》[奸笑]"
+        },
+        {
+          "commentId": "1583978651",
+          "user": "shu舒克_",
+          "likes": 52809,
+          "date": "2019-08-06 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我也失望难过舍不得 可我什么也没说"
+        },
+        {
+          "commentId": "1583940164",
+          "user": "记得说晚安笨蛋-",
+          "likes": 52015,
+          "date": "2019-08-06 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“为什么我们总爱上那些不在乎我们的人？” “因为我们总觉得自己不配得到更好的爱”"
+        },
+        {
+          "commentId": "1584784583",
+          "user": "太史婧雯",
+          "likes": 51569,
+          "date": "2019-08-06 16:40",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "谦哥 这么久没见啦 想告诉你我呀 找到幸福了 17岁给你留言时候的梦想都已经成为现实啦 最近在准备导演新的作品 你越来越好就最好了 谦哥加油 我们都加油🥰"
+        },
+        {
+          "commentId": "1583932313",
+          "user": "枪决心动",
+          "likes": 35801,
+          "date": "2019-08-06 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "很久没见的人 再见还是喜欢"
+        },
+        {
+          "commentId": "1584069231",
+          "user": "Grooot见过老薛版",
+          "likes": 34968,
+          "date": "2019-08-06 01:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“这么久不见了，我们还要互相了解吗 这么久不见了，还有必要了解吗？”"
+        },
+        {
+          "commentId": "1583951961",
+          "user": "最近不太想你",
+          "likes": 30895,
+          "date": "2019-08-06 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "多少人等到了零点！"
+        },
+        {
+          "commentId": "1583950959",
+          "user": "吃掉脆脆土豆",
+          "likes": 29258,
+          "date": "2019-08-06 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我跟你说星星很好看，你跟别人说星星很好看，我以后都不会再跟你说星星很好看了。别人跟你说星星很好看，你跟我说星星很好看，星星就没那么好看了。"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "1583930265",
+        "user": "香伞",
+        "likes": 176263,
+        "date": "2019-08-06 00:00",
+        "commentYear": 2019,
+        "yearsAfterRelease": 0,
+        "content": "我们总是在错误的时间，错误的地点，懵懵然就爱上那个人，然后，不得不用尽一生遗忘。"
+      }
+    },
+    {
+      "song": "变废为宝",
+      "album": "无数",
+      "releaseYear": 2022,
+      "commentCount": 102104,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5363828679",
+          "user": "星乀野",
+          "likes": 103171,
+          "date": "2021-07-17 09:09",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "我要和我头像里的女孩结婚了[多多比耶]"
+        },
+        {
+          "commentId": "5363537079",
+          "user": "九杰编乐",
+          "likes": 66679,
+          "date": "2021-07-17 00:01",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦 你的名字是我听过最治愈的文案"
+        },
+        {
+          "commentId": "5363540540",
+          "user": "刘正武武武",
+          "likes": 40393,
+          "date": "2021-07-17 00:01",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "从初中开始认识老薛 一直默默听他的歌 他特别努力 老薛的歌一直都很有力量 也传递力量 我常常负能量满身 但我只想说 没有绝对的天才 也没有一直落魄的人 每个人都是一块宝玉 相信高考不理想并不能阻碍我们前进的脚步 每一个努力的人都值得被欣赏 共勉"
+        },
+        {
+          "commentId": "5368806115",
+          "user": "AKA阳帅",
+          "likes": 30836,
+          "date": "2021-07-22 16:01",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "我多么希望世界不会再有争吵 所有人都不会为了金钱而烦恼"
+        },
+        {
+          "commentId": "5363529435",
+          "user": "RRRRYYYY9",
+          "likes": 23086,
+          "date": "2021-07-17 00:00",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "路的尽头终会是温柔和月光， 同时所有热爱的事情都要不遗余力，满目星河，既往不咎，我不想做你生命的插曲，只想做你生命最完美的结局。"
+        },
+        {
+          "commentId": "5363864515",
+          "user": "星星花园热心网友",
+          "likes": 22740,
+          "date": "2021-07-17 09:59",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "“不要因为身边的恋爱氛围而放弃自己的恋爱观”"
+        },
+        {
+          "commentId": "5364258798",
+          "user": "RRRRYYYY9",
+          "likes": 22545,
+          "date": "2021-07-17 18:48",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "希望在你在丧失表达欲的时候 有人能温柔地接住你的疲惫"
+        },
+        {
+          "commentId": "5363530132",
+          "user": "别玩了出去睡",
+          "likes": 21830,
+          "date": "2021-07-17 00:00",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "生日快乐"
+        },
+        {
+          "commentId": "5363530009",
+          "user": "范范范智谋",
+          "likes": 21094,
+          "date": "2021-07-17 00:00",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "不知从何时开始 出新歌都会按时来听 以前也是 现在也是 以后也是 老薛生日快乐~ 717！！ 演唱会门票大卖！！"
+        },
+        {
+          "commentId": "5363576775",
+          "user": "Wfan不晚",
+          "likes": 16566,
+          "date": "2021-07-17 00:12",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "生日快乐呀！ 薛之谦✨ 祝，，你所求皆如愿，平安喜乐，万事胜意…"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5363828679",
+        "user": "星乀野",
+        "likes": 103171,
+        "date": "2021-07-17 09:09",
+        "commentYear": 2021,
+        "yearsAfterRelease": 0,
+        "content": "我要和我头像里的女孩结婚了[多多比耶]"
+      }
+    },
+    {
+      "song": "哑巴",
+      "album": "怪咖",
+      "releaseYear": 2018,
+      "commentCount": 96715,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "1112623511",
+          "user": "朴日图",
+          "likes": 152589,
+          "date": "2018-05-10 10:18",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "有时我沉默，但并非无话可说"
+        },
+        {
+          "commentId": "1112613689",
+          "user": "hhhhlnln",
+          "likes": 91352,
+          "date": "2018-05-10 10:13",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "有时候觉得 哑巴才是这个世界最洒脱的 他不用把任何事情都拿出来说"
+        },
+        {
+          "commentId": "1112605759",
+          "user": "孤園-",
+          "likes": 66178,
+          "date": "2018-05-10 10:01",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "我就像哑巴一样，看着你渐行渐远，最后我造就了安静"
+        },
+        {
+          "commentId": "1112611712",
+          "user": "把你写进我的梦想清单",
+          "likes": 51775,
+          "date": "2018-05-10 10:12",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "太好了，终于完美了，没有现场的人声杂音，也没有现场休音后较长的静音，间奏完美，我薛对音乐真的是零瑕疵的容忍度，又是一首精品，我听着听着眼睛又湿了"
+        },
+        {
+          "commentId": "1112665556",
+          "user": "晩出",
+          "likes": 50703,
+          "date": "2018-05-10 11:32",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "也许世间最好的默契 不是有人懂你的言外之意 而是有人心疼你的欲言又止"
+        },
+        {
+          "commentId": "1112644732",
+          "user": "港岛妹妹没有给我西班牙馅饼",
+          "likes": 46328,
+          "date": "2018-05-10 11:03",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "“她割破了手指，他紧张地跑去给她买创可贴。 他是个哑巴，比划了好久售货员还是不懂他的意思。 他心急如焚，用小刀在自己的手上割了一个小口…… ”我很喜欢这个故事， 如果说爱情只是靠说说而已， 那哑巴怎么办？"
+        },
+        {
+          "commentId": "1112613680",
+          "user": "长风如叹息",
+          "likes": 39349,
+          "date": "2018-05-10 10:13",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "喜欢你live版每次唱出“哑巴”两个字时的轻声，像向你靠近又微微后退，近情情怯，大抵如此[心碎]"
+        },
+        {
+          "commentId": "1112816383",
+          "user": "南冥无鱼",
+          "likes": 34530,
+          "date": "2018-05-10 15:34",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "玫瑰不会说话，王子却会爱它。 狐狸明明会说话，却只能当哑巴。 “你还有玫瑰，而我只有你。”"
+        },
+        {
+          "commentId": "1112605958",
+          "user": "Xue_Kai",
+          "likes": 26516,
+          "date": "2018-05-10 10:11",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "在首期《无限歌谣季》中，薛之谦作为“无限唱作人”蒙面登台，一身简洁黑衣钢琴弹唱由汪苏泷创作、刘维原唱的歌曲《哑巴》，并进行了浓重“薛氏情歌”色彩式的改编，不仅再次填词编曲，更对整体结构予以了二次创作，细腻又不失张力，音乐铺张由简入繁，层层递进，巧妙描绘出一个“情感失语者”的自白。"
+        },
+        {
+          "commentId": "1112614830",
+          "user": "黑雷_",
+          "likes": 24018,
+          "date": "2018-05-10 10:27",
+          "commentYear": 2018,
+          "yearsAfterRelease": 0,
+          "content": "“我就像一个哑巴一样”，在感情里，我还是选择闭口不言，受了伤就默默舔舐伤口，后来明白，从来没有过争吵的感情是多么不堪一击。"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "1112623511",
+        "user": "朴日图",
+        "likes": 152589,
+        "date": "2018-05-10 10:18",
+        "commentYear": 2018,
+        "yearsAfterRelease": 0,
+        "content": "有时我沉默，但并非无话可说"
+      }
+    },
+    {
+      "song": "笑场",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 94863,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "1608430401",
+          "user": "就装进帽子里吧",
+          "likes": 106617,
+          "date": "2019-08-25 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "你就是我时光里 最温暖的一束光 新歌很好 你也很好 只要你还在唱 我们就会听。 来日方长 一起走啊。"
+        },
+        {
+          "commentId": "1608444231",
+          "user": "盼你温柔",
+          "likes": 105368,
+          "date": "2019-08-25 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "''据说，即使一个人演技再好, 也会身不由己的笑场, 那是蓦然念起心上人的一瞬间.''"
+        },
+        {
+          "commentId": "1611739278",
+          "user": "Grooot见过老薛版",
+          "likes": 84400,
+          "date": "2019-08-27 15:23",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "小丑在台上表演笑场，面具下双眼泪在流淌。"
+        },
+        {
+          "commentId": "1608473665",
+          "user": "寒春思夏",
+          "likes": 64416,
+          "date": "2019-08-25 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "那年冬天，我和她一起表演话剧 话剧里有句“我喜欢你”的台词 在剧本里她应该要答应我的表白 可当我真情的说出我喜欢你的时候 她却笑场了，观众席一片唏嘘声 我没有继续完成我拙劣的表演 我这个演员其实也没有那么高尚 那是我唯一一次勇气，也是最后一次…"
+        },
+        {
+          "commentId": "1611761612",
+          "user": "酷酷的Ycy",
+          "likes": 53799,
+          "date": "2019-08-27 15:02",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "如果告白和告别同时出场，那该是个怎样的故事！"
+        },
+        {
+          "commentId": "1608508520",
+          "user": "ryry777",
+          "likes": 47377,
+          "date": "2019-08-25 00:02",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "那年毕业典礼 我本在讲着我的三年学校生活 还有回不去的青春 当讲到青春懵懂的时候 可我却忽然笑场 所有人都以为是场意外 只有我自己知道 因为我看见了台下的你"
+        },
+        {
+          "commentId": "1608476577",
+          "user": "呓根鱼刺",
+          "likes": 33737,
+          "date": "2019-08-25 00:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我说我要走了，可你竟然笑了"
+        },
+        {
+          "commentId": "1609817153",
+          "user": "人间百岁不过一壶酒",
+          "likes": 29466,
+          "date": "2019-08-25 23:09",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "云淡风轻的描述些过往觉得很有意义的事情 谈起来面无表情 仿佛不是自己的亲身经历 \"我站在世界外面看里面的自己 愚蠢的无可救药又狰狞得好笑\""
+        },
+        {
+          "commentId": "1608608088",
+          "user": "朴日图",
+          "likes": 28227,
+          "date": "2019-08-25 01:09",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“未曾开言我先笑场，笑场完了听我诉一诉衷肠”"
+        },
+        {
+          "commentId": "1608526969",
+          "user": "徐志摩呀_",
+          "likes": 22033,
+          "date": "2019-08-25 00:14",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我全情投入 你却离场 幸好我很健忘 你 我会忘[心碎]"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "1608430401",
+        "user": "就装进帽子里吧",
+        "likes": 106617,
+        "date": "2019-08-25 00:00",
+        "commentYear": 2019,
+        "yearsAfterRelease": 0,
+        "content": "你就是我时光里 最温暖的一束光 新歌很好 你也很好 只要你还在唱 我们就会听。 来日方长 一起走啊。"
+      }
+    },
+    {
+      "song": "念",
+      "album": "守村人",
+      "releaseYear": 2024,
+      "commentCount": 77704,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5942639063",
+          "user": "A李政政政",
+          "likes": 42536,
+          "date": "2023-07-17 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "作曲：薛之谦/赵英俊[流泪][流泪][流泪]"
+        },
+        {
+          "commentId": "5942704173",
+          "user": "你是我朝夕相伴的一生",
+          "likes": 41471,
+          "date": "2023-07-17 00:11",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "特别喜欢老薛 祝你生日快乐 也希望我可以带着自己最喜欢的人一起去看你的演唱会"
+        },
+        {
+          "commentId": "5942629140",
+          "user": "小姜汀薛",
+          "likes": 21239,
+          "date": "2023-07-17 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "《念》，是眷念，是怀念，是挂念。眷念着你，怀念着你的演唱会，挂念着你的身体。认为你也在眷念着谦友，怀念着演唱会上其乐融融的聊天，挂念着谦友回家路上的安全。在你真的老去之前，我们还会见很多面，因为我们会陪你唱到老的，还会陪你走过很多个十七年。永远快乐薛之谦，我心终有谦谦结！！祝老薛"
+        },
+        {
+          "commentId": "5942629120",
+          "user": "板栗山楂鹅",
+          "likes": 13833,
+          "date": "2023-07-17 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "一年一度的惯例 他说 这是五年前就写好的 是给我们的 是他的回礼 薛值钱 四十岁啦 生日快乐 四旬老汉今天也很帅咦"
+        },
+        {
+          "commentId": "5942747221",
+          "user": "网易摄影师",
+          "likes": 12027,
+          "date": "2023-07-17 00:41",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "听到背景音乐里的吉他声，我好像看到了赵英俊，看到的一瞬间好像起了雾，之后又下了雨，雨过天晴，我看到薛之谦在那个舞台上唱着念，毛毛细雨落到我的身边 ——从此雨便代表思念"
+        },
+        {
+          "commentId": "5943154572",
+          "user": "倘若问心有愧_",
+          "likes": 11531,
+          "date": "2023-07-17 18:28",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "想念也好 怀念也罢 千山万水 人海人海 我挂念你"
+        },
+        {
+          "commentId": "5942643864",
+          "user": "想摘嘤嘤樱桃",
+          "likes": 8815,
+          "date": "2023-07-17 00:01",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "半分钟999+，你们网速6G啊"
+        },
+        {
+          "commentId": "5942653514",
+          "user": "账号已注销",
+          "likes": 5848,
+          "date": "2023-07-17 00:01",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "苦尽甘来 老薛 生日快乐[爱心]"
+        },
+        {
+          "commentId": "5942646780",
+          "user": "不脏不丑",
+          "likes": 5691,
+          "date": "2023-07-17 00:01",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "居然是赵英俊吗[流泪]"
+        },
+        {
+          "commentId": "5942797529",
+          "user": "液耶耶耶耶",
+          "likes": 5688,
+          "date": "2023-07-17 02:02",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "马上高三了，来点刺激的，一个赞一张卷子"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5942639063",
+        "user": "A李政政政",
+        "likes": 42536,
+        "date": "2023-07-17 00:00",
+        "commentYear": 2023,
+        "yearsAfterRelease": 0,
+        "content": "作曲：薛之谦/赵英俊[流泪][流泪][流泪]"
+      }
+    },
+    {
+      "song": "聊表心意",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 65585,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "2063452173",
+          "user": "长夜看海",
+          "likes": 86662,
+          "date": "2019-12-27 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“别回来了，我已经过了重蹈覆辙的年纪。”"
+        },
+        {
+          "commentId": "2063514464",
+          "user": "本少高高在上",
+          "likes": 59722,
+          "date": "2019-12-27 22:01",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "可能是天生懦弱我肯定是喜欢你的"
+        },
+        {
+          "commentId": "2063507552",
+          "user": "WLee_x",
+          "likes": 42171,
+          "date": "2019-12-27 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“你爱ta吗？” “爱，就算偷偷爱着 也可以…”"
+        },
+        {
+          "commentId": "2063595371",
+          "user": "i-miss_you-i",
+          "likes": 28029,
+          "date": "2019-12-27 22:35",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "明明我们也曾互相心动过。 周叶玲"
+        },
+        {
+          "commentId": "2063499769",
+          "user": "我的快乐飞走了",
+          "likes": 27819,
+          "date": "2019-12-27 22:01",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我做了很多毫无意义的事情 包括反复确认你是否有十分之一的在意我"
+        },
+        {
+          "commentId": "2063522476",
+          "user": "太史婧雯",
+          "likes": 23943,
+          "date": "2019-12-27 22:03",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "爱过一个错的人 就连说话都是轻轻的 怕吵到他 怕他烦 怕他不要我 就连他走后 我都忘记了自己的声音"
+        },
+        {
+          "commentId": "2063533381",
+          "user": "Tides乐队I",
+          "likes": 17004,
+          "date": "2019-12-27 22:04",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "如果有一天你找不到我了，千万不要难过，不是我不爱你了，也不是你错过我了，而是我终于有了勇气离开，但请你记得，在这之前我真的有傻傻的等过。各位大侠不要复制了，我曾经为了她真的迷失过"
+        },
+        {
+          "commentId": "2063552338",
+          "user": "风声冷冷",
+          "likes": 15408,
+          "date": "2019-12-27 22:10",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "聊表心意变成了表心意，是不想有人看出我的真心。"
+        },
+        {
+          "commentId": "2063502858",
+          "user": "蓝的够戗",
+          "likes": 15239,
+          "date": "2019-12-27 22:06",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "爱过。就这样爱过。燃烧过的，等待过的，希望过的，那些一起拥有的时间。有时候我会觉得，他们是在某一天自己有了生命，他们只是在我们没看见的世界里，他们自己独立运行。"
+        },
+        {
+          "commentId": "2063628264",
+          "user": "贴吧_锋小蜜吧",
+          "likes": 12514,
+          "date": "2019-12-27 22:50",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "👸 谢谢你给了我一段最美好的风景， 让我一生回味无穷！ 在最美的年华能够遇到你。 你是我这一生旅途 最美的相遇 谢谢你来过我故事里。 爱宝兽 …… 属于我们的岁月永不忘记！"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "2063452173",
+        "user": "长夜看海",
+        "likes": 86662,
+        "date": "2019-12-27 22:00",
+        "commentYear": 2019,
+        "yearsAfterRelease": 0,
+        "content": "“别回来了，我已经过了重蹈覆辙的年纪。”"
+      }
+    },
+    {
+      "song": "尘",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 49830,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "1652501635",
+          "user": "敬清秋--",
+          "likes": 67407,
+          "date": "2019-10-11 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "他现在变得高冷了 他现在不疯了 他现在不嚷嚷着“世界和平”了 他现在不会在发新歌的时候写段子了 他现在不会染头发了 他现在不会像个小孩子那样活蹦乱跳了 他现在不会和他的谦友互怼了 他现在节目接的少了 现在的他发新歌时候，微博只有短短的“感谢聆听”这四个字 让我心疼原来的他"
+        },
+        {
+          "commentId": "1652491741",
+          "user": "可爱乖乖-",
+          "likes": 60687,
+          "date": "2019-10-11 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "月亮在慢慢变圆 事情也会慢慢变好对吧"
+        },
+        {
+          "commentId": "1652499776",
+          "user": "小馒头要配AD钙",
+          "likes": 44579,
+          "date": "2019-10-11 22:03",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "快了，就快了。 他唱歌开始笑了。 染回黑色的头发了。 节目也开始有了。 段子他也发了。 快了，真的快了。 恶人得到惩罚了。 真相终究到来了。 差的只是那句世界和平了。"
+        },
+        {
+          "commentId": "1652523675",
+          "user": "徐志摩呀_",
+          "likes": 23272,
+          "date": "2019-10-11 22:07",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "抱歉我是一颗渺小的尘埃 也许我的陪伴变成了阻碍 风带我看繁花在雨里盛开 这样看来 是我不该"
+        },
+        {
+          "commentId": "1652717974",
+          "user": "太史婧雯",
+          "likes": 22087,
+          "date": "2019-10-12 01:19",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "从前你爱我 我的尘是星尘的尘 后来你不爱了 我的尘是尘埃的尘"
+        },
+        {
+          "commentId": "1652481983",
+          "user": "Monica-Bangbang",
+          "likes": 17775,
+          "date": "2019-10-11 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "假如你不够快乐 也不要把眉头深锁 人生本来短暂 为什么还要栽培苦涩."
+        },
+        {
+          "commentId": "1652507619",
+          "user": "十二酱ovo",
+          "likes": 16348,
+          "date": "2019-10-11 22:02",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我将忠于自己 披星戴月奔向理想和薛之谦你"
+        },
+        {
+          "commentId": "1652443474",
+          "user": "长夜看海",
+          "likes": 12991,
+          "date": "2019-10-11 22:00",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "如今连暧昧的方式都紧跟时代 而我却在人来人往中沦为尘埃 其实我也没有被万事万物​淘汰 只是没了期待 忘了爱"
+        },
+        {
+          "commentId": "1652635873",
+          "user": "Fluoxetine_HCL",
+          "likes": 12127,
+          "date": "2019-10-11 23:42",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "我曾悄无声息的喜欢过你，友情之上，爱情未满。或许每个人心里都住着一个人，或眷念，或暗恋，或想念。但我更希望往事化作尘埃。"
+        },
+        {
+          "commentId": "1652503691",
+          "user": "心上人儿r",
+          "likes": 10135,
+          "date": "2019-10-11 22:02",
+          "commentYear": 2019,
+          "yearsAfterRelease": 0,
+          "content": "“幸运的话，我会在今年暑假夏天最盛的时候乘着火车去听你的演唱会，路上的辛苦疲惫都无所谓，我想，能听到你的声音就是最好的抚慰。:)”"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "1652501635",
+        "user": "敬清秋--",
+        "likes": 67407,
+        "date": "2019-10-11 22:00",
+        "commentYear": 2019,
+        "yearsAfterRelease": 0,
+        "content": "他现在变得高冷了 他现在不疯了 他现在不嚷嚷着“世界和平”了 他现在不会在发新歌的时候写段子了 他现在不会染头发了 他现在不会像个小孩子那样活蹦乱跳了 他现在不会和他的谦友互怼了 他现在节目接的少了 现在的他发新歌时候，微博只有短短的“感谢聆听”这四个字 让我心疼原来的他"
+      }
+    },
+    {
+      "song": "崇拜",
+      "album": "守村人",
+      "releaseYear": 2023,
+      "commentCount": 47218,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5924998283",
+          "user": "墨雨孤栀",
+          "likes": 29254,
+          "date": "2023-06-16 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "如果你跟我一样等待着新歌 那真的是泰裤辣"
+        },
+        {
+          "commentId": "5925072675",
+          "user": "李易鹿",
+          "likes": 22345,
+          "date": "2023-06-16 01:27",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "世间好多遗憾 一切都有替代。"
+        },
+        {
+          "commentId": "5924996642",
+          "user": "GutsOver_",
+          "likes": 15796,
+          "date": "2023-06-16 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "看完三巡我以为是青春的结束，没想到才是开始"
+        },
+        {
+          "commentId": "5925185308",
+          "user": "Grooot见过老薛版",
+          "likes": 9236,
+          "date": "2023-06-16 10:43",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "\"抛弃盲目的崇拜，过得比谁都自在\""
+        },
+        {
+          "commentId": "5925102879",
+          "user": "倘若问心有愧_",
+          "likes": 8322,
+          "date": "2023-06-16 03:13",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "那日的桂花 是我为你写的诗"
+        },
+        {
+          "commentId": "5925535010",
+          "user": "陪我像影子一样",
+          "likes": 8246,
+          "date": "2023-06-16 23:56",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "单数就放弃 双数我就去追！"
+        },
+        {
+          "commentId": "5924999988",
+          "user": "-尓-",
+          "likes": 7347,
+          "date": "2023-06-16 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "八点在现场看梅西踢球 十二点发新歌 名叫「崇拜」 一切都是最好的安排"
+        },
+        {
+          "commentId": "5952315317",
+          "user": "相遇街尾",
+          "likes": 7045,
+          "date": "2023-08-01 01:43",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "我始终觉得玩弄别人感情的人不应该幸福"
+        },
+        {
+          "commentId": "5939816768",
+          "user": "江野4-",
+          "likes": 5355,
+          "date": "2023-07-12 17:12",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "在车上听，前半段在过隧道，到后半段最后一次 我崇拜 时，突然出了隧道，那种光一下打在脸上的感觉，真的，救命[流泪][流泪][流泪]全世界都亮了，就像出现了，我的救赎[爱心]"
+        },
+        {
+          "commentId": "5925097175",
+          "user": "南城以北花漫野",
+          "likes": 4821,
+          "date": "2023-06-16 02:47",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "“这又不是电影，谁会等你三五年” “可惜这不是电影，我等你三五年，你又怎会晓得”"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5924998283",
+        "user": "墨雨孤栀",
+        "likes": 29254,
+        "date": "2023-06-16 00:00",
+        "commentYear": 2023,
+        "yearsAfterRelease": 0,
+        "content": "如果你跟我一样等待着新歌 那真的是泰裤辣"
+      }
+    },
+    {
+      "song": "凤毛麟角",
+      "album": "无数",
+      "releaseYear": 2022,
+      "commentCount": 41299,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5488869244",
+          "user": "马可波罗堡-",
+          "likes": 40992,
+          "date": "2021-12-24 12:17",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "得到什么的时候同样也会失去些什么，有很多话想说奈何只能保持沉默..."
+        },
+        {
+          "commentId": "5488606255",
+          "user": "不能说的简单爱",
+          "likes": 31688,
+          "date": "2021-12-24 00:00",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "你如凤毛麟角般稀有又如天外来物般求之不得。"
+        },
+        {
+          "commentId": "5488604467",
+          "user": "向羽而栖",
+          "likes": 19960,
+          "date": "2021-12-24 00:00",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "“凤毛麟角”意指珍贵且稀少的人或物。如果有一天你发现了一个眼里藏着星星的人，而那漫天星辰只因遇见你而熠熠生辉，请务必紧紧抓住别松手，因为这可能是你用尽余生的运气才能遇见的，独属于你的凤毛麟角般的白月光。"
+        },
+        {
+          "commentId": "5488622444",
+          "user": "DANGER_0",
+          "likes": 15444,
+          "date": "2021-12-24 00:01",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦五大哲学态度四部曲 《凤毛麟角》以欲望的火焰燃烧本我，以愿望的深海浸润真我，真我与本我的决斗纠缠出一座华丽的牢笼 《配合》批判网络暴力，送给所有的键盘侠 《高尚》写进扭曲的价值观，人生观 《野心》暗黑单曲，满满都是正义与黑暗的对立面 《病态》当愚昧成为主流，清醒就是犯罪"
+        },
+        {
+          "commentId": "5488605427",
+          "user": "记得每天都要早睡",
+          "likes": 8058,
+          "date": "2021-12-24 00:00",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "还以为这次能牵你的手呢"
+        },
+        {
+          "commentId": "5488625300",
+          "user": "西街Llt",
+          "likes": 5408,
+          "date": "2021-12-24 00:02",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "我不知道该如何形容你，我不知道你在我心里是何等重要，我只知道你随时能把握我的情绪"
+        },
+        {
+          "commentId": "5489027118",
+          "user": "小金呀_1219",
+          "likes": 5210,
+          "date": "2021-12-24 17:44",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "我本就没什么凤毛麟角 用所剩的明天换一丝曙光 我必须强大 因为你还被爱着 你保护你的全世界 我来保护你……"
+        },
+        {
+          "commentId": "5488634724",
+          "user": "奶茶去冰半糖不要珍珠",
+          "likes": 5110,
+          "date": "2021-12-24 00:04",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "我要去当兵啦 以后记得帮我听薛之谦的新歌。"
+        },
+        {
+          "commentId": "5488608289",
+          "user": "天空好像刚哭过",
+          "likes": 4211,
+          "date": "2021-12-24 00:00",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "18级的学长学姐真的是我最羡慕的一届…… 2018.6.8高考结束，老薛的《那是你离开了北京的生活》发行，给18年的那个夏天增添了不少难忘的回忆…… 2021.12.24，距离考研仅有一天，《凤毛麟角》的到来在我看来又是老薛的小礼物，祝你们“一研为定”……"
+        },
+        {
+          "commentId": "5488671122",
+          "user": "Z_Yyy_Q",
+          "likes": 3983,
+          "date": "2021-12-24 00:26",
+          "commentYear": 2021,
+          "yearsAfterRelease": 0,
+          "content": "老薛这两年那么多明星倒下了，你要撑住，我不允许你倒下，你的老婆很漂亮，碰到妖魔鬼怪要叫她们滚蛋[怒]！"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5488869244",
+        "user": "马可波罗堡-",
+        "likes": 40992,
+        "date": "2021-12-24 12:17",
+        "commentYear": 2021,
+        "yearsAfterRelease": 0,
+        "content": "得到什么的时候同样也会失去些什么，有很多话想说奈何只能保持沉默..."
+      }
+    },
+    {
+      "song": "关于你",
+      "album": "无数",
+      "releaseYear": 2022,
+      "commentCount": 38880,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5705402997",
+          "user": "绅士家的A酱子",
+          "likes": 28764,
+          "date": "2022-07-17 00:00",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "明明是你的生日，却出新歌给我们惊喜。《关于你》的故事可以慢慢听，大家先全体起立：祝薛之谦717生日快乐！"
+        },
+        {
+          "commentId": "5705404362",
+          "user": "北苑晨雪",
+          "likes": 23394,
+          "date": "2022-07-17 00:00",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "2020-7-17《天外来物》 2021-7-17《变废为宝》 2022-7-17《关于你》 “关于你”走过的足迹 我们永远相随 过去 现在 未来 都一样"
+        },
+        {
+          "commentId": "5705412621",
+          "user": "霜降_ly_",
+          "likes": 20180,
+          "date": "2022-07-17 00:02",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "是给妈妈写的，阿薛生日快乐，我们会永远陪你"
+        },
+        {
+          "commentId": "5708946531",
+          "user": "CLARE-MUSIC",
+          "likes": 11141,
+          "date": "2022-07-21 23:27",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "反反复复听每一遍都很动情[爱心]"
+        },
+        {
+          "commentId": "5705408116",
+          "user": "语棠溪夏",
+          "likes": 9079,
+          "date": "2022-07-17 00:00",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "“关于你，我编篡了七零八散的回忆 硬是要塞进与你有关，却没你的时光里“"
+        },
+        {
+          "commentId": "5705418066",
+          "user": "原野说",
+          "likes": 7887,
+          "date": "2022-07-17 00:02",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "他是家中独子，他的妈妈名叫曹爱真，因患有隐疾，不适合生育，为了给薛家留后，薛母执意要生下薛之谦。在薛之谦四岁的时候，薛母因身体透支，离开人世，只留下他和爸爸生活。"
+        },
+        {
+          "commentId": "5705415055",
+          "user": "Teddy余生",
+          "likes": 5921,
+          "date": "2022-07-17 00:02",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "发着微弱光芒的我 也终于被看到了 谢谢薛老师当时坚定的选择与鼓励 谢谢薛老师如此用心地对待这首作品 谢谢薛老师唱出了他 我 还有每一个你 这首歌希望大家能够喜欢"
+        },
+        {
+          "commentId": "5705402511",
+          "user": "一只亚o",
+          "likes": 5365,
+          "date": "2022-07-17 00:00",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "生日快乐，不止生日！"
+        },
+        {
+          "commentId": "5705403464",
+          "user": "Duffinodd",
+          "likes": 4705,
+          "date": "2022-07-17 00:00",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "从认真的雪到变废为宝，从世界和平到承蒙关照，年年往复，永远炽热的七月，永远热爱人，永远爱的薛之谦"
+        },
+        {
+          "commentId": "5705405496",
+          "user": "作业你该减肥啦",
+          "likes": 4195,
+          "date": "2022-07-17 00:00",
+          "commentYear": 2022,
+          "yearsAfterRelease": 0,
+          "content": "每一首歌就是要用心去把它做好，所以其实从始至终我一直在做这件事，但是没有人知道，我发现我的坚持是对的，虽然我已经坚持十年了，看上去很狼狈，但我觉得那就是对的。——薛之谦"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5705402997",
+        "user": "绅士家的A酱子",
+        "likes": 28764,
+        "date": "2022-07-17 00:00",
+        "commentYear": 2022,
+        "yearsAfterRelease": 0,
+        "content": "明明是你的生日，却出新歌给我们惊喜。《关于你》的故事可以慢慢听，大家先全体起立：祝薛之谦717生日快乐！"
+      }
+    },
+    {
+      "song": "AI",
+      "album": "守村人",
+      "releaseYear": 2024,
+      "commentCount": 38812,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "6057946098",
+          "user": "你是我朝夕相伴的一生",
+          "likes": 44663,
+          "date": "2024-02-14 00:00",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "真开心老薛在 2.14 情人节发新歌｡◕‿◕｡我打算在 4.2 生日的时候表白 希望能成功"
+        },
+        {
+          "commentId": "6057987329",
+          "user": "用户1717223655",
+          "likes": 40071,
+          "date": "2024-02-14 00:19",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦给我们的情人节礼物 我觉得我们有点暧昧了[多多大哭]"
+        },
+        {
+          "commentId": "6057947775",
+          "user": "偶是土豆大王_",
+          "likes": 14596,
+          "date": "2024-02-14 00:00",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "AI可以计算一切 唯独不能计算爱的答案"
+        },
+        {
+          "commentId": "6057987925",
+          "user": "清遊",
+          "likes": 11340,
+          "date": "2024-02-14 00:19",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "“可惜AI算不到我的爱”"
+        },
+        {
+          "commentId": "6058385942",
+          "user": "纯真永遠_",
+          "likes": 9954,
+          "date": "2024-02-14 17:30",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "发现个细节，越到后面薛的声音电流声越小，感觉从AI越来越像真人了，所以爱会挣扎着长出血肉[流泪]"
+        },
+        {
+          "commentId": "6057962771",
+          "user": "夏天的甜味-u",
+          "likes": 9376,
+          "date": "2024-02-14 00:02",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "点赞的，这个情人节都能脱单！ 这样，你就拥有一个时刻关心陪你一起的人啦。"
+        },
+        {
+          "commentId": "6058140296",
+          "user": "Klein_B_",
+          "likes": 7010,
+          "date": "2024-02-14 09:13",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "今天的点赞都是小元宝形状ai[憨笑]"
+        },
+        {
+          "commentId": "6058275381",
+          "user": "为钱所困-",
+          "likes": 6354,
+          "date": "2024-02-14 13:49",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "高三党玩个大的，一赞一张数学卷子"
+        },
+        {
+          "commentId": "6057948898",
+          "user": "厦门小恶魔-",
+          "likes": 4933,
+          "date": "2024-02-14 00:00",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "\"等待一个和我情人节蹲薛之谦发新歌的男娃子\""
+        },
+        {
+          "commentId": "6057969219",
+          "user": "倘若问心有愧_",
+          "likes": 4652,
+          "date": "2024-02-14 00:06",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "不能做正确的选择 那就做开心的选择"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "6057946098",
+        "user": "你是我朝夕相伴的一生",
+        "likes": 44663,
+        "date": "2024-02-14 00:00",
+        "commentYear": 2024,
+        "yearsAfterRelease": 0,
+        "content": "真开心老薛在 2.14 情人节发新歌｡◕‿◕｡我打算在 4.2 生日的时候表白 希望能成功"
+      }
+    },
+    {
+      "song": "跃",
+      "album": "跃",
+      "releaseYear": 2025,
+      "commentCount": 37856,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "7657419066",
+          "user": "亮亮宝宝-",
+          "likes": 22560,
+          "date": "2025-07-17 00:00",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "2019年慢半拍 2020年天外来物 2021年变废为宝 2022年关于你 2023年念 2024年守村人 2025年第一首歌跃 感谢聆听 承蒙关照 连续七年 生辰发歌 还是少年 初心未改"
+        },
+        {
+          "commentId": "7657437430",
+          "user": "钟意薛先生",
+          "likes": 17023,
+          "date": "2025-07-17 00:00",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "2019-7-17《慢半拍》 2020-7-17《天外来物》 2021-7-17《变废为宝》 2022-7-17《关于你》 2023-7-17《念》 2024-7-17《守村人》 2025-7-17《跃》"
+        },
+        {
+          "commentId": "7657462747",
+          "user": "顾渐",
+          "likes": 9277,
+          "date": "2025-07-17 00:06",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "在生日发布的歌主题和环境保护、海洋污染、核污水排放有关…他是最想世界和平的人啊[流泪][流泪][流泪]"
+        },
+        {
+          "commentId": "7657434562",
+          "user": "我想带你去看一场浪漫的爱情电影",
+          "likes": 6836,
+          "date": "2025-07-17 00:00",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "八年了我还在，生日快乐我最爱的人"
+        },
+        {
+          "commentId": "7657433753",
+          "user": "满可弟",
+          "likes": 5971,
+          "date": "2025-07-17 00:00",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "一直唱下去吧 需要你"
+        },
+        {
+          "commentId": "7657450318",
+          "user": "板栗山楂鹅",
+          "likes": 4099,
+          "date": "2025-07-17 00:00",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "哥生日快乐呀🎉 凌晨的惯例 好久没见了 最近的日子不太好过 虽然说要好好生活 但是还是很难过 好像被不断折磨抑郁 溺于深海 沉默抵抗 希望早点见面 要好好休息 会更好的 下次见啦"
+        },
+        {
+          "commentId": "7659007940",
+          "user": "碑海北wov-",
+          "likes": 3379,
+          "date": "2025-07-18 22:08",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "人类盖起了房子，就说动物是流浪的"
+        },
+        {
+          "commentId": "7658566647",
+          "user": "莫凡卍6",
+          "likes": 3030,
+          "date": "2025-07-18 12:18",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "尾奏的声音越来越大，新闻的声音越来越小，像是人类在试图掩饰自己的罪行"
+        },
+        {
+          "commentId": "7657469439",
+          "user": "SOLY-0717",
+          "likes": 2969,
+          "date": "2025-07-17 00:06",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "结尾部分致敬了迈克尔杰克逊HIStory的最后新闻报道部分 这是一首很伟大很有世界观的歌……世界和平的口号 他从来不是说说而已"
+        },
+        {
+          "commentId": "7658318035",
+          "user": "Lyh的收音机",
+          "likes": 2940,
+          "date": "2025-07-18 01:43",
+          "commentYear": 2025,
+          "yearsAfterRelease": 0,
+          "content": "那个不会腐朽的白色蜉蝣，是塑料袋吧…"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "7657419066",
+        "user": "亮亮宝宝-",
+        "likes": 22560,
+        "date": "2025-07-17 00:00",
+        "commentYear": 2025,
+        "yearsAfterRelease": 0,
+        "content": "2019年慢半拍 2020年天外来物 2021年变废为宝 2022年关于你 2023年念 2024年守村人 2025年第一首歌跃 感谢聆听 承蒙关照 连续七年 生辰发歌 还是少年 初心未改"
+      }
+    },
+    {
+      "song": "租购",
+      "album": "守村人",
+      "releaseYear": 2024,
+      "commentCount": 30502,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "7463302787",
+          "user": "定格思痛",
+          "likes": 41775,
+          "date": "2024-11-22 10:21",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "租的未必不漫长"
+        },
+        {
+          "commentId": "7463154799",
+          "user": "qu洗洗睡吧",
+          "likes": 24997,
+          "date": "2024-11-22 00:02",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "点了四巡都能抢到票🤓👉"
+        },
+        {
+          "commentId": "7463174533",
+          "user": "逾期不退",
+          "likes": 23634,
+          "date": "2024-11-22 00:17",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "“能给她一个不管多久都不会变动的家。”"
+        },
+        {
+          "commentId": "7463160517",
+          "user": "终是没入海底",
+          "likes": 12253,
+          "date": "2024-11-22 00:04",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "正式版的少了live的无奈的声嘶力竭，更多的是安逸，平静，听着更像是“他”已经找到了那个有她的温暖的家."
+        },
+        {
+          "commentId": "7467095572",
+          "user": "Paris__rain",
+          "likes": 11253,
+          "date": "2024-11-28 16:23",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "只剩钟表在流逝"
+        },
+        {
+          "commentId": "7463172396",
+          "user": "一盛",
+          "likes": 9928,
+          "date": "2024-11-22 00:15",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "爱情不是随意租来的华服，供一时虚荣炫耀 。而是用心购得的珍宝，用一生呵护珍藏。想了半天憋出这两句（虽然我是渣男不配这个句子[大哭]）"
+        },
+        {
+          "commentId": "7463742356",
+          "user": "小心漂亮女人熬-",
+          "likes": 9672,
+          "date": "2024-11-23 00:21",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "“即使我们不是情侣关系，我也害怕你爱上别人”"
+        },
+        {
+          "commentId": "7463147978",
+          "user": "不看月亮啦",
+          "likes": 8523,
+          "date": "2024-11-22 00:00",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "“不管租还是购，只要有你就足够”"
+        },
+        {
+          "commentId": "7471510006",
+          "user": "乐x丶x",
+          "likes": 7810,
+          "date": "2024-12-03 00:48",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "余华老师说:“人和人交往还是少说话，克制表达欲，平静温和就行，不自卑也别炫耀。别为了获得共鸣，讲起过往没完没了。无意间表现的品质，被对方发现才更招人喜欢，胜过千言万语。仔细想想，你哪次滔滔不绝后，带来的不是悔恨。\""
+        },
+        {
+          "commentId": "7463370430",
+          "user": "H-7ug",
+          "likes": 7428,
+          "date": "2024-11-22 13:07",
+          "commentYear": 2024,
+          "yearsAfterRelease": 0,
+          "content": "单数继续爱，双数就放弃"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "7463302787",
+        "user": "定格思痛",
+        "likes": 41775,
+        "date": "2024-11-22 10:21",
+        "commentYear": 2024,
+        "yearsAfterRelease": 0,
+        "content": "租的未必不漫长"
+      }
+    },
+    {
+      "song": "花儿和少年",
+      "album": "初学者",
+      "releaseYear": 2016,
+      "commentCount": 26851,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "184436815",
+          "user": "一梦千百度",
+          "likes": 70308,
+          "date": "2016-07-18 07:03",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "老薛昨天叫我们不要买数字专辑，我还以为要钱，钱都准备好了，一点进去，还是免费，我真的从未这么舍得用钱听音乐，老薛，你傻，对于你，我们不差钱…"
+        },
+        {
+          "commentId": "185270375",
+          "user": "曰天君",
+          "likes": 47828,
+          "date": "2016-07-19 13:16",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦拒绝了你的钱并扔给你几首新歌。"
+        },
+        {
+          "commentId": "184380948",
+          "user": "云游的蒼吉措",
+          "likes": 25214,
+          "date": "2016-07-18 00:02",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "“还懵懂的 花儿和少年，眉梢眼角带电 近情情怯，花儿长发披肩 少年似同学。”意气风发的少年，翩翩公子的薛之谦。感谢你的音乐，让我遇见你，和你一起成长。"
+        },
+        {
+          "commentId": "184402543",
+          "user": "阿芜-",
+          "likes": 20156,
+          "date": "2016-07-18 00:46",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "他还是十年前那个戴着发带笑得像花儿一样的少年。拿着一把吉他就敢上台唱歌的少年[爱心]"
+        },
+        {
+          "commentId": "184432408",
+          "user": "西污EI",
+          "likes": 13223,
+          "date": "2016-07-18 00:45",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "说不出什么专业的评价，但我想说薛之谦的一句对歌的保质保量让我深信不疑，这首花儿和少年真的是在单曲循环…放到最大声耳朵都很舒服的那种…有故事的少年…希望我说的爱你也让你深信不疑…薛之谦加油，音乐界顶端，我仰望你…"
+        },
+        {
+          "commentId": "184603375",
+          "user": "悠悠粉红小翅膀",
+          "likes": 7815,
+          "date": "2016-07-18 13:36",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "音乐是R&B风格，背景音乐中有一个像玻璃弹珠掉落，又像是一扇古旧的木门被打开的声音，歌词描写的心境和薛很符合，有种时过境迁的感觉，经历了许多之后，回想起曾经简单美好的高清，口吻很平静。这么好首歌，一如既往的耐听，很轻柔，单曲循环好多遍依然没听够，等在听出了新的意义再来评论。"
+        },
+        {
+          "commentId": "184718208",
+          "user": "Amazing的何先生",
+          "likes": 5326,
+          "date": "2016-07-18 17:27",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "主歌几个离调音，铺垫略带忧伤的情绪。到副歌的五声音阶，简单却又很抓耳。估计这首歌应该有个中国风的编曲版本，被out的原因估计是考虑到太普通，旋律跟编曲的感觉重复了。现在这个爵士味道的编曲和旋律相称起来倒是另有一番味道，情绪很到位。好了。提醒自己逼装到这里适可而止。这首歌适合看歌词听"
+        },
+        {
+          "commentId": "184758088",
+          "user": "kevenshen",
+          "likes": 4990,
+          "date": "2016-07-18 17:32",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "上一个能把一张专辑的歌都做的很好听的。是十年前的周杰伦……"
+        },
+        {
+          "commentId": "184969275",
+          "user": "人生就像个花",
+          "likes": 3581,
+          "date": "2016-07-19 01:49",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "有人说 薛之谦火了之后 做歌不用心了 没有感情了 我没有不理智的反驳他 这是他的问题 因为他没有故事 听不出这歌中的感情 不是所有人都懂薛之谦 我自认问心无愧 这感情 我们懂 便足够了..."
+        },
+        {
+          "commentId": "185341413",
+          "user": "德国大美",
+          "likes": 2776,
+          "date": "2016-07-19 16:01",
+          "commentYear": 2016,
+          "yearsAfterRelease": 0,
+          "content": "薛早就说过为了避免一张专辑大家只听主打歌而忽略其他好歌，所以这次他要一首首出！一首首打！就是要在专辑出来前让大家都先听到里面的歌，好听再去买。之前出了EP的时候都拼命叫大家不要买，等十首全出来的时候再买，现在整张数字专辑都免费的了，你们还要他怎样！[怒]"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "184436815",
+        "user": "一梦千百度",
+        "likes": 70308,
+        "date": "2016-07-18 07:03",
+        "commentYear": 2016,
+        "yearsAfterRelease": 0,
+        "content": "老薛昨天叫我们不要买数字专辑，我还以为要钱，钱都准备好了，一点进去，还是免费，我真的从未这么舍得用钱听音乐，老薛，你傻，对于你，我们不差钱…"
+      }
+    },
+    {
+      "song": "银河少年",
+      "album": "守村人",
+      "releaseYear": 2023,
+      "commentCount": 23343,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 10,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [
+        {
+          "commentId": "5831516098",
+          "user": "_紅妝掩幼稚",
+          "likes": 8674,
+          "date": "2023-01-11 00:02",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "“有人说我们这个时代本是由周杰伦陪着的。 有的人走得快一点，遇见了陈奕迅。有的人不经意间回头，看见了张国荣。我停了好久， 遇见了正在奔跑的薛之谦。”"
+        },
+        {
+          "commentId": "5831511206",
+          "user": "-漫游银河-",
+          "likes": 5544,
+          "date": "2023-01-11 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "薛之谦！不是姐姐不爱你[流泪][心碎]因为我是农村的🌾一年的收入只能养活自己💰[流泪]哪里还能顾得上你[流泪][流泪]我要为你去奋斗✊🏻再苦再累不回头🤕只要你耐心把我来等候❤️😌总有一天会出头👍🏻等我搬到城里去🏬开着大奔来接你🚘👧🏻到那个时候把你搂在怀里💞🤗再叫一声亲爱的❤️[色]"
+        },
+        {
+          "commentId": "5831523723",
+          "user": "Edric-ZH",
+          "likes": 2579,
+          "date": "2023-01-11 00:07",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "老薛真的很好有心啊[流泪]整首歌几乎就是为了展现王的声线，两段副歌都是王来唱，最后一段副歌大部分也是唱的和声[流泪]对有才华的人老薛从来不吝啬"
+        },
+        {
+          "commentId": "5831509248",
+          "user": "心事以海之名",
+          "likes": 2465,
+          "date": "2023-01-11 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "「其实等字很浪漫」 时隔四月 终于等到了新歌 薛之谦 王啸坤 银河少年 二〇二三 感谢聆听"
+        },
+        {
+          "commentId": "5831509989",
+          "user": "初鹿野城",
+          "likes": 2278,
+          "date": "2023-01-11 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "浩渺宇宙，星云缭绕，对峙孤独，奋力张望，不愿妥协的信念，为黑夜亮起微光."
+        },
+        {
+          "commentId": "5831553941",
+          "user": "小蝴蝶_cc",
+          "likes": 2163,
+          "date": "2023-01-11 00:32",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "觉得王唱的是意气风发，拯救世界的少年，谦谦唱的是经过岁月沉淀，但是仍然坚守自己初心的那种韧性，一个是最初的少年，一个是坚持初心的少年。"
+        },
+        {
+          "commentId": "5831557421",
+          "user": "对风说不想被左右_J",
+          "likes": 1888,
+          "date": "2023-01-11 00:39",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "有不认识王啸坤的吗，我来科普下。2006年，王啸坤获得东方卫视《我型我秀》全国总冠军并以此作为歌手出道。2007年4月30日，发行首张个人同名专辑《王啸坤》。他和老薛同样参加了我型我秀，为音乐梦想而努力，所以老薛知道他的不容易，这首歌的歌名也像当时的他们一样，是两个有音乐梦想的银河少年……"
+        },
+        {
+          "commentId": "5831513224",
+          "user": "-TANGB",
+          "likes": 1611,
+          "date": "2023-01-11 00:01",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "其实等字是个浪漫的词"
+        },
+        {
+          "commentId": "5831519860",
+          "user": "我是冷脸懵",
+          "likes": 1335,
+          "date": "2023-01-11 00:01",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "有多少人守着0点等新歌"
+        },
+        {
+          "commentId": "5831514806",
+          "user": "weejetty_Zealot",
+          "likes": 895,
+          "date": "2023-01-11 00:00",
+          "commentYear": 2023,
+          "yearsAfterRelease": 0,
+          "content": "穿梭在银河里的少年 未来感满满 两人适配度拉满了 老薛出品 必属精品！！！！"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5831516098",
+        "user": "_紅妝掩幼稚",
+        "likes": 8674,
+        "date": "2023-01-11 00:02",
+        "commentYear": 2023,
+        "yearsAfterRelease": 0,
+        "content": "“有人说我们这个时代本是由周杰伦陪着的。 有的人走得快一点，遇见了陈奕迅。有的人不经意间回头，看见了张国荣。我停了好久， 遇见了正在奔跑的薛之谦。”"
+      }
+    }
+  ]
+}

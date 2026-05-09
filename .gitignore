@@ -1,0 +1,10 @@
+﻿# local runtime / scratch
+.omx/
+.tmp/
+__pycache__/
+*.pyc
+.tmp-*
+
+# OS / editor
+.DS_Store
+Thumbs.db
