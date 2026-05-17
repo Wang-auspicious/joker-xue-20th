@@ -7,32 +7,17 @@
   <script async src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700;900&display=swap');
-    :root{
-      --paper:#F4EFE6; --ink:#2E261F; --muted:#6C6258;
-      --serif:'Noto Serif SC','Source Han Serif SC','Songti SC',serif;
-      --latin:'Cormorant Garamond',Georgia,serif;
-      --mono:'DM Mono','SFMono-Regular',Consolas,monospace;
-    }
+    :root{--paper:#E8E1D2;--ink:#2A211B;--serif:'Noto Serif SC','Source Han Serif SC','Songti SC',serif;--latin:'Cormorant Garamond',Georgia,serif;--mono:'DM Mono','SFMono-Regular',Consolas,monospace}
     html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--paper);color:var(--ink)}
-    body{display:grid;place-items:center}
-    svg{width:100vw;height:100vh;display:block;background:var(--paper)}
-    text{font-family:var(--serif)}
-    .title{font-size:50px;font-weight:900;letter-spacing:2px;fill:#2E261F}
-    .en{font:700 14px var(--latin);letter-spacing:1.45px;text-transform:uppercase;fill:#625346}
-    .sub{font-size:25px;font-weight:700;fill:#4A3B31}.small{font:400 10px var(--mono);fill:#7A6D62}
-    .grid{stroke:rgba(90,75,60,.055);stroke-width:1}.year-line{stroke:rgba(90,75,60,.10);stroke-width:1;stroke-dasharray:2 7}
-    .layer{mix-blend-mode:multiply;cursor:pointer;transition:opacity .16s ease}.layer.dim{opacity:.16!important}.layer.hot{opacity:.94!important}
-    .layer-edge{fill:none;stroke:rgba(63,49,40,.25);stroke-width:.9;pointer-events:none}.outer-edge{fill:none;stroke:rgba(62,48,39,.43);stroke-width:1.35}
-    .guide{stroke:rgba(70,55,45,.34);stroke-width:1;stroke-dasharray:3 4;fill:none}.guide.soft{stroke:rgba(70,55,45,.18)}
-    .node{transition:opacity .16s ease,filter .16s ease}.node.dim{opacity:.18}.node.hot{filter:drop-shadow(0 2px 3px rgba(75,55,40,.14))}
-    .node-title{font-size:13px;font-weight:800;fill:#382E27}.node-sub{font-size:10px;fill:#6E6258}.node-data{font:800 10px var(--mono);fill:#9B3F37}
-    .pill-title{font-size:13px;font-weight:900;fill:#FAF0E5}.pill-sub{font:600 10px var(--mono);fill:#F8E8DB}
-    .axis{stroke:#8D7565;stroke-width:1.25}.axis-early{stroke:rgba(141,117,101,.36);stroke-width:1.25;stroke-dasharray:6 6}
-    .year{font:600 12px var(--latin);fill:#5F5147}.axis-note{font-size:12px;font-weight:800;fill:#6D5B50}.axis-sub{font:400 11px var(--mono);fill:#8C7D70}
-    .note-title{font-size:15px;font-weight:900;fill:#3C3027}.note-body{font-size:12px;fill:#6C6258}.note-key{font:600 10px var(--mono);fill:#8C7769}
-    .legend-cn{font-size:11px;font-weight:800;fill:#3D332C}.legend-en{font:600 8px var(--latin);letter-spacing:.55px;fill:#776B61}
-    .source{font:400 9px var(--mono);fill:#8E8378}.tip{position:fixed;z-index:20;width:266px;padding:10px 12px;border:1px solid rgba(74,59,49,.32);background:rgba(250,246,238,.97);box-shadow:0 8px 20px rgba(55,40,28,.1);font:12px/1.55 var(--serif);color:#3B3028;pointer-events:none;opacity:0;transform:translate(12px,12px)}
-    .tip b{display:block;font-size:14px;margin-bottom:2px}.tip .meta{font:700 10px var(--mono);color:#8B493D;margin-bottom:3px}
+    body{display:grid;place-items:center}svg{width:100vw;height:100vh;display:block;background:var(--paper)}text{font-family:var(--serif)}
+    .title{font-size:50px;font-weight:900;letter-spacing:2px;fill:#211A15}.en{font:700 14px var(--latin);letter-spacing:1.4px;text-transform:uppercase;fill:#5A4B40}.sub{font-size:25px;font-weight:800;fill:#3E3028}.small{font:400 10px var(--mono);fill:#817468}
+    .grid{stroke:rgba(90,75,60,.052);stroke-width:1}.year-line{stroke:rgba(63,51,43,.20);stroke-width:1;stroke-dasharray:7 8}.node-year{stroke:rgba(63,51,43,.24);stroke-width:1;stroke-dasharray:3 4}
+    .layer{cursor:pointer;transition:opacity .16s ease}.layer.dim,.texture.dim{opacity:.16!important}.layer.hot{opacity:1!important}.separator{fill:none;stroke:rgba(83,62,48,.26);stroke-width:1}.outer{fill:none;stroke:rgba(64,49,39,.42);stroke-width:1.15}
+    .guide{stroke:rgba(64,49,39,.38);stroke-width:1;stroke-dasharray:3 4;fill:none}.guide.solid{stroke-dasharray:none;stroke:rgba(64,49,39,.18)}.dot{stroke:#EFE7DA;stroke-width:1.2}
+    .node{transition:opacity .16s ease,filter .16s ease}.node.dim{opacity:.20}.node.hot{filter:drop-shadow(0 2px 3px rgba(55,40,28,.16))}.node-title{font-size:13px;font-weight:900;fill:#342720}.node-sub{font-size:10px;fill:#75685D}.node-data{font:800 10px var(--mono);fill:#8D312B}
+    .tag-text{font-size:13px;font-weight:900;fill:#FFF3E7}.tag-sub{font:700 10px var(--mono);fill:#F6DFD0}.axis{stroke:#8D7565;stroke-width:1.25}.year{font:700 12px var(--latin);fill:#51463F}.axis-note{font-size:12px;font-weight:900;fill:#6B5A4F}.axis-sub{font:400 11px var(--mono);fill:#8B7D72}
+    .note-title{font-size:15px;font-weight:900;fill:#3C3027}.note-body{font-size:12px;fill:#6C6258}.note-key{font:600 10px var(--mono);fill:#8C7769}.legend-cn{font-size:11px;font-weight:900;fill:#382E27}.legend-en{font:700 8px var(--latin);letter-spacing:.55px;fill:#6F635A}.source{font:400 9px var(--mono);fill:#8E8378}
+    .tip{position:fixed;z-index:20;width:266px;padding:10px 12px;border:1px solid rgba(74,59,49,.32);background:rgba(246,239,227,.97);box-shadow:0 8px 20px rgba(55,40,28,.1);font:12px/1.55 var(--serif);color:#3B3028;pointer-events:none;opacity:0;transform:translate(12px,12px)}.tip b{display:block;font-size:14px;margin-bottom:2px}.tip .meta{font:700 10px var(--mono);color:#8B493D;margin-bottom:3px}
   </style>
 </head>
 <body>
@@ -41,132 +26,105 @@
 <script>
 (() => {
   const NS='http://www.w3.org/2000/svg', svg=document.getElementById('river'), tip=document.getElementById('tip');
-  const W=1920,H=1080, x=year=>90+(year-2006)/20*1720, fmt=n=>n>=10000?(n/10000).toFixed(n>=1000000?1:0)+'万':String(n);
+  const W=1920,H=1080, x=year=>90+(year-2013)/13*1720, fmt=n=>n>=10000?(n/10000).toFixed(n>=1000000?1:0)+'万':String(n);
   const layers=[
-    {id:'ritual',   cn:'打卡仪式', en:'Ritual',    c:'#D8A24B', dark:'#8F5B27', note:'低信息短评、生日祝福、0 点蹲守构成的在场证明。'},
-    {id:'narrative',cn:'主观叙事', en:'Narrative', c:'#C87363', dark:'#8C3F34', note:'一人称、故事化长评和主观评价在 2017—2018 形成厚层。'},
-    {id:'identity', cn:'身份认同', en:'Identity',  c:'#B8896A', dark:'#7B5846', note:'把评论区当作“我们仍在”的群体身份场。'},
-    {id:'memory',   cn:'记忆释怀', en:'Memory',    c:'#879A80', dark:'#5A715C', note:'错过、遗憾、当年与现在，把歌曲变成个人记忆档案。'},
-    {id:'night',    cn:'深夜长评', en:'Night',     c:'#68749D', dark:'#454D75', note:'凌晨 1—5 点更长、更主观；2023 年深夜率最高。'}
+    {id:'identity', cn:'身份认同', en:'Identity',  fill:'#F0DBD8', stroke:'#B47A78', pattern:'dots',  dark:'#8F3B34', note:'《无数》《跃》附近更突出，把评论区变成“我仍在这里”的身份场。'},
+    {id:'narrative',cn:'主观叙事', en:'Narrative', fill:'#E6A39D', stroke:'#C17973', pattern:'fine',  dark:'#8F3B34', note:'主观性、平均字数和故事化表达在 2017—2018 达到高位。'},
+    {id:'ritual',   cn:'仪式打卡', en:'Ritual',    fill:'#C96341', stroke:'#9B4B32', pattern:'stripe',dark:'#8C2D24', note:'低信息短评、生日祝福与 0 点蹲守，作为平台在场证明。'},
+    {id:'memory',   cn:'记忆释怀', en:'Memory',    fill:'#A7B5A7', stroke:'#748371', pattern:'grain', dark:'#536653', note:'语境复杂度、情感释怀和记忆存档共同形成的慢层。'},
+    {id:'night',    cn:'深夜长评', en:'Night',     fill:'#727B9F', stroke:'#545D84', pattern:'cross', dark:'#404873', note:'深夜率和长评率叠加，2023 年后底层明显变厚。'}
   ];
-  const layerMap=new Map(layers.map(d=>[d.id,d]));
-  const knots=[
-    {y:2006.0,c:520,h:6,  p:[.19,.22,.19,.20,.20]},
-    {y:2008.0,c:518,h:18, p:[.18,.22,.19,.21,.20]},
-    {y:2010.0,c:512,h:42, p:[.17,.23,.18,.21,.21]},
-    {y:2012.0,c:508,h:72, p:[.17,.24,.17,.21,.21]},
-    {y:2014.0,c:504,h:118,p:[.16,.25,.16,.21,.22]},
-    {y:2015.8,c:497,h:178,p:[.15,.27,.15,.20,.23]},
-    {y:2017.1,c:502,h:340,p:[.15,.31,.15,.17,.22]},
-    {y:2018.2,c:506,h:425,p:[.15,.32,.15,.16,.22]},
-    {y:2019.4,c:520,h:374,p:[.23,.24,.16,.17,.20]},
-    {y:2020.5,c:516,h:448,p:[.22,.22,.17,.17,.22]},
-    {y:2021.6,c:526,h:358,p:[.20,.23,.21,.18,.18]},
-    {y:2022.7,c:538,h:380,p:[.22,.20,.21,.16,.21]},
-    {y:2023.5,c:548,h:405,p:[.24,.18,.20,.14,.24]},
-    {y:2024.5,c:536,h:328,p:[.20,.20,.22,.18,.20]},
-    {y:2025.35,c:522,h:212,p:[.16,.19,.30,.17,.18]},
-    {y:2026.0,c:516,h:92, p:[.15,.19,.27,.18,.21]}
+  const data=[
+    {year:2013,n:114,low:.0789,zero:.0351,deep:.1053,long:.0614,subj:.3205,ctx:.0241,len:23.38,emo:.117,id:.10},
+    {year:2014,n:1311,low:.0625,zero:.0587,deep:.1289,long:.0252,subj:.2949,ctx:.0423,len:20.54,emo:.068,id:.10},
+    {year:2015,n:77187,low:.0617,zero:.0634,deep:.1301,long:.0286,subj:.3679,ctx:.0679,len:30.77,emo:.077,id:.14},
+    {year:2016,n:919320,low:.0651,zero:.1015,deep:.1791,long:.0307,subj:.4137,ctx:.0812,len:38.73,emo:.074,id:.20},
+    {year:2017,n:1874253,low:.0618,zero:.1305,deep:.2116,long:.0467,subj:.4831,ctx:.1027,len:48.57,emo:.062,id:.32},
+    {year:2018,n:1053659,low:.0675,zero:.1021,deep:.1833,long:.0495,subj:.4925,ctx:.1035,len:48.67,emo:.073,id:.28},
+    {year:2019,n:1431460,low:.1087,zero:.1917,deep:.2775,long:.0362,subj:.4532,ctx:.1045,len:40.34,emo:.099,id:.26},
+    {year:2020,n:1845852,low:.0829,zero:.1508,deep:.2303,long:.0321,subj:.4372,ctx:.0935,len:38.36,emo:.103,id:.30},
+    {year:2021,n:782993,low:.1268,zero:.1717,deep:.2691,long:.0337,subj:.4296,ctx:.1003,len:37.42,emo:.115,id:.78},
+    {year:2022,n:779940,low:.1134,zero:.1896,deep:.2936,long:.0358,subj:.4376,ctx:.0977,len:37.98,emo:.109,id:.50},
+    {year:2023,n:654208,low:.1147,zero:.2683,deep:.3646,long:.0325,subj:.4063,ctx:.1007,len:37.18,emo:.114,id:.46},
+    {year:2024,n:499609,low:.1313,zero:.2157,deep:.3187,long:.0464,subj:.4067,ctx:.0944,len:37.42,emo:.101,id:.42},
+    {year:2025,n:778412,low:.1157,zero:.1495,deep:.2701,long:.0293,subj:.3317,ctx:.0644,len:30.38,emo:.075,id:.90},
+    {year:2026,n:227078,low:.1809,zero:.1493,deep:.2714,long:.0335,subj:.3457,ctx:.0696,len:32.85,emo:.063,id:.54}
   ];
-  const albums={
-    '意外':{year:2013.86,date:'2013',comments:1123502,tag:'主观性 .500',flow:'narrative'},
-    '初学者':{year:2016.43,date:'2016',comments:857755,tag:'评论洪峰前夜',flow:'narrative'},
-    '渡':{year:2017.84,date:'2017',comments:1842233,tag:'184.2万评论',flow:'narrative'},
-    '尘':{year:2019.49,date:'2019',comments:1289563,tag:'语境 .106',flow:'memory'},
-    '天外来物':{year:2020.54,date:'2020',comments:1545967,tag:'154.6万评论',flow:'ritual'},
-    '守村人':{year:2023.46,date:'2023',comments:698913,tag:'深夜46.13%',flow:'night'},
-    '跃':{year:2025.54,date:'2025',comments:778412,tag:'身份认同',flow:'identity'}
-  };
-  function E(tag, attrs={}, parent=svg){const el=document.createElementNS(NS,tag); for(const [k,v] of Object.entries(attrs)){ if(k==='text')el.textContent=v; else if(k==='className')el.setAttribute('class',v); else el.setAttribute(k,v);} parent.appendChild(el); return el;}
-  function G(attrs={}, parent=svg){return E('g',attrs,parent)}
-  function T(parent,text,x,y,cls,attrs={}){return E('text',{x,y,className:cls,text,...attrs},parent)}
-  function curve(points, move=true){ if(!points.length)return ''; let d=(move?'M':'L')+points[0].x.toFixed(1)+','+points[0].y.toFixed(1); for(let i=0;i<points.length-1;i++){ const p0=points[i-1]||points[i],p1=points[i],p2=points[i+1],p3=points[i+2]||p2; const c1={x:p1.x+(p2.x-p0.x)/6,y:p1.y+(p2.y-p0.y)/6}; const c2={x:p2.x-(p3.x-p1.x)/6,y:p2.y-(p3.y-p1.y)/6}; d+=' C'+c1.x.toFixed(1)+','+c1.y.toFixed(1)+' '+c2.x.toFixed(1)+','+c2.y.toFixed(1)+' '+p2.x.toFixed(1)+','+p2.y.toFixed(1);} return d; }
-  const areaPath=(top,bottom)=>curve(top,true)+curve([...bottom].reverse(),false)+' Z';
-  const linePath=points=>curve(points,true);
-  function between(a,b,t){return a+(b-a)*t}
-  function stateAt(year){
-    let a=knots[0],b=knots[knots.length-1];
-    for(let i=0;i<knots.length-1;i++){ if(year>=knots[i].y && year<=knots[i+1].y){a=knots[i];b=knots[i+1];break;} }
-    const t=(year-a.y)/(b.y-a.y||1); const p=a.p.map((v,i)=>between(v,b.p[i],t)); const sum=p.reduce((s,v)=>s+v,0);
-    return {year, x:x(year), c:between(a.c,b.c,t), h:between(a.h,b.h,t), p:p.map(v=>v/sum)};
-  }
-  function bandsAt(year){ const s=stateAt(year); let y0=s.c-s.h/2; const bands=[]; for(let i=0;i<layers.length;i++){ const h=s.h*s.p[i]; bands.push({id:layers[i].id,x:s.x,year,top:y0,bottom:y0+h,mid:y0+h/2,total:s.h}); y0+=h; } return bands; }
-  function bandCenter(id,year){return bandsAt(year).find(b=>b.id===id).mid}
-  function outerAt(year){const s=stateAt(year); return {top:s.c-s.h/2,bottom:s.c+s.h/2,mid:s.c,x:s.x,h:s.h}}
-
-  const defs=E('defs');
-  const noise=E('filter',{id:'paperNoise',x:0,y:0,width:'100%',height:'100%'},defs);
-  E('feTurbulence',{type:'fractalNoise',baseFrequency:'.86',numOctaves:3,seed:17},noise); E('feColorMatrix',{type:'saturate',values:0},noise);
-  layers.forEach(l=>{const grad=E('linearGradient',{id:'g-'+l.id,x1:0,y1:0,x2:1,y2:0},defs); E('stop',{offset:'0%','stop-color':l.c,'stop-opacity':.62},grad); E('stop',{offset:'42%','stop-color':l.c,'stop-opacity':.88},grad); E('stop',{offset:'100%','stop-color':l.c,'stop-opacity':.58},grad);});
-  const coverGrad=E('linearGradient',{id:'coverPaper',x1:0,y1:0,x2:1,y2:1},defs); E('stop',{offset:'0%','stop-color':'#E8DED2'},coverGrad); E('stop',{offset:'62%','stop-color':'#CBBBAA'},coverGrad); E('stop',{offset:'100%','stop-color':'#F6EFE5'},coverGrad);
-
-  E('rect',{width:W,height:H,fill:'#F4EFE6'}); E('rect',{width:W,height:H,filter:'url(#paperNoise)',opacity:.035});
-  for(let y=0;y<=H;y+=40)E('line',{className:'grid',x1:0,x2:W,y1:y,y2:y});
-  for(let yr=2006;yr<=2026;yr+=2)E('line',{className:'year-line',x1:x(yr),x2:x(yr),y1:190,y2:920});
-
-  const mast=G();
-  T(mast,'薛之谦评论文化河流图',70,73,'title');
-  T(mast,'Comment Culture River Map',72,105,'en');
-  T(mast,'从听歌反馈，到五维评论文化的沉积',72,148,'sub');
-  E('path',{d:'M74,171 C105,162 136,179 168,169 C199,160 222,170 252,166',fill:'none',stroke:'#B88D78','stroke-width':4,opacity:.55},mast);
-  T(mast,'v3 secondary cleaning · 10,925,396 comments · comment data 2013—2026',72,190,'small');
-
-  const note=G({transform:'translate(1380,70)'});
-  T(note,'这张图怎么看',0,0,'note-title');
-  const noteLines=['外轮廓是评论总水位：前后收窄，中段因作品节点和平台行为扩张。','五种颜色不是五条平行河，而是同一条评论母河里的沉积层；它们共享入口，并在高峰期互相压叠。','起伏不是装饰：变宽表示该时期文化机制变强，弯折表示发布、蹲守、深夜化等事件造成转向。'];
-  noteLines.forEach((t,i)=>T(note,t,0,30+i*22,'note-body'));
-  T(note,'outer width = total comments · inner bands = cultural mechanisms',0,108,'note-key');
-
-  const samples=[]; for(let yr=2006; yr<=2026.0001; yr+=0.25)samples.push(+yr.toFixed(2)); knots.forEach(k=>samples.push(k.y)); samples.sort((a,b)=>a-b);
-  const uniq=[...new Set(samples.map(v=>v.toFixed(2)))].map(Number);
-  const allBands=uniq.map(bandsAt), outer=uniq.map(outerAt);
-  const top=outer.map(d=>({x:d.x,y:d.top})), bottom=outer.map(d=>({x:d.x,y:d.bottom}));
-  const outerD=areaPath(top,bottom);
-  const clip=E('clipPath',{id:'riverClip'},defs); E('path',{d:outerD},clip);
-
-  const flowG=G({id:'flows'}), guideG=G({id:'guides'}), nodeG=G({id:'nodes'});
-  layers.forEach((l,idx)=>{
-    const upper=[],lower=[];
-    allBands.forEach(bands=>{const b=bands[idx], extra=Math.min(18,Math.max(5,b.total*.05)); upper.push({x:b.x,y:b.top-extra}); lower.push({x:b.x,y:b.bottom+extra});});
-    const p=E('path',{className:'layer',id:'layer-'+l.id,d:areaPath(upper,lower),fill:'url(#g-'+l.id+')',opacity:.78,'clip-path':'url(#riverClip)'},flowG);
-    p.dataset.flow=l.id; p.addEventListener('mouseenter',()=>hot(l.id)); p.addEventListener('mouseleave',()=>{if(!locked)clearHot();});
-    const edge=allBands.map(b=>({x:b[idx].x,y:b[idx].bottom}));
-    if(idx<layers.length-1)E('path',{className:'layer-edge',d:linePath(edge)},flowG);
+  const maxN=Math.max(...data.map(d=>d.n));
+  data.forEach(d=>{
+    const q=Math.sqrt(d.n/maxN);
+    d.identity=q*(.28+1.08*d.id);
+    d.narrative=q*(.18+1.18*d.subj+.013*d.len);
+    d.ritual=q*(.35+1.85*d.low+1.25*d.zero);
+    d.memory=q*(.24+2.85*d.ctx+.55*Math.max(d.emo,0));
+    d.night=q*(.18+1.55*d.deep+4.6*d.long);
   });
-  E('path',{className:'outer-edge',d:linePath(top)},flowG); E('path',{className:'outer-edge',d:linePath(bottom)},flowG);
-  E('text',{x:118,y:501,'font-size':12,'font-weight':800,fill:'#6A5C52',text:'同源入口'}); T(svg,'feedback begins',118,520,'small');
-
-  function guide(cx,y1,y2,soft=false){E('line',{className:soft?'guide soft':'guide',x1:cx,x2:cx,y1,y2},guideG)}
-  function dot(cx,cy,c){E('circle',{cx,cy,r:3.8,fill:c,stroke:'#F7EFE4','stroke-width':1.2},guideG)}
-  function cover(g,name,color){E('rect',{width:50,height:50,fill:'url(#coverPaper)',stroke:'#8A7667','stroke-width':.9},g); E('rect',{x:5,y:5,width:40,height:40,fill:color,opacity:.18},g); E('path',{d:'M6,42 C17,28 29,36 44,10',stroke:color,'stroke-width':2.2,fill:'none',opacity:.62},g); T(g,name.slice(0,2),25,31,'',{'text-anchor':'middle','font-size':18,'font-weight':900,fill:'#3A3028'});}
-  function showTip(e,d){tip.innerHTML='<b>'+d.title+'</b><div class="meta">'+(d.meta||'')+'</div><div>'+(d.data||'')+'</div><div style="margin-top:4px;color:#67584d">'+(d.note||'')+'</div>'; tip.style.opacity=1; tip.style.left=e.clientX+'px'; tip.style.top=e.clientY+'px';}
-  function bind(g,d){g.dataset.flow=d.flow; g.classList.add('node'); g.style.cursor='pointer'; g.addEventListener('mouseenter',e=>{hot(d.flow);showTip(e,d)}); g.addEventListener('mousemove',e=>showTip(e,d)); g.addEventListener('mouseleave',()=>{if(!locked){tip.style.opacity=0;clearHot();}}); g.addEventListener('click',e=>{e.stopPropagation(); locked=locked===d.id?null:d.id; if(!locked){clearHot();return;} hot(d.flow); showTip(e,d);});}
-  let locked=null; svg.addEventListener('click',()=>{locked=null;clearHot();tip.style.opacity=0;});
-  function hot(id){document.querySelectorAll('.layer').forEach(el=>{el.classList.toggle('dim',el.dataset.flow!==id); el.classList.toggle('hot',el.dataset.flow===id);}); document.querySelectorAll('.node').forEach(el=>{el.classList.toggle('dim',el.dataset.flow!==id); el.classList.toggle('hot',el.dataset.flow===id);});}
-  function clearHot(){document.querySelectorAll('.layer,.node').forEach(el=>{el.classList.remove('dim','hot');});}
-  function albumNode(name,yPos,side='top'){
-    const a=albums[name], l=layerMap.get(a.flow), cx=x(a.year), cy=bandCenter(a.flow,a.year), g=G({transform:'translate('+(cx-25)+','+yPos+')'},nodeG);
-    guide(cx,side==='top'?yPos+54:yPos,cy); guide(cx,cy,920,true); dot(cx,cy,l.c); bind(g,{id:'album-'+name,flow:a.flow,title:'《'+name+'》',meta:a.date+' · 专辑节点',data:fmt(a.comments)+'评论 · '+a.tag,note:'作品节点解释这段评论母河为什么变宽或转向。'});
-    cover(g,name,l.c); T(g,'《'+name+'》',60,14,'node-title'); T(g,a.date+' AD · 专辑',60,32,'node-sub'); T(g,a.tag,60,49,'node-data');
+  const rawMax=Math.max(...data.map(d=>layers.reduce((s,l)=>s+d[l.id],0))), px=430/rawMax;
+  const values=layers.map(l=>data.map(d=>d[l.id]*px));
+  const baseline=wiggle(values), stacks=layers.map((l,i)=>data.map((d,j)=>{let y0=baseline[j]; for(let k=0;k<i;k++)y0+=values[k][j]; return {year:d.year,x:x(d.year),y0,y1:y0+values[i][j],v:values[i][j],raw:d[l.id]};}));
+  const allY=stacks.flatMap(s=>s.flatMap(p=>[p.y0,p.y1])), shift=532-(Math.min(...allY)+Math.max(...allY))/2;
+  stacks.forEach(s=>s.forEach(p=>{p.y0+=shift;p.y1+=shift;p.mid=(p.y0+p.y1)/2;}));
+  function wiggle(vals){
+    const n=vals.length,m=vals[0].length,b=Array(m).fill(0);
+    for(let j=1;j<m;j++){let s1=0,weighted=0; for(let i=0;i<n;i++){const v=vals[i][j], dv=v-vals[i][j-1]; let above=0; for(let k=0;k<i;k++)above+=vals[k][j]-vals[k][j-1]; weighted+=(above+dv/2)*v; s1+=v;} b[j]=b[j-1]-(s1?weighted/s1:0);} return b;
   }
-  albumNode('意外',176,'top'); albumNode('渡',132,'top'); albumNode('天外来物',218,'top'); albumNode('跃',190,'top');
-  albumNode('初学者',800,'bottom'); albumNode('守村人',804,'bottom');
+  function E(tag,attrs={},parent=svg){const el=document.createElementNS(NS,tag); for(const [k,v] of Object.entries(attrs)){ if(k==='text')el.textContent=v; else if(k==='className')el.setAttribute('class',v); else el.setAttribute(k,v);} parent.appendChild(el); return el;}
+  function G(attrs={},parent=svg){return E('g',attrs,parent)} function T(parent,text,x,y,cls,attrs={}){return E('text',{x,y,className:cls,text,...attrs},parent)}
+  function curve(points,move=true){let d=(move?'M':'L')+points[0].x.toFixed(1)+','+points[0].y.toFixed(1); for(let i=0;i<points.length-1;i++){const p0=points[i-1]||points[i],p1=points[i],p2=points[i+1],p3=points[i+2]||p2,c1={x:p1.x+(p2.x-p0.x)/6,y:p1.y+(p2.y-p0.y)/6},c2={x:p2.x-(p3.x-p1.x)/6,y:p2.y-(p3.y-p1.y)/6}; d+=' C'+c1.x.toFixed(1)+','+c1.y.toFixed(1)+' '+c2.x.toFixed(1)+','+c2.y.toFixed(1)+' '+p2.x.toFixed(1)+','+p2.y.toFixed(1);} return d;}
+  const area=s=>curve(s.map(p=>({x:p.x,y:p.y0})),true)+curve([...s].reverse().map(p=>({x:p.x,y:p.y1})),false)+' Z', line=pts=>curve(pts,true);
+  function interpLayer(id,year){const s=stacks[layers.findIndex(l=>l.id===id)]; let a=s[0],b=s[s.length-1]; for(let i=0;i<s.length-1;i++){if(year>=s[i].year&&year<=s[i+1].year){a=s[i];b=s[i+1];break;}} const t=(year-a.year)/(b.year-a.year||1); return {x:x(year),y0:a.y0+(b.y0-a.y0)*t,y1:a.y1+(b.y1-a.y1)*t,mid:a.mid+(b.mid-a.mid)*t};}
 
-  function pill(d){const l=layerMap.get(d.flow), cx=x(d.year), cy=bandCenter(d.flow,d.year), w=d.w||170, h=42, px=cx-w/2, py=d.y; guide(cx,d.side==='top'?py+h:py,cy); if(d.axis)guide(cx,cy,920,true); dot(cx,cy,l.c); const g=G({transform:'translate('+px+','+py+')'},nodeG); bind(g,d); E('rect',{width:w,height:h,rx:18,fill:d.fill||l.dark,opacity:.93},g); E('circle',{cx:14,cy:21,r:4.1,fill:'#F8EDE2'},g); T(g,d.title,27,18,'pill-title'); T(g,d.short,27,34,'pill-sub');}
-  pill({id:'zero',flow:'ritual',year:2020.0,y:335,w:158,side:'top',fill:'#A94C38',title:'00:00',short:'1,719,105 条',meta:'hour clock · zero hour',data:'零点评论占全天 15.73%',note:'准点发布、生日与等待，把听歌反馈改造成集体仪式。',axis:true});
-  pill({id:'subj',flow:'narrative',year:2018.0,y:402,w:178,side:'top',title:'主观叙事峰',short:'2017—2018 · .483/.492',meta:'year_trends.csv',data:'平均字数约 48；主观性达到高位',note:'评论从“好听”转成故事、评价和自我说明。'});
-  pill({id:'night',flow:'night',year:2023.2,y:686,w:174,side:'bottom',fill:'#4F5A86',title:'2023 深夜化',short:'全量深夜率 36.5%',meta:'duckdb_year.csv',data:'《守村人》深夜率 46.13%',note:'深夜层在右下方变厚，说明时间分布也改变了表达结构。'});
-  pill({id:'mem',flow:'memory',year:2021.45,y:744,w:198,side:'bottom',fill:'#687E68',title:'记忆 / 释怀',short:'20,222 / 15,824',meta:'five_dimension_summary.csv',data:'情感释怀 20,222；记忆存档 15,824',note:'评论区成为个人经历的档案柜。'});
+  const defs=E('defs'), noise=E('filter',{id:'paperNoise',x:0,y:0,width:'100%',height:'100%'},defs);
+  E('feTurbulence',{type:'fractalNoise',baseFrequency:'.72',numOctaves:4,seed:9},noise); E('feColorMatrix',{type:'saturate',values:.2},noise);
+  const paper=E('pattern',{id:'paperMesh',patternUnits:'userSpaceOnUse',width:8,height:8},defs); E('path',{d:'M0,8 L8,0',stroke:'rgba(95,82,70,.045)','stroke-width':1},paper);
+  const patterns={
+    dots:p=>{E('circle',{cx:6,cy:6,r:1.45,fill:'#AA6B70',opacity:.30},p);E('circle',{cx:18,cy:14,r:1.2,fill:'#AA6B70',opacity:.20},p)},
+    fine:p=>{E('path',{d:'M0 7 H24 M0 15 H24 M8 0 V24 M16 0 V24',stroke:'#F2C6C1','stroke-width':.75,opacity:.42},p)},
+    stripe:p=>{E('path',{d:'M0 5 H26 M0 12 H26 M0 19 H26',stroke:'#E8A276','stroke-width':2.1,opacity:.82},p);E('path',{d:'M-8 24 L24 -8 M0 32 L32 0',stroke:'#D98A65','stroke-width':1.2,opacity:.52},p)},
+    grain:p=>{E('circle',{cx:7,cy:7,r:1.2,fill:'#E3E5D9',opacity:.28},p);E('circle',{cx:18,cy:15,r:1.0,fill:'#657768',opacity:.18},p)},
+    cross:p=>{E('path',{d:'M-6 18 L18 -6 M0 24 L24 0 M8 30 L30 8 M-6 6 L18 30 M0 0 L24 24',stroke:'#B9BBD0','stroke-width':1,opacity:.38},p)}
+  };
+  layers.forEach(l=>{const p=E('pattern',{id:'pat-'+l.id,patternUnits:'userSpaceOnUse',width:24,height:24},defs); patterns[l.pattern](p);});
+  const coverGrad=E('linearGradient',{id:'coverPaper',x1:0,y1:0,x2:1,y2:1},defs); E('stop',{offset:'0%','stop-color':'#E8DED2'},coverGrad); E('stop',{offset:'58%','stop-color':'#C8B8A7'},coverGrad); E('stop',{offset:'100%','stop-color':'#F4ECDF'},coverGrad);
 
-  const axis=G();
-  E('line',{className:'axis-early',x1:x(2006),x2:x(2013),y1:920,y2:920},axis); E('line',{className:'axis',x1:x(2013),x2:x(2026),y1:920,y2:920},axis);
-  for(let yr=2006;yr<=2026;yr+=2){E('circle',{cx:x(yr),cy:920,r:3.8,fill:yr<2013?'#C7BAAD':'#8D7565'},axis); T(axis,yr+'AD',x(yr),947,'year',{'text-anchor':'middle'});}
-  E('line',{x1:x(2013),x2:x(2013),y1:895,y2:932,stroke:'#9B3F37','stroke-width':1.2,'stroke-dasharray':'4 4'},axis); T(axis,'评论数据起点 2013',x(2013)+8,904,'axis-sub');
-  T(axis,'作品时间轴 2006—2026',92,980,'axis-note'); T(axis,'评论数据覆盖 2013—2026；2013 以前为早期作品源流，用窄河与虚线提示。',92,998,'axis-sub');
-  const leg=G({transform:'translate(90,1020)'});
-  layers.forEach((l,i)=>{const g=G({transform:'translate('+(i*185)+',0)'},leg); E('line',{x1:0,x2:28,y1:0,y2:0,stroke:l.c,'stroke-width':8,'stroke-linecap':'round',opacity:.86},g); E('circle',{cx:0,cy:0,r:4.6,fill:l.dark},g); T(g,l.cn,38,0,'legend-cn',{'dominant-baseline':'middle'}); T(g,l.en,38,16,'legend-en');});
-  T(svg,'Data: advanced_cleaning_v3/year_trends.csv · duckdb_year.csv · five_dimension_summary.csv · album_profiles.csv · hour_profiles.csv',1170,1000,'source');
-  T(svg,'Outer silhouette encodes full comment water level; colored strata encode ritual, narrative, identity, memory and night mechanisms.',1170,1018,'source');
+  E('rect',{width:W,height:H,fill:'#E8E1D2'}); E('rect',{width:W,height:H,fill:'url(#paperMesh)',opacity:1}); E('rect',{width:W,height:H,filter:'url(#paperNoise)',opacity:.045});
+  for(let y=0;y<=H;y+=40)E('line',{className:'grid',x1:0,x2:W,y1:y,y2:y}); for(let yr=2013;yr<=2026;yr++)E('line',{className:'year-line',x1:x(yr),x2:x(yr),y1:205,y2:920});
+
+  const mast=G(); T(mast,'薛之谦评论文化河流图',70,73,'title'); T(mast,'Comment Culture River Map',72,105,'en'); T(mast,'从作品发布，到评论区语言的生成',72,148,'sub');
+  E('path',{d:'M74,171 C105,162 136,179 168,169 C199,160 222,170 252,166',fill:'none',stroke:'#B88D78','stroke-width':4,opacity:.55},mast); T(mast,'streamgraph / wiggle offset · positive values only · comment data 2013—2026',72,190,'small');
+  const note=G({transform:'translate(1370,62)'}); T(note,'这张图怎么看',0,0,'note-title'); ['这次按真正流图定义绘制：五层都是正值时间序列，围绕中心轴用 wiggle offset 重新定位，减少整体摆动。','色带不是透明叠色，而是参考图式低饱和、近不透明的沉积层；条纹和网点用于区分文化机制。','开口和结尾收窄来自评论强度本身，2017、2020 和 2023 附近因数据峰值自然变宽。'].forEach((t,i)=>T(note,t,0,28+i*22,'note-body')); T(note,'baseline minimizes weighted squared slopes',0,100,'note-key');
+
+  const flowG=G({id:'flows'}), textureG=G({id:'textures'}), guideG=G({id:'guides'}), nodeG=G({id:'nodes'}), layerMap=new Map(layers.map((l,i)=>[l.id,{...l,index:i}]));
+  stacks.forEach((s,i)=>{const l=layers[i],d=area(s); const p=E('path',{className:'layer',id:'layer-'+l.id,d,fill:l.fill,stroke:l.stroke,'stroke-width':1.05,opacity:.96},flowG); p.dataset.flow=l.id; const tx=E('path',{className:'texture',d,fill:'url(#pat-'+l.id+')',opacity:l.pattern==='stripe'?.86:.72},textureG); tx.dataset.flow=l.id; p.addEventListener('mouseenter',()=>hot(l.id)); p.addEventListener('mouseleave',()=>{if(!locked)clearHot();}); tx.addEventListener('mouseenter',()=>hot(l.id)); tx.addEventListener('mouseleave',()=>{if(!locked)clearHot();});});
+  for(let i=1;i<stacks.length;i++)E('path',{className:'separator',d:line(stacks[i].map(p=>({x:p.x,y:p.y0})))},flowG);
+  E('path',{className:'outer',d:line(stacks[0].map(p=>({x:p.x,y:p.y0})))},flowG); E('path',{className:'outer',d:line(stacks.at(-1).map(p=>({x:p.x,y:p.y1})))},flowG);
+
+  let locked=null; svg.addEventListener('click',()=>{locked=null;clearHot();tip.style.opacity=0;});
+  function hot(id){document.querySelectorAll('.layer,.texture').forEach(el=>{el.classList.toggle('dim',el.dataset.flow!==id); el.classList.toggle('hot',el.dataset.flow===id);}); document.querySelectorAll('.node').forEach(el=>{el.classList.toggle('dim',el.dataset.flow!==id); el.classList.toggle('hot',el.dataset.flow===id);});}
+  function clearHot(){document.querySelectorAll('.layer,.texture,.node').forEach(el=>el.classList.remove('dim','hot'));}
+  function show(e,d){tip.innerHTML='<b>'+d.title+'</b><div class="meta">'+(d.meta||'')+'</div><div>'+(d.data||'')+'</div><div style="margin-top:4px;color:#67584d">'+(d.note||'')+'</div>'; tip.style.opacity=1; tip.style.left=e.clientX+'px'; tip.style.top=e.clientY+'px';}
+  function bind(g,d){g.dataset.flow=d.flow; g.classList.add('node'); g.style.cursor='pointer'; g.addEventListener('mouseenter',e=>{hot(d.flow);show(e,d)}); g.addEventListener('mousemove',e=>show(e,d)); g.addEventListener('mouseleave',()=>{if(!locked){tip.style.opacity=0;clearHot();}}); g.addEventListener('click',e=>{e.stopPropagation();locked=locked===d.id?null:d.id;if(!locked){clearHot();return;}hot(d.flow);show(e,d);});}
+  function vguide(cx,y1,y2,soft=false){E('line',{className:soft?'guide solid':'guide',x1:cx,x2:cx,y1,y2},guideG)} function dot(cx,cy,c){E('circle',{className:'dot',cx,cy,r:3.9,fill:c},guideG)}
+  function cover(g,name,color){E('rect',{width:52,height:52,fill:'url(#coverPaper)',stroke:'#8B7667','stroke-width':.9},g); E('path',{d:'M7,44 C19,28 31,36 45,10',stroke:color,'stroke-width':2.2,fill:'none',opacity:.7},g); T(g,name.slice(0,2),26,32,'',{'text-anchor':'middle','font-size':18,'font-weight':900,fill:'#342820'});}
+  const albums={
+    '意外':{year:2013.86,date:'2013',comments:1123502,tag:'主观性 .500',flow:'narrative',y:218,side:'top'},
+    '初学者':{year:2016.43,date:'2016',comments:857755,tag:'洪峰前夜',flow:'narrative',y:806,side:'bottom'},
+    '渡':{year:2017.84,date:'2017',comments:1842233,tag:'184.2万评论',flow:'narrative',y:126,side:'top'},
+    '尘':{year:2019.49,date:'2019',comments:1289563,tag:'语境 .106',flow:'memory',y:770,side:'bottom'},
+    '天外来物':{year:2020.54,date:'2020',comments:1545967,tag:'154.6万评论',flow:'ritual',y:132,side:'top'},
+    '守村人':{year:2023.46,date:'2023',comments:698913,tag:'深夜46.13%',flow:'night',y:790,side:'bottom'},
+    '跃':{year:2025.54,date:'2025',comments:778412,tag:'身份认同',flow:'identity',y:174,side:'top'}
+  };
+  Object.entries(albums).forEach(([name,a])=>{const l=layerMap.get(a.flow), p=interpLayer(a.flow,a.year), g=G({transform:'translate('+(p.x-26)+','+a.y+')'},nodeG); vguide(p.x,a.side==='top'?a.y+56:a.y,p.mid); vguide(p.x,p.mid,920,true); dot(p.x,p.mid,l.fill); bind(g,{id:'album-'+name,flow:a.flow,title:'《'+name+'》',meta:a.date+' · 专辑节点',data:fmt(a.comments)+'评论 · '+a.tag,note:'节点不决定形状，只标出对应年份的数据波峰和语义层。'}); cover(g,name,l.stroke); T(g,'《'+name+'》',62,13,'node-title'); T(g,a.date+' AD · 专辑',62,31,'node-sub'); T(g,a.tag,62,48,'node-data');});
+  function tag(d){const l=layerMap.get(d.flow), p=interpLayer(d.flow,d.year), w=d.w||164, h=42, px=p.x-w/2, py=d.y, g=G({transform:'translate('+px+','+py+')'},nodeG); vguide(p.x,d.side==='top'?py+h:py,p.mid); if(d.axis)vguide(p.x,p.mid,920,true); dot(p.x,p.mid,l.fill); bind(g,d); E('rect',{width:w,height:h,rx:17,fill:d.fill||'#8E1715',opacity:.96},g); E('path',{d:'M'+(w*.46)+' 42 L'+(w*.38)+' 55 L'+(w*.57)+' 42 Z',fill:d.fill||'#8E1715'},g); T(g,d.title,18,18,'tag-text'); T(g,d.short,18,34,'tag-sub');}
+  tag({id:'zero',flow:'ritual',year:2020,y:324,side:'top',w:150,fill:'#9B2019',title:'00:00',short:'1,719,105 条',meta:'hour clock',data:'零点评论占全天 15.73%',note:'首发、生日、祝福和蹲守共同形成仪式层。',axis:true});
+  tag({id:'subj',flow:'narrative',year:2018,y:392,side:'top',w:176,fill:'#A54236',title:'主观叙事峰',short:'2017—2018 · .483/.492',meta:'year_trends.csv',data:'平均字数约 48；主观性达到高位。',note:'这层的厚度由主观性和评论长度共同推高。'});
+  tag({id:'night',flow:'night',year:2023.1,y:694,side:'bottom',w:164,fill:'#4B5480',title:'2023 深夜化',short:'深夜率 36.5%',meta:'duckdb_year.csv',data:'《守村人》深夜率 46.13%',note:'深夜长评层在后段自然变厚。'});
+
+  const axis=G(); E('line',{className:'axis',x1:x(2013),x2:x(2026),y1:920,y2:920},axis); for(let yr=2013;yr<=2026;yr++){E('circle',{cx:x(yr),cy:920,r:3.6,fill:'#8D7565'},axis); if(yr===2013||yr%2===0||yr===2026)T(axis,yr+'AD',x(yr),947,'year',{'text-anchor':'middle'});}
+  T(axis,'评论河流时间轴 2013—2026',92,980,'axis-note'); T(axis,'作品时间轴 2006—2026；本页河流仅使用实际覆盖的评论数据 2013—2026。',92,998,'axis-sub');
+  const leg=G({transform:'translate(90,1020)'}); layers.forEach((l,i)=>{const g=G({transform:'translate('+(i*190)+',0)'},leg); E('rect',{x:0,y:-5,width:30,height:10,fill:l.fill,stroke:l.stroke,'stroke-width':.7},g); E('rect',{x:0,y:-5,width:30,height:10,fill:'url(#pat-'+l.id+')',opacity:.75},g); T(g,l.cn,40,0,'legend-cn',{'dominant-baseline':'middle'}); T(g,l.en,40,16,'legend-en');});
+  T(svg,'Data: advanced_cleaning_v3/full_cleaning_by_year.csv · duckdb_year.csv · year_trends.csv · five_dimension_summary.csv',1140,1000,'source'); T(svg,'Method: positive yearly series · weighted wiggle offset · matte textured streamgraph, not separated rivers.',1140,1018,'source');
 })();
 </script>
 </body>
