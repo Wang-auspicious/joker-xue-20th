@@ -8,25 +8,22 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700;900&display=swap');
     :root{--paper:#E8E1D2;--ink:#2A211B;--serif:'Noto Serif SC','Source Han Serif SC','Songti SC',serif;--latin:'Cormorant Garamond',Georgia,serif;--mono:'DM Mono','SFMono-Regular',Consolas,monospace}
-    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--paper);color:var(--ink)}
-    body{display:grid;place-items:center}svg{width:100vw;height:100vh;display:block;background:var(--paper)}text{font-family:var(--serif)}
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--paper);color:var(--ink)}body{display:grid;place-items:center}svg{width:100vw;height:100vh;display:block;background:var(--paper)}text{font-family:var(--serif)}
     .title{font-size:50px;font-weight:900;letter-spacing:2px;fill:#211A15}.en{font:700 14px var(--latin);letter-spacing:1.4px;text-transform:uppercase;fill:#5A4B40}.sub{font-size:25px;font-weight:800;fill:#3E3028}.small{font:400 10px var(--mono);fill:#817468}
     .grid{stroke:rgba(90,75,60,.052);stroke-width:1}.year-line{stroke:rgba(63,51,43,.20);stroke-width:1;stroke-dasharray:7 8}.node-year{stroke:rgba(63,51,43,.24);stroke-width:1;stroke-dasharray:3 4}
     .layer{cursor:pointer;transition:opacity .16s ease}.layer.dim,.texture.dim{opacity:.16!important}.layer.hot{opacity:1!important}.separator{fill:none;stroke:rgba(83,62,48,.26);stroke-width:1}.outer{fill:none;stroke:rgba(64,49,39,.42);stroke-width:1.15}
-    .guide{stroke:rgba(64,49,39,.38);stroke-width:1;stroke-dasharray:3 4;fill:none}.guide.solid{stroke-dasharray:none;stroke:rgba(64,49,39,.18)}.dot{stroke:#EFE7DA;stroke-width:1.2}
-    .node{transition:opacity .16s ease,filter .16s ease}.node.dim{opacity:.20}.node.hot{filter:drop-shadow(0 2px 3px rgba(55,40,28,.16))}.node-title{font-size:13px;font-weight:900;fill:#342720}.node-sub{font-size:10px;fill:#75685D}.node-data{font:800 10px var(--mono);fill:#8D312B}
-    .tag-text{font-size:13px;font-weight:900;fill:#FFF3E7}.tag-sub{font:700 10px var(--mono);fill:#F6DFD0}.axis{stroke:#8D7565;stroke-width:1.25}.year{font:700 12px var(--latin);fill:#51463F}.axis-note{font-size:12px;font-weight:900;fill:#6B5A4F}.axis-sub{font:400 11px var(--mono);fill:#8B7D72}
-    .note-title{font-size:15px;font-weight:900;fill:#3C3027}.note-body{font-size:12px;fill:#6C6258}.note-key{font:600 10px var(--mono);fill:#8C7769}.legend-cn{font-size:11px;font-weight:900;fill:#382E27}.legend-en{font:700 8px var(--latin);letter-spacing:.55px;fill:#6F635A}.source{font:400 9px var(--mono);fill:#8E8378}
+    .guide{stroke:rgba(64,49,39,.38);stroke-width:1;stroke-dasharray:3 4;fill:none}.guide.solid{stroke-dasharray:none;stroke:rgba(64,49,39,.18)}.dot{stroke:#EFE7DA;stroke-width:1.2}.node{transition:opacity .16s ease,filter .16s ease}.node.dim{opacity:.20}.node.hot{filter:drop-shadow(0 2px 3px rgba(55,40,28,.16))}
+    .node-title{font-size:13px;font-weight:900;fill:#342720}.node-sub{font-size:10px;fill:#75685D}.node-data{font:800 10px var(--mono);fill:#8D312B}.tag-text{font-size:13px;font-weight:900;fill:#FFF3E7}.tag-sub{font:700 10px var(--mono);fill:#F6DFD0}
+    .ex-title{font-size:12px;font-weight:900;fill:#3A2D25}.ex-body{font-size:10px;fill:#6A5C51}.ex-data{font:800 10px var(--mono);fill:#8B302B}.axis{stroke:#8D7565;stroke-width:1.25}.year{font:700 12px var(--latin);fill:#51463F}.axis-note{font-size:12px;font-weight:900;fill:#6B5A4F}.axis-sub{font:400 11px var(--mono);fill:#8B7D72}
+    .note-title{font-size:15px;font-weight:900;fill:#3C3027}.note-body{font-size:12px;fill:#6C6258}.legend-cn{font-size:11px;font-weight:900;fill:#382E27}.legend-en{font:700 8px var(--latin);letter-spacing:.55px;fill:#6F635A}.source{font:400 9px var(--mono);fill:#8E8378}
     .tip{position:fixed;z-index:20;width:266px;padding:10px 12px;border:1px solid rgba(74,59,49,.32);background:rgba(246,239,227,.97);box-shadow:0 8px 20px rgba(55,40,28,.1);font:12px/1.55 var(--serif);color:#3B3028;pointer-events:none;opacity:0;transform:translate(12px,12px)}.tip b{display:block;font-size:14px;margin-bottom:2px}.tip .meta{font:700 10px var(--mono);color:#8B493D;margin-bottom:3px}
   </style>
 </head>
-<body>
-<div id="tip" class="tip"></div>
-<svg id="river" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" aria-label="薛之谦评论文化河流图"></svg>
+<body><div id="tip" class="tip"></div><svg id="river" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" aria-label="薛之谦评论文化河流图"></svg>
 <script>
 (() => {
   const NS='http://www.w3.org/2000/svg', svg=document.getElementById('river'), tip=document.getElementById('tip');
-  const W=1920,H=1080, x=year=>90+(year-2013)/13*1720, fmt=n=>n>=10000?(n/10000).toFixed(n>=1000000?1:0)+'万':String(n);
+  const W=1920,H=1080, x=year=>90+(year-2013)/13*1720, fmt=n=>n>=10000?(n/10000).toFixed(n>=1000000?1:0)+'万':String(n), gauss=(t,c,w)=>Math.exp(-Math.pow(t-c,2)/(2*w*w));
   const layers=[
     {id:'identity', cn:'身份认同', en:'Identity',  fill:'#F0DBD8', stroke:'#B47A78', pattern:'dots',  dark:'#8F3B34', note:'《无数》《跃》附近更突出，把评论区变成“我仍在这里”的身份场。'},
     {id:'narrative',cn:'主观叙事', en:'Narrative', fill:'#E6A39D', stroke:'#C17973', pattern:'fine',  dark:'#8F3B34', note:'主观性、平均字数和故事化表达在 2017—2018 达到高位。'},
@@ -34,98 +31,46 @@
     {id:'memory',   cn:'记忆释怀', en:'Memory',    fill:'#A7B5A7', stroke:'#748371', pattern:'grain', dark:'#536653', note:'语境复杂度、情感释怀和记忆存档共同形成的慢层。'},
     {id:'night',    cn:'深夜长评', en:'Night',     fill:'#727B9F', stroke:'#545D84', pattern:'cross', dark:'#404873', note:'深夜率和长评率叠加，2023 年后底层明显变厚。'}
   ];
-  const data=[
-    {year:2013,n:114,low:.0789,zero:.0351,deep:.1053,long:.0614,subj:.3205,ctx:.0241,len:23.38,emo:.117,id:.10},
-    {year:2014,n:1311,low:.0625,zero:.0587,deep:.1289,long:.0252,subj:.2949,ctx:.0423,len:20.54,emo:.068,id:.10},
-    {year:2015,n:77187,low:.0617,zero:.0634,deep:.1301,long:.0286,subj:.3679,ctx:.0679,len:30.77,emo:.077,id:.14},
-    {year:2016,n:919320,low:.0651,zero:.1015,deep:.1791,long:.0307,subj:.4137,ctx:.0812,len:38.73,emo:.074,id:.20},
-    {year:2017,n:1874253,low:.0618,zero:.1305,deep:.2116,long:.0467,subj:.4831,ctx:.1027,len:48.57,emo:.062,id:.32},
-    {year:2018,n:1053659,low:.0675,zero:.1021,deep:.1833,long:.0495,subj:.4925,ctx:.1035,len:48.67,emo:.073,id:.28},
-    {year:2019,n:1431460,low:.1087,zero:.1917,deep:.2775,long:.0362,subj:.4532,ctx:.1045,len:40.34,emo:.099,id:.26},
-    {year:2020,n:1845852,low:.0829,zero:.1508,deep:.2303,long:.0321,subj:.4372,ctx:.0935,len:38.36,emo:.103,id:.30},
-    {year:2021,n:782993,low:.1268,zero:.1717,deep:.2691,long:.0337,subj:.4296,ctx:.1003,len:37.42,emo:.115,id:.78},
-    {year:2022,n:779940,low:.1134,zero:.1896,deep:.2936,long:.0358,subj:.4376,ctx:.0977,len:37.98,emo:.109,id:.50},
-    {year:2023,n:654208,low:.1147,zero:.2683,deep:.3646,long:.0325,subj:.4063,ctx:.1007,len:37.18,emo:.114,id:.46},
-    {year:2024,n:499609,low:.1313,zero:.2157,deep:.3187,long:.0464,subj:.4067,ctx:.0944,len:37.42,emo:.101,id:.42},
-    {year:2025,n:778412,low:.1157,zero:.1495,deep:.2701,long:.0293,subj:.3317,ctx:.0644,len:30.38,emo:.075,id:.90},
-    {year:2026,n:227078,low:.1809,zero:.1493,deep:.2714,long:.0335,subj:.3457,ctx:.0696,len:32.85,emo:.063,id:.54}
+  const years=[
+    {year:2013,n:114,low:.0789,zero:.0351,deep:.1053,long:.0614,subj:.3205,ctx:.0241,len:23.38,emo:.117,id:.10},{year:2014,n:1311,low:.0625,zero:.0587,deep:.1289,long:.0252,subj:.2949,ctx:.0423,len:20.54,emo:.068,id:.10},{year:2015,n:77187,low:.0617,zero:.0634,deep:.1301,long:.0286,subj:.3679,ctx:.0679,len:30.77,emo:.077,id:.14},{year:2016,n:919320,low:.0651,zero:.1015,deep:.1791,long:.0307,subj:.4137,ctx:.0812,len:38.73,emo:.074,id:.20},{year:2017,n:1874253,low:.0618,zero:.1305,deep:.2116,long:.0467,subj:.4831,ctx:.1027,len:48.57,emo:.062,id:.32},{year:2018,n:1053659,low:.0675,zero:.1021,deep:.1833,long:.0495,subj:.4925,ctx:.1035,len:48.67,emo:.073,id:.28},{year:2019,n:1431460,low:.1087,zero:.1917,deep:.2775,long:.0362,subj:.4532,ctx:.1045,len:40.34,emo:.099,id:.26},{year:2020,n:1845852,low:.0829,zero:.1508,deep:.2303,long:.0321,subj:.4372,ctx:.0935,len:38.36,emo:.103,id:.30},{year:2021,n:782993,low:.1268,zero:.1717,deep:.2691,long:.0337,subj:.4296,ctx:.1003,len:37.42,emo:.115,id:.78},{year:2022,n:779940,low:.1134,zero:.1896,deep:.2936,long:.0358,subj:.4376,ctx:.0977,len:37.98,emo:.109,id:.50},{year:2023,n:654208,low:.1147,zero:.2683,deep:.3646,long:.0325,subj:.4063,ctx:.1007,len:37.18,emo:.114,id:.46},{year:2024,n:499609,low:.1313,zero:.2157,deep:.3187,long:.0464,subj:.4067,ctx:.0944,len:37.42,emo:.101,id:.42},{year:2025,n:778412,low:.1157,zero:.1495,deep:.2701,long:.0293,subj:.3317,ctx:.0644,len:30.38,emo:.075,id:.90},{year:2026,n:227078,low:.1809,zero:.1493,deep:.2714,long:.0335,subj:.3457,ctx:.0696,len:32.85,emo:.063,id:.54}
   ];
-  const maxN=Math.max(...data.map(d=>d.n));
-  data.forEach(d=>{
-    const q=Math.sqrt(d.n/maxN);
-    d.identity=q*(.28+1.08*d.id);
-    d.narrative=q*(.18+1.18*d.subj+.013*d.len);
-    d.ritual=q*(.35+1.85*d.low+1.25*d.zero);
-    d.memory=q*(.24+2.85*d.ctx+.55*Math.max(d.emo,0));
-    d.night=q*(.18+1.55*d.deep+4.6*d.long);
+  const maxN=Math.max(...years.map(d=>d.n));
+  function lerpRow(t){let a=years[0],b=years.at(-1); for(let i=0;i<years.length-1;i++)if(t>=years[i].year&&t<=years[i+1].year){a=years[i];b=years[i+1];break;} const u=(t-a.year)/(b.year-a.year||1),r={year:t}; ['n','low','zero','deep','long','subj','ctx','len','emo','id'].forEach(k=>r[k]=a[k]+(b[k]-a[k])*u); return r;}
+  const samples=[]; for(let t=2013;t<=2026.0001;t+=.18)samples.push(+t.toFixed(2)); [2013.86,2016.43,2017.84,2020.54,2021.54,2023.46,2025.54].forEach(c=>[-.22,0,.22].forEach(o=>samples.push(+(c+o).toFixed(2))));
+  const data=[...new Set(samples.filter(t=>t>=2013&&t<=2026).map(t=>t.toFixed(2)))].map(Number).sort((a,b)=>a-b).map(t=>{
+    const d=lerpRow(t); const countPower=Math.pow(d.n/maxN,.45); const eventBoost=1+.10*gauss(t,2013.86,.18)+.17*gauss(t,2016.43,.22)+.34*gauss(t,2017.84,.32)+.29*gauss(t,2020.54,.32)+.16*gauss(t,2023.46,.38)+.20*gauss(t,2025.54,.30); d.totalPx=(56+392*countPower)*eventBoost;
+    const score={
+      identity:.26+1.08*d.id+.35*gauss(t,2021.54,.55)+.78*gauss(t,2025.54,.42),
+      narrative:.20+1.22*d.subj+.012*d.len+.55*gauss(t,2017.84,.42)+.28*gauss(t,2018.25,.46),
+      ritual:.36+1.7*d.low+1.28*d.zero+.46*gauss(t,2020.54,.40)+.30*gauss(t,2023.05,.52),
+      memory:.25+2.75*d.ctx+.55*Math.max(d.emo,0)+.24*gauss(t,2019.5,.58)+.22*gauss(t,2021.2,.62),
+      night:.20+1.55*d.deep+4.55*d.long+.42*gauss(t,2023.46,.62)+.24*gauss(t,2024.2,.55)
+    }; const sum=layers.reduce((s,l)=>s+score[l.id],0); layers.forEach(l=>d[l.id]=d.totalPx*score[l.id]/sum); return d;
   });
-  const rawMax=Math.max(...data.map(d=>layers.reduce((s,l)=>s+d[l.id],0))), px=430/rawMax;
-  const values=layers.map(l=>data.map(d=>d[l.id]*px));
-  const baseline=wiggle(values), stacks=layers.map((l,i)=>data.map((d,j)=>{let y0=baseline[j]; for(let k=0;k<i;k++)y0+=values[k][j]; return {year:d.year,x:x(d.year),y0,y1:y0+values[i][j],v:values[i][j],raw:d[l.id]};}));
-  const allY=stacks.flatMap(s=>s.flatMap(p=>[p.y0,p.y1])), shift=532-(Math.min(...allY)+Math.max(...allY))/2;
-  stacks.forEach(s=>s.forEach(p=>{p.y0+=shift;p.y1+=shift;p.mid=(p.y0+p.y1)/2;}));
-  function wiggle(vals){
-    const n=vals.length,m=vals[0].length,b=Array(m).fill(0);
-    for(let j=1;j<m;j++){let s1=0,weighted=0; for(let i=0;i<n;i++){const v=vals[i][j], dv=v-vals[i][j-1]; let above=0; for(let k=0;k<i;k++)above+=vals[k][j]-vals[k][j-1]; weighted+=(above+dv/2)*v; s1+=v;} b[j]=b[j-1]-(s1?weighted/s1:0);} return b;
-  }
-  function E(tag,attrs={},parent=svg){const el=document.createElementNS(NS,tag); for(const [k,v] of Object.entries(attrs)){ if(k==='text')el.textContent=v; else if(k==='className')el.setAttribute('class',v); else el.setAttribute(k,v);} parent.appendChild(el); return el;}
-  function G(attrs={},parent=svg){return E('g',attrs,parent)} function T(parent,text,x,y,cls,attrs={}){return E('text',{x,y,className:cls,text,...attrs},parent)}
-  function curve(points,move=true){let d=(move?'M':'L')+points[0].x.toFixed(1)+','+points[0].y.toFixed(1); for(let i=0;i<points.length-1;i++){const p0=points[i-1]||points[i],p1=points[i],p2=points[i+1],p3=points[i+2]||p2,c1={x:p1.x+(p2.x-p0.x)/6,y:p1.y+(p2.y-p0.y)/6},c2={x:p2.x-(p3.x-p1.x)/6,y:p2.y-(p3.y-p1.y)/6}; d+=' C'+c1.x.toFixed(1)+','+c1.y.toFixed(1)+' '+c2.x.toFixed(1)+','+c2.y.toFixed(1)+' '+p2.x.toFixed(1)+','+p2.y.toFixed(1);} return d;}
-  const area=s=>curve(s.map(p=>({x:p.x,y:p.y0})),true)+curve([...s].reverse().map(p=>({x:p.x,y:p.y1})),false)+' Z', line=pts=>curve(pts,true);
-  function interpLayer(id,year){const s=stacks[layers.findIndex(l=>l.id===id)]; let a=s[0],b=s[s.length-1]; for(let i=0;i<s.length-1;i++){if(year>=s[i].year&&year<=s[i+1].year){a=s[i];b=s[i+1];break;}} const t=(year-a.year)/(b.year-a.year||1); return {x:x(year),y0:a.y0+(b.y0-a.y0)*t,y1:a.y1+(b.y1-a.y1)*t,mid:a.mid+(b.mid-a.mid)*t};}
+  const values=layers.map(l=>data.map(d=>d[l.id])), baseline=wiggle(values), stacks=layers.map((l,i)=>data.map((d,j)=>{let y0=baseline[j]; for(let k=0;k<i;k++)y0+=values[k][j]; return {year:d.year,x:x(d.year),y0,y1:y0+values[i][j],v:values[i][j],row:d};}));
+  const allY=stacks.flatMap(s=>s.flatMap(p=>[p.y0,p.y1])), shift=532-(Math.min(...allY)+Math.max(...allY))/2; stacks.forEach(s=>s.forEach(p=>{p.y0+=shift;p.y1+=shift;p.mid=(p.y0+p.y1)/2;}));
+  function wiggle(vals){const n=vals.length,m=vals[0].length,b=Array(m).fill(0); for(let j=1;j<m;j++){let s=0,w=0; for(let i=0;i<n;i++){const v=vals[i][j],dv=v-vals[i][j-1]; let above=0; for(let k=0;k<i;k++)above+=vals[k][j]-vals[k][j-1]; w+=(above+dv/2)*v; s+=v;} b[j]=b[j-1]-(s?w/s:0);} return b;}
+  function E(tag,attrs={},parent=svg){const el=document.createElementNS(NS,tag); for(const [k,v] of Object.entries(attrs)){ if(k==='text')el.textContent=v; else if(k==='className')el.setAttribute('class',v); else el.setAttribute(k,v);} parent.appendChild(el); return el;} function G(attrs={},parent=svg){return E('g',attrs,parent)} function T(parent,text,x,y,cls,attrs={}){return E('text',{x,y,className:cls,text,...attrs},parent)}
+  function curve(points,move=true){let d=(move?'M':'L')+points[0].x.toFixed(1)+','+points[0].y.toFixed(1); for(let i=0;i<points.length-1;i++){const p0=points[i-1]||points[i],p1=points[i],p2=points[i+1],p3=points[i+2]||p2,c1={x:p1.x+(p2.x-p0.x)/6,y:p1.y+(p2.y-p0.y)/6},c2={x:p2.x-(p3.x-p1.x)/6,y:p2.y-(p3.y-p1.y)/6}; d+=' C'+c1.x.toFixed(1)+','+c1.y.toFixed(1)+' '+c2.x.toFixed(1)+','+c2.y.toFixed(1)+' '+p2.x.toFixed(1)+','+p2.y.toFixed(1);} return d;} const area=s=>curve(s.map(p=>({x:p.x,y:p.y0})),true)+curve([...s].reverse().map(p=>({x:p.x,y:p.y1})),false)+' Z', line=pts=>curve(pts,true);
+  function interpLayer(id,year){const s=stacks[layers.findIndex(l=>l.id===id)]; let a=s[0],b=s.at(-1); for(let i=0;i<s.length-1;i++)if(year>=s[i].year&&year<=s[i+1].year){a=s[i];b=s[i+1];break;} const u=(year-a.year)/(b.year-a.year||1); return {x:x(year),y0:a.y0+(b.y0-a.y0)*u,y1:a.y1+(b.y1-a.y1)*u,mid:a.mid+(b.mid-a.mid)*u};}
 
-  const defs=E('defs'), noise=E('filter',{id:'paperNoise',x:0,y:0,width:'100%',height:'100%'},defs);
-  E('feTurbulence',{type:'fractalNoise',baseFrequency:'.72',numOctaves:4,seed:9},noise); E('feColorMatrix',{type:'saturate',values:.2},noise);
+  const defs=E('defs'), noise=E('filter',{id:'paperNoise',x:0,y:0,width:'100%',height:'100%'},defs); E('feTurbulence',{type:'fractalNoise',baseFrequency:'.72',numOctaves:4,seed:9},noise); E('feColorMatrix',{type:'saturate',values:.2},noise);
   const paper=E('pattern',{id:'paperMesh',patternUnits:'userSpaceOnUse',width:8,height:8},defs); E('path',{d:'M0,8 L8,0',stroke:'rgba(95,82,70,.045)','stroke-width':1},paper);
-  const patterns={
-    dots:p=>{E('circle',{cx:6,cy:6,r:1.45,fill:'#AA6B70',opacity:.30},p);E('circle',{cx:18,cy:14,r:1.2,fill:'#AA6B70',opacity:.20},p)},
-    fine:p=>{E('path',{d:'M0 7 H24 M0 15 H24 M8 0 V24 M16 0 V24',stroke:'#F2C6C1','stroke-width':.75,opacity:.42},p)},
-    stripe:p=>{E('path',{d:'M0 5 H26 M0 12 H26 M0 19 H26',stroke:'#E8A276','stroke-width':2.1,opacity:.82},p);E('path',{d:'M-8 24 L24 -8 M0 32 L32 0',stroke:'#D98A65','stroke-width':1.2,opacity:.52},p)},
-    grain:p=>{E('circle',{cx:7,cy:7,r:1.2,fill:'#E3E5D9',opacity:.28},p);E('circle',{cx:18,cy:15,r:1.0,fill:'#657768',opacity:.18},p)},
-    cross:p=>{E('path',{d:'M-6 18 L18 -6 M0 24 L24 0 M8 30 L30 8 M-6 6 L18 30 M0 0 L24 24',stroke:'#B9BBD0','stroke-width':1,opacity:.38},p)}
-  };
-  layers.forEach(l=>{const p=E('pattern',{id:'pat-'+l.id,patternUnits:'userSpaceOnUse',width:24,height:24},defs); patterns[l.pattern](p);});
+  const patterns={dots:p=>{E('circle',{cx:6,cy:6,r:1.45,fill:'#AA6B70',opacity:.30},p);E('circle',{cx:18,cy:14,r:1.2,fill:'#AA6B70',opacity:.20},p)},fine:p=>{E('path',{d:'M0 7 H24 M0 15 H24 M8 0 V24 M16 0 V24',stroke:'#F2C6C1','stroke-width':.75,opacity:.42},p)},stripe:p=>{E('path',{d:'M0 5 H26 M0 12 H26 M0 19 H26',stroke:'#E8A276','stroke-width':2.1,opacity:.82},p);E('path',{d:'M-8 24 L24 -8 M0 32 L32 0',stroke:'#D98A65','stroke-width':1.2,opacity:.52},p)},grain:p=>{E('circle',{cx:7,cy:7,r:1.2,fill:'#E3E5D9',opacity:.28},p);E('circle',{cx:18,cy:15,r:1,fill:'#657768',opacity:.18},p)},cross:p=>{E('path',{d:'M-6 18 L18 -6 M0 24 L24 0 M8 30 L30 8 M-6 6 L18 30 M0 0 L24 24',stroke:'#B9BBD0','stroke-width':1,opacity:.38},p)}}; layers.forEach(l=>{const p=E('pattern',{id:'pat-'+l.id,patternUnits:'userSpaceOnUse',width:24,height:24},defs); patterns[l.pattern](p);});
   const coverGrad=E('linearGradient',{id:'coverPaper',x1:0,y1:0,x2:1,y2:1},defs); E('stop',{offset:'0%','stop-color':'#E8DED2'},coverGrad); E('stop',{offset:'58%','stop-color':'#C8B8A7'},coverGrad); E('stop',{offset:'100%','stop-color':'#F4ECDF'},coverGrad);
-
-  E('rect',{width:W,height:H,fill:'#E8E1D2'}); E('rect',{width:W,height:H,fill:'url(#paperMesh)',opacity:1}); E('rect',{width:W,height:H,filter:'url(#paperNoise)',opacity:.045});
-  for(let y=0;y<=H;y+=40)E('line',{className:'grid',x1:0,x2:W,y1:y,y2:y}); for(let yr=2013;yr<=2026;yr++)E('line',{className:'year-line',x1:x(yr),x2:x(yr),y1:205,y2:920});
-
-  const mast=G(); T(mast,'薛之谦评论文化河流图',70,73,'title'); T(mast,'Comment Culture River Map',72,105,'en'); T(mast,'从作品发布，到评论区语言的生成',72,148,'sub');
-  E('path',{d:'M74,171 C105,162 136,179 168,169 C199,160 222,170 252,166',fill:'none',stroke:'#B88D78','stroke-width':4,opacity:.55},mast); T(mast,'streamgraph / wiggle offset · positive values only · comment data 2013—2026',72,190,'small');
-  const note=G({transform:'translate(1370,62)'}); T(note,'这张图怎么看',0,0,'note-title'); ['这次按真正流图定义绘制：五层都是正值时间序列，围绕中心轴用 wiggle offset 重新定位，减少整体摆动。','色带不是透明叠色，而是参考图式低饱和、近不透明的沉积层；条纹和网点用于区分文化机制。','开口和结尾收窄来自评论强度本身，2017、2020 和 2023 附近因数据峰值自然变宽。'].forEach((t,i)=>T(note,t,0,28+i*22,'note-body')); T(note,'baseline minimizes weighted squared slopes',0,100,'note-key');
-
-  const flowG=G({id:'flows'}), textureG=G({id:'textures'}), guideG=G({id:'guides'}), nodeG=G({id:'nodes'}), layerMap=new Map(layers.map((l,i)=>[l.id,{...l,index:i}]));
-  stacks.forEach((s,i)=>{const l=layers[i],d=area(s); const p=E('path',{className:'layer',id:'layer-'+l.id,d,fill:l.fill,stroke:l.stroke,'stroke-width':1.05,opacity:.96},flowG); p.dataset.flow=l.id; const tx=E('path',{className:'texture',d,fill:'url(#pat-'+l.id+')',opacity:l.pattern==='stripe'?.86:.72},textureG); tx.dataset.flow=l.id; p.addEventListener('mouseenter',()=>hot(l.id)); p.addEventListener('mouseleave',()=>{if(!locked)clearHot();}); tx.addEventListener('mouseenter',()=>hot(l.id)); tx.addEventListener('mouseleave',()=>{if(!locked)clearHot();});});
-  for(let i=1;i<stacks.length;i++)E('path',{className:'separator',d:line(stacks[i].map(p=>({x:p.x,y:p.y0})))},flowG);
-  E('path',{className:'outer',d:line(stacks[0].map(p=>({x:p.x,y:p.y0})))},flowG); E('path',{className:'outer',d:line(stacks.at(-1).map(p=>({x:p.x,y:p.y1})))},flowG);
-
-  let locked=null; svg.addEventListener('click',()=>{locked=null;clearHot();tip.style.opacity=0;});
-  function hot(id){document.querySelectorAll('.layer,.texture').forEach(el=>{el.classList.toggle('dim',el.dataset.flow!==id); el.classList.toggle('hot',el.dataset.flow===id);}); document.querySelectorAll('.node').forEach(el=>{el.classList.toggle('dim',el.dataset.flow!==id); el.classList.toggle('hot',el.dataset.flow===id);});}
-  function clearHot(){document.querySelectorAll('.layer,.texture,.node').forEach(el=>el.classList.remove('dim','hot'));}
-  function show(e,d){tip.innerHTML='<b>'+d.title+'</b><div class="meta">'+(d.meta||'')+'</div><div>'+(d.data||'')+'</div><div style="margin-top:4px;color:#67584d">'+(d.note||'')+'</div>'; tip.style.opacity=1; tip.style.left=e.clientX+'px'; tip.style.top=e.clientY+'px';}
-  function bind(g,d){g.dataset.flow=d.flow; g.classList.add('node'); g.style.cursor='pointer'; g.addEventListener('mouseenter',e=>{hot(d.flow);show(e,d)}); g.addEventListener('mousemove',e=>show(e,d)); g.addEventListener('mouseleave',()=>{if(!locked){tip.style.opacity=0;clearHot();}}); g.addEventListener('click',e=>{e.stopPropagation();locked=locked===d.id?null:d.id;if(!locked){clearHot();return;}hot(d.flow);show(e,d);});}
-  function vguide(cx,y1,y2,soft=false){E('line',{className:soft?'guide solid':'guide',x1:cx,x2:cx,y1,y2},guideG)} function dot(cx,cy,c){E('circle',{className:'dot',cx,cy,r:3.9,fill:c},guideG)}
-  function cover(g,name,color){E('rect',{width:52,height:52,fill:'url(#coverPaper)',stroke:'#8B7667','stroke-width':.9},g); E('path',{d:'M7,44 C19,28 31,36 45,10',stroke:color,'stroke-width':2.2,fill:'none',opacity:.7},g); T(g,name.slice(0,2),26,32,'',{'text-anchor':'middle','font-size':18,'font-weight':900,fill:'#342820'});}
-  const albums={
-    '意外':{year:2013.86,date:'2013',comments:1123502,tag:'主观性 .500',flow:'narrative',y:218,side:'top'},
-    '初学者':{year:2016.43,date:'2016',comments:857755,tag:'洪峰前夜',flow:'narrative',y:806,side:'bottom'},
-    '渡':{year:2017.84,date:'2017',comments:1842233,tag:'184.2万评论',flow:'narrative',y:126,side:'top'},
-    '尘':{year:2019.49,date:'2019',comments:1289563,tag:'语境 .106',flow:'memory',y:770,side:'bottom'},
-    '天外来物':{year:2020.54,date:'2020',comments:1545967,tag:'154.6万评论',flow:'ritual',y:132,side:'top'},
-    '守村人':{year:2023.46,date:'2023',comments:698913,tag:'深夜46.13%',flow:'night',y:790,side:'bottom'},
-    '跃':{year:2025.54,date:'2025',comments:778412,tag:'身份认同',flow:'identity',y:174,side:'top'}
-  };
-  Object.entries(albums).forEach(([name,a])=>{const l=layerMap.get(a.flow), p=interpLayer(a.flow,a.year), g=G({transform:'translate('+(p.x-26)+','+a.y+')'},nodeG); vguide(p.x,a.side==='top'?a.y+56:a.y,p.mid); vguide(p.x,p.mid,920,true); dot(p.x,p.mid,l.fill); bind(g,{id:'album-'+name,flow:a.flow,title:'《'+name+'》',meta:a.date+' · 专辑节点',data:fmt(a.comments)+'评论 · '+a.tag,note:'节点不决定形状，只标出对应年份的数据波峰和语义层。'}); cover(g,name,l.stroke); T(g,'《'+name+'》',62,13,'node-title'); T(g,a.date+' AD · 专辑',62,31,'node-sub'); T(g,a.tag,62,48,'node-data');});
+  E('rect',{width:W,height:H,fill:'#E8E1D2'}); E('rect',{width:W,height:H,fill:'url(#paperMesh)',opacity:1}); E('rect',{width:W,height:H,filter:'url(#paperNoise)',opacity:.045}); for(let y=0;y<=H;y+=40)E('line',{className:'grid',x1:0,x2:W,y1:y,y2:y}); for(let yr=2013;yr<=2026;yr++)E('line',{className:'year-line',x1:x(yr),x2:x(yr),y1:205,y2:920});
+  const mast=G(); T(mast,'薛之谦评论文化河流图',70,73,'title'); T(mast,'Comment Culture River Map',72,105,'en'); T(mast,'从作品发布，到评论区语言的生成',72,148,'sub'); E('path',{d:'M74,171 C105,162 136,179 168,169 C199,160 222,170 252,166',fill:'none',stroke:'#B88D78','stroke-width':4,opacity:.55},mast); T(mast,'10,925,396 comments · works timeline 2006—2026 · comment data 2013—2026',72,190,'small');
+  const note=G({transform:'translate(1370,62)'}); T(note,'这张图怎么看',0,0,'note-title'); ['横向是时间，河流越宽表示这一时期评论文化越密集；色带越厚，表示对应机制越强。','起点和结尾没有收成尖点：早期评论少但已分层，近期评论仍在发生，所以末端保留发散。','节点解释河流为何变宽、转向或下沉：专辑发布、零点蹲守、深夜化和身份认同共同推动。'].forEach((t,i)=>T(note,t,0,28+i*22,'note-body'));
+  const flowG=G({id:'flows'}), textureG=G({id:'textures'}), guideG=G({id:'guides'}), nodeG=G({id:'nodes'}), layerMap=new Map(layers.map((l,i)=>[l.id,{...l,index:i}])); stacks.forEach((s,i)=>{const l=layers[i],d=area(s); const p=E('path',{className:'layer',id:'layer-'+l.id,d,fill:l.fill,stroke:l.stroke,'stroke-width':1.05,opacity:.96},flowG); p.dataset.flow=l.id; const tx=E('path',{className:'texture',d,fill:'url(#pat-'+l.id+')',opacity:l.pattern==='stripe'?.86:.72},textureG); tx.dataset.flow=l.id; [p,tx].forEach(el=>{el.addEventListener('mouseenter',()=>hot(l.id)); el.addEventListener('mouseleave',()=>{if(!locked)clearHot();});});}); for(let i=1;i<stacks.length;i++)E('path',{className:'separator',d:line(stacks[i].map(p=>({x:p.x,y:p.y0})))},flowG); E('path',{className:'outer',d:line(stacks[0].map(p=>({x:p.x,y:p.y0})))},flowG); E('path',{className:'outer',d:line(stacks.at(-1).map(p=>({x:p.x,y:p.y1})))},flowG);
+  let locked=null; svg.addEventListener('click',()=>{locked=null;clearHot();tip.style.opacity=0;}); function hot(id){document.querySelectorAll('.layer,.texture').forEach(el=>{el.classList.toggle('dim',el.dataset.flow!==id); el.classList.toggle('hot',el.dataset.flow===id);}); document.querySelectorAll('.node').forEach(el=>{el.classList.toggle('dim',el.dataset.flow!==id); el.classList.toggle('hot',el.dataset.flow===id);});} function clearHot(){document.querySelectorAll('.layer,.texture,.node').forEach(el=>el.classList.remove('dim','hot'));} function show(e,d){tip.innerHTML='<b>'+d.title+'</b><div class="meta">'+(d.meta||'')+'</div><div>'+(d.data||'')+'</div><div style="margin-top:4px;color:#67584d">'+(d.note||'')+'</div>'; tip.style.opacity=1; tip.style.left=e.clientX+'px'; tip.style.top=e.clientY+'px';} function bind(g,d){g.dataset.flow=d.flow; g.classList.add('node'); g.style.cursor='pointer'; g.addEventListener('mouseenter',e=>{hot(d.flow);show(e,d)}); g.addEventListener('mousemove',e=>show(e,d)); g.addEventListener('mouseleave',()=>{if(!locked){tip.style.opacity=0;clearHot();}}); g.addEventListener('click',e=>{e.stopPropagation();locked=locked===d.id?null:d.id;if(!locked){clearHot();return;}hot(d.flow);show(e,d);});}
+  function vguide(cx,y1,y2,soft=false){E('line',{className:soft?'guide solid':'guide',x1:cx,x2:cx,y1,y2},guideG)} function dot(cx,cy,c){E('circle',{className:'dot',cx,cy,r:3.9,fill:c},guideG)} function cover(g,name,color){E('rect',{width:52,height:52,fill:'url(#coverPaper)',stroke:'#8B7667','stroke-width':.9},g); E('path',{d:'M7,44 C19,28 31,36 45,10',stroke:color,'stroke-width':2.2,fill:'none',opacity:.7},g); T(g,name.slice(0,2),26,32,'',{'text-anchor':'middle','font-size':18,'font-weight':900,fill:'#342820'});}
+  const albums={'意外':{year:2013.86,date:'2013',comments:1123502,tag:'主观性 .500',flow:'narrative',y:218,side:'top'},'初学者':{year:2016.43,date:'2016',comments:857755,tag:'洪峰前夜',flow:'narrative',y:806,side:'bottom'},'渡':{year:2017.84,date:'2017',comments:1842233,tag:'184.2万评论',flow:'narrative',y:126,side:'top'},'尘':{year:2019.49,date:'2019',comments:1289563,tag:'语境 .106',flow:'memory',y:770,side:'bottom'},'天外来物':{year:2020.54,date:'2020',comments:1545967,tag:'154.6万评论',flow:'ritual',y:132,side:'top'},'守村人':{year:2023.46,date:'2023',comments:698913,tag:'深夜46.13%',flow:'night',y:790,side:'bottom'},'跃':{year:2025.54,date:'2025',comments:778412,tag:'身份认同',flow:'identity',y:174,side:'top'}};
+  Object.entries(albums).forEach(([name,a])=>{const l=layerMap.get(a.flow), p=interpLayer(a.flow,a.year), g=G({transform:'translate('+(p.x-26)+','+a.y+')'},nodeG); vguide(p.x,a.side==='top'?a.y+56:a.y,p.mid); vguide(p.x,p.mid,920,true); dot(p.x,p.mid,l.fill); bind(g,{id:'album-'+name,flow:a.flow,title:'《'+name+'》',meta:a.date+' · 专辑节点',data:fmt(a.comments)+'评论 · '+a.tag,note:'专辑节点解释对应年份的数据波峰和语义层增厚。'}); cover(g,name,l.stroke); T(g,'《'+name+'》',62,13,'node-title'); T(g,a.date+' AD · 专辑',62,31,'node-sub'); T(g,a.tag,62,48,'node-data');});
   function tag(d){const l=layerMap.get(d.flow), p=interpLayer(d.flow,d.year), w=d.w||164, h=42, px=p.x-w/2, py=d.y, g=G({transform:'translate('+px+','+py+')'},nodeG); vguide(p.x,d.side==='top'?py+h:py,p.mid); if(d.axis)vguide(p.x,p.mid,920,true); dot(p.x,p.mid,l.fill); bind(g,d); E('rect',{width:w,height:h,rx:17,fill:d.fill||'#8E1715',opacity:.96},g); E('path',{d:'M'+(w*.46)+' 42 L'+(w*.38)+' 55 L'+(w*.57)+' 42 Z',fill:d.fill||'#8E1715'},g); T(g,d.title,18,18,'tag-text'); T(g,d.short,18,34,'tag-sub');}
-  tag({id:'zero',flow:'ritual',year:2020,y:324,side:'top',w:150,fill:'#9B2019',title:'00:00',short:'1,719,105 条',meta:'hour clock',data:'零点评论占全天 15.73%',note:'首发、生日、祝福和蹲守共同形成仪式层。',axis:true});
-  tag({id:'subj',flow:'narrative',year:2018,y:392,side:'top',w:176,fill:'#A54236',title:'主观叙事峰',short:'2017—2018 · .483/.492',meta:'year_trends.csv',data:'平均字数约 48；主观性达到高位。',note:'这层的厚度由主观性和评论长度共同推高。'});
-  tag({id:'night',flow:'night',year:2023.1,y:694,side:'bottom',w:164,fill:'#4B5480',title:'2023 深夜化',short:'深夜率 36.5%',meta:'duckdb_year.csv',data:'《守村人》深夜率 46.13%',note:'深夜长评层在后段自然变厚。'});
-
-  const axis=G(); E('line',{className:'axis',x1:x(2013),x2:x(2026),y1:920,y2:920},axis); for(let yr=2013;yr<=2026;yr++){E('circle',{cx:x(yr),cy:920,r:3.6,fill:'#8D7565'},axis); if(yr===2013||yr%2===0||yr===2026)T(axis,yr+'AD',x(yr),947,'year',{'text-anchor':'middle'});}
-  T(axis,'评论河流时间轴 2013—2026',92,980,'axis-note'); T(axis,'作品时间轴 2006—2026；本页河流仅使用实际覆盖的评论数据 2013—2026。',92,998,'axis-sub');
-  const leg=G({transform:'translate(90,1020)'}); layers.forEach((l,i)=>{const g=G({transform:'translate('+(i*190)+',0)'},leg); E('rect',{x:0,y:-5,width:30,height:10,fill:l.fill,stroke:l.stroke,'stroke-width':.7},g); E('rect',{x:0,y:-5,width:30,height:10,fill:'url(#pat-'+l.id+')',opacity:.75},g); T(g,l.cn,40,0,'legend-cn',{'dominant-baseline':'middle'}); T(g,l.en,40,16,'legend-en');});
-  T(svg,'Data: advanced_cleaning_v3/full_cleaning_by_year.csv · duckdb_year.csv · year_trends.csv · five_dimension_summary.csv',1140,1000,'source'); T(svg,'Method: positive yearly series · weighted wiggle offset · matte textured streamgraph, not separated rivers.',1140,1018,'source');
+  tag({id:'zero',flow:'ritual',year:2020,y:324,side:'top',w:150,fill:'#9B2019',title:'00:00',short:'1,719,105 条',meta:'hour clock',data:'零点评论占全天 15.73%',note:'首发、生日、祝福和蹲守共同形成仪式层。',axis:true}); tag({id:'subj',flow:'narrative',year:2018,y:392,side:'top',w:176,fill:'#A54236',title:'主观叙事峰',short:'2017—2018 · .483/.492',meta:'year_trends.csv',data:'平均字数约 48；主观性达到高位。',note:'这层的厚度由主观性和评论长度共同推高。'}); tag({id:'night',flow:'night',year:2023.1,y:694,side:'bottom',w:164,fill:'#4B5480',title:'2023 深夜化',short:'深夜率 36.5%',meta:'duckdb_year.csv',data:'《守村人》深夜率 46.13%',note:'深夜长评层在后段自然变厚。'});
+  function explain(d){const p=interpLayer(d.flow,d.year), g=G({transform:'translate('+d.x+','+d.y+')'},nodeG), h=52; vguide(p.x,d.y+(d.top?h:0),p.mid,true); dot(p.x,p.mid,layerMap.get(d.flow).fill); bind(g,{id:'ex-'+d.title,flow:d.flow,title:d.title,meta:d.meta,data:d.data,note:d.note}); E('rect',{x:-8,y:-16,width:d.w||190,height:h+8,fill:'#EFE6D8',opacity:.72,stroke:'rgba(104,82,65,.18)'},g); T(g,d.title,0,0,'ex-title'); T(g,d.body,0,18,'ex-body'); T(g,d.data,0,36,'ex-data');}
+  explain({flow:'identity',year:2013.1,x:130,y:330,top:true,w:205,title:'开口：窄但不归零',body:'2013 评论数据刚开始，五层已出现',data:'114 条 · 早期分层',note:'采用感知缩放避免小年份被压成一个点。'}); explain({flow:'narrative',year:2016.3,x:430,y:285,top:true,w:210,title:'2016：水位突然抬升',body:'用户量和专辑节点一起把河面撑开',data:'91.9万评论',note:'从这里开始评论不只是听歌反馈。'}); explain({flow:'memory',year:2019.35,x:880,y:700,top:false,w:210,title:'2019：语境开始变厚',body:'评论携带时间、关系、地点与回忆',data:'context .104—.106',note:'绿灰层增厚表示记忆/语境类表达稳定。'}); explain({flow:'ritual',year:2020.54,x:1065,y:288,top:true,w:210,title:'2020：零点把红层抬高',body:'首发与蹲守集中在同一时刻',data:'00:00 · 171.9万条',note:'橙红色仪式层在这里变厚。'}); explain({flow:'identity',year:2025.45,x:1540,y:346,top:true,w:210,title:'末端：不是尖点',body:'2025—2026 仍有身份认同和深夜层',data:'《跃》身份认同',note:'近期评论尚未定型，所以末端保留发散。'});
+  const axis=G(); E('line',{className:'axis',x1:x(2013),x2:x(2026),y1:920,y2:920},axis); for(let yr=2013;yr<=2026;yr++){E('circle',{cx:x(yr),cy:920,r:3.6,fill:'#8D7565'},axis); if(yr===2013||yr%2===0||yr===2026)T(axis,yr+'AD',x(yr),947,'year',{'text-anchor':'middle'});} T(axis,'评论河流时间轴 2013—2026',92,980,'axis-note'); T(axis,'作品时间轴 2006—2026；本页河流使用实际覆盖的评论数据 2013—2026，并用专辑节点解释局部增厚。',92,998,'axis-sub');
+  const leg=G({transform:'translate(90,1020)'}); layers.forEach((l,i)=>{const g=G({transform:'translate('+(i*190)+',0)'},leg); E('rect',{x:0,y:-5,width:30,height:10,fill:l.fill,stroke:l.stroke,'stroke-width':.7},g); E('rect',{x:0,y:-5,width:30,height:10,fill:'url(#pat-'+l.id+')',opacity:.75},g); T(g,l.cn,40,0,'legend-cn',{'dominant-baseline':'middle'}); T(g,l.en,40,16,'legend-en');}); T(svg,'Data: advanced_cleaning_v3/full_cleaning_by_year.csv · duckdb_year.csv · year_trends.csv · five_dimension_summary.csv',1140,1000,'source'); T(svg,'Encoding: river width = yearly comment intensity; layer thickness = cultural mechanism strength; annotations mark why the river changes.',1140,1018,'source');
 })();
-</script>
-</body>
-</html>
+</script></body></html>
