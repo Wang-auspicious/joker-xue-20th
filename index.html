@@ -1047,7 +1047,222 @@ body::after {
   <div class="line"></div>
 </div>
 
-<!-- ============ PAGE 2: 人们在说什么 · 词云与高频词 ============ -->
+<!-- ============ PAGE 2: 基础统计概览 · 数据肖像 ============ -->
+<section class="page" id="page-stats">
+<style>
+#page-stats {
+  background: var(--paper); color: var(--ink);
+  min-height: 100vh; padding: 48px 64px 40px;
+  display: flex; flex-direction: column;
+}
+#page-stats .stats-masthead { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid rgba(42,34,48,0.22); padding-bottom: 14px; margin-bottom: 18px; }
+#page-stats .stats-masthead .left { font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: 0.22em; color: var(--ink-soft); text-transform: uppercase; }
+#page-stats .stats-masthead .right { font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: 0.18em; color: var(--ink-mute); text-transform: uppercase; }
+#page-stats .stats-title { text-align: center; margin-bottom: 2px; }
+#page-stats .stats-title h1 { font-family: "Noto Serif SC", serif; font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.01em; line-height: 1.08; color: var(--ink); }
+#page-stats .stats-title .dek { font-family: "Cormorant Garamond", "Noto Serif SC", serif; font-style: italic; font-size: clamp(14px, 1.2vw, 17px); color: var(--ink-soft); margin-top: 6px; letter-spacing: 0.02em; }
+
+#page-stats .stats-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 20px; flex: 1; min-height: 0; }
+#page-stats .stats-cell { background: rgba(255,255,255,0.35); border: 1px solid rgba(42,34,48,0.08); border-radius: 6px; padding: 14px 16px 10px; display: flex; flex-direction: column; position: relative; }
+#page-stats .stats-cell-label { font-family: "DM Mono", monospace; font-size: 9px; letter-spacing: 0.16em; color: var(--ink-mute); text-transform: uppercase; margin-bottom: 4px; }
+#page-stats .stats-cell-chart { flex: 1; min-height: 0; }
+#page-stats .stats-cell-chart svg { width: 100%; height: 100%; }
+#page-stats .stats-insight { position: absolute; bottom: 10px; right: 16px; font: italic 400 12px/1.5 "Cormorant Garamond", "Noto Serif SC", serif; color: var(--ink-mute); text-align: right; max-width: 220px; }
+
+#page-stats .stats-quote-strip { display: flex; gap: 10px; margin-top: 14px; }
+#page-stats .stats-quote-card { flex: 1; background: rgba(255,255,255,0.4); border: 1px solid rgba(42,34,48,0.07); border-radius: 4px; padding: 10px 12px; min-width: 0; }
+#page-stats .stats-quote-card .qc-likes { font: 700 11px "DM Mono", monospace; color: var(--c-wine); margin-bottom: 2px; }
+#page-stats .stats-quote-card .qc-text { font: 400 12px/1.55 "Noto Serif SC", serif; color: var(--ink); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+#page-stats .stats-quote-card .qc-song { font: 400 10px "DM Mono", monospace; color: var(--ink-mute); margin-top: 4px; }
+</style>
+
+<div class="stats-masthead">
+  <div class="left">薛 之 谦 · 数 据 层 · 章 二</div>
+  <div class="right">第 二 页 · 基 础 统 计 概 览</div>
+</div>
+<div class="stats-title">
+  <h1>一千零九十二万条评论</h1>
+  <div class="dek">Ten Million Voices · A Statistical Portrait</div>
+</div>
+
+<div class="stats-grid">
+  <!-- Top-left: Length histogram -->
+  <div class="stats-cell" id="cell-length">
+    <div class="stats-cell-label">评论长度分布 · Comment Length</div>
+    <div class="stats-cell-chart" id="chart-length"></div>
+    <div class="stats-insight">一半评论不超过12个字；<br>短评是云村的主要表达形态</div>
+  </div>
+  <!-- Top-right: Hour distribution -->
+  <div class="stats-cell" id="cell-hour">
+    <div class="stats-cell-label">评论时间节律 · Hourly Rhythm</div>
+    <div class="stats-cell-chart" id="chart-hour"></div>
+    <div class="stats-insight">深夜0点评论量是中午的3.5倍；<br>凌晨2-4点评论最长</div>
+  </div>
+  <!-- Bottom-left: Likes distribution -->
+  <div class="stats-cell" id="cell-likes">
+    <div class="stats-cell-label">点赞分布 · Like Distribution (log)</div>
+    <div class="stats-cell-chart" id="chart-likes"></div>
+    <div class="stats-insight">50.6%评论零点赞；<br>0.02%评论超过一万赞—幂律分布</div>
+  </div>
+  <!-- Bottom-right: Top users -->
+  <div class="stats-cell" id="cell-users">
+    <div class="stats-cell-label">高频用户 Top 10 · Power Users</div>
+    <div class="stats-cell-chart" id="chart-users"></div>
+    <div class="stats-insight">榜首用户留下12.3万条评论；<br>3位用户跨45+首歌评论</div>
+  </div>
+</div>
+
+<div class="stats-quote-strip" id="top-quotes"></div>
+
+<script>
+(function(){
+var LENGTH = {"bins":[5,10,15,20,25,30,40,50,60,80,100,150,200,500],"counts":[9956,10932,8523,5586,3004,1899,2259,1368,861,995,599,1168,38,9],"total":47197,"p50":12,"p75":21,"p90":42};
+var LIKES = {"bins":[0,1,3,5,10,20,50,100,200,500,1000,2000,5000,10000,50000,100000,1000000],"counts":[23896,9531,8770,2777,1603,303,131,61,49,38,23,3,5,4,2,0,1],"total":47197,"p50":0,"p90":4};
+var HOUR = [40087,11465,5743,3263,2036,1790,3022,5223,7326,8622,10054,9677,11116,10778,8826,8835,9671,9424,9930,10725,12434,14286,17661,18249];
+var USERS = [{"name":"#1","n":123101,"songs":8,"avg_len":16.1,"max_like":14},{"name":"#2","n":105937,"songs":11,"avg_len":12.9,"max_like":7},{"name":"#3","n":99874,"songs":45,"avg_len":24.2,"max_like":202063},{"name":"#4","n":27130,"songs":4,"avg_len":13.3,"max_like":15},{"name":"#5","n":20603,"songs":4,"avg_len":22.7,"max_like":30},{"name":"#6","n":9498,"songs":82,"avg_len":15.6,"max_like":1692},{"name":"#7","n":6783,"songs":45,"avg_len":12.6,"max_like":1325},{"name":"#8","n":5930,"songs":71,"avg_len":26.0,"max_like":3411},{"name":"#9","n":4513,"songs":45,"avg_len":8.5,"max_like":641},{"name":"#10","n":3680,"songs":58,"avg_len":26.1,"max_like":57242}];
+var TOP5 = [{"likes":"629,222","text":"一个人能有多不正经，就能有多深情。","song":"演员"},{"likes":"458,257","text":"多少人等到了零点！","song":"我好像在哪见过你"},{"likes":"409,306","text":"你有这种期待 我有这种打算 但是 天外来物 不算大招吗...","song":"天外来物"},{"likes":"376,634","text":"十年前 五岁半的我 耳朵有血管瘤 手术后右耳失聪...","song":"那是你离开北京的生活"},{"likes":"362,934","text":"一个初学者，都沦为丑八怪了，你还要我怎样呢...","song":"我好像在哪见过你"}];
+
+// --- Length histogram ---
+(function(){
+  var cell = document.getElementById('chart-length');
+  var W = cell.clientWidth, H = cell.clientHeight;
+  var m = {top:8, right:24, bottom:28, left:36}, iw = W-m.left-m.right, ih = H-m.top-m.bottom;
+  var svg = d3.select(cell).append('svg').attr('viewBox','0 0 '+W+' '+H).attr('preserveAspectRatio','xMidYMid meet');
+  var g = svg.append('g').attr('transform','translate('+m.left+','+m.top+')');
+  var x = d3.scaleLinear().domain([0,220]).range([0,iw]);
+  var bins = LENGTH.bins, counts = LENGTH.counts;
+  var bw = iw / bins.length * 0.78, gap = iw / bins.length * 0.22;
+  var maxC = d3.max(counts);
+  var y = d3.scaleLinear().domain([0,maxC*1.12]).range([ih,0]);
+  g.selectAll('rect').data(bins).enter().append('rect')
+    .attr('x',function(d,i){ return x(d) - bw/2; }).attr('y',function(d,i){ return y(counts[i]); })
+    .attr('width',bw).attr('height',function(d,i){ return ih - y(counts[i]); })
+    .attr('fill','var(--c-plum)').attr('opacity',0.7).attr('rx',1);
+  // KDE curve approximation
+  var kdeX = d3.range(1,220,1);
+  var kdeY = kdeX.map(function(v){
+    var s = 0;
+    for (var i=0;i<bins.length;i++){ var c = bins[i]; s += counts[i] * Math.exp(-0.5*Math.pow((v-c)/18,2)); }
+    return s * 0.022;
+  });
+  var line = d3.line().x(function(d,i){ return x(kdeX[i]); }).y(function(d){ return y(d); }).curve(d3.curveBasis);
+  g.append('path').datum(kdeY).attr('d',line).attr('fill','none').attr('stroke','var(--c-wine)').attr('stroke-width',1.5).attr('opacity',0.55);
+  // Annotations
+  g.append('line').attr('x1',x(12)).attr('x2',x(12)).attr('y1',y(maxC*0.72)).attr('y2',y(maxC*1.02)).attr('stroke','var(--ink-soft)').attr('stroke-width',0.8).attr('stroke-dasharray','3,2');
+  g.append('text').attr('x',x(12)).attr('y',y(maxC*0.68)).text('中位数=12字').attr('text-anchor','middle').attr('font-family','DM Mono').attr('font-size','9px').attr('fill','var(--ink-soft)');
+  g.append('g').attr('transform','translate(0,'+ih+')').call(d3.axisBottom(x).tickValues([0,50,100,150,200]).tickFormat(function(d){ return d+'字'; }))
+    .selectAll('text').attr('font-family','DM Mono').attr('font-size','8px').attr('fill','var(--ink-mute)');
+  g.append('g').call(d3.axisLeft(y).ticks(3).tickFormat(function(d){ return (d/1000).toFixed(1)+'k'; }))
+    .selectAll('text').attr('font-family','DM Mono').attr('font-size','8px').attr('fill','var(--ink-mute)');
+})();
+
+// --- Hour distribution ---
+(function(){
+  var cell = document.getElementById('chart-hour');
+  var W = cell.clientWidth, H = cell.clientHeight;
+  var m = {top:8, right:24, bottom:28, left:36}, iw = W-m.left-m.right, ih = H-m.top-m.bottom;
+  var svg = d3.select(cell).append('svg').attr('viewBox','0 0 '+W+' '+H).attr('preserveAspectRatio','xMidYMid meet');
+  var g = svg.append('g').attr('transform','translate('+m.left+','+m.top+')');
+  var x = d3.scaleBand().domain(d3.range(0,24)).range([0,iw]).padding(0.18);
+  var y = d3.scaleLinear().domain([0,d3.max(HOUR)*1.08]).range([ih,0]);
+  var nightColor = d3.scaleLinear().domain([0,6,18,23]).range(['#2A2240','#1C1830','#2A2240','#2A2240']);
+  g.selectAll('rect').data(HOUR).enter().append('rect')
+    .attr('x',function(d,i){ return x(i); }).attr('width',x.bandwidth())
+    .attr('y',function(d){ return y(d); }).attr('height',function(d){ return ih - y(d); })
+    .attr('fill',function(d,i){ return (i>=22||i<=5) ? 'var(--c-plum)' : 'var(--c-lilac)'; })
+    .attr('opacity',function(d,i){ return (i>=22||i<=5) ? 0.78 : 0.5; }).attr('rx',1);
+  // Night shade
+  g.append('rect').attr('x',x(22)-2).attr('width',x(5)-x(22)+x.bandwidth()+4).attr('y',0).attr('height',ih)
+    .attr('fill','var(--c-plum)').attr('opacity',0.06).attr('rx',2);
+  g.append('text').attr('x',(x(22)+x(5)+x.bandwidth())/2).attr('y',12).text('深夜时段').attr('text-anchor','middle')
+    .attr('font-family','Noto Serif SC').attr('font-size','9px').attr('fill','var(--c-wine)').attr('opacity',0.6);
+  // Peak annotation
+  g.append('text').attr('x',x(0)+x.bandwidth()/2).attr('y',y(HOUR[0])-6).text('峰值').attr('text-anchor','middle')
+    .attr('font-family','DM Mono').attr('font-size','9px').attr('fill','var(--c-wine)').attr('font-weight','700');
+  g.append('g').attr('transform','translate(0,'+ih+')').call(d3.axisBottom(x).tickFormat(function(d){ return d+':00'; }).tickValues([0,6,12,18,23]))
+    .selectAll('text').attr('font-family','DM Mono').attr('font-size','8px').attr('fill','var(--ink-mute)');
+  g.append('g').call(d3.axisLeft(y).ticks(3).tickFormat(function(d){ return (d/1000).toFixed(0)+'k'; }))
+    .selectAll('text').attr('font-family','DM Mono').attr('font-size','8px').attr('fill','var(--ink-mute)');
+})();
+
+// --- Likes distribution ---
+(function(){
+  var cell = document.getElementById('chart-likes');
+  var W = cell.clientWidth, H = cell.clientHeight;
+  var m = {top:8, right:24, bottom:28, left:36}, iw = W-m.left-m.right, ih = H-m.top-m.bottom;
+  var svg = d3.select(cell).append('svg').attr('viewBox','0 0 '+W+' '+H).attr('preserveAspectRatio','xMidYMid meet');
+  var g = svg.append('g').attr('transform','translate('+m.left+','+m.top+')');
+  var logLabels = ['0','1','3','5','10','20','50','100','200','500','1k','2k','5k','10k','50k','100k','1M'];
+  var indices = d3.range(0,logLabels.length);
+  var x = d3.scaleBand().domain(indices).range([0,iw]).padding(0.15);
+  var maxC = d3.max(LIKES.counts);
+  var y = d3.scaleLinear().domain([0,maxC*1.15]).range([ih,0]);
+  g.selectAll('rect').data(indices).enter().append('rect')
+    .attr('x',function(d){ return x(d); }).attr('width',x.bandwidth())
+    .attr('y',function(d){ return y(LIKES.counts[d]); }).attr('height',function(d){ return ih - y(LIKES.counts[d]); })
+    .attr('fill',function(d,i){ return i===0 ? 'var(--c-rose)' : 'var(--c-lilac)'; })
+    .attr('opacity',function(d,i){ return i===0 ? 0.9 : 0.55; }).attr('rx',1);
+  g.append('text').attr('x',x(0)+x.bandwidth()/2).attr('y',y(LIKES.counts[0])-6).text('50.6%').attr('text-anchor','middle')
+    .attr('font-family','DM Mono').attr('font-size','9px').attr('fill','var(--c-wine)').attr('font-weight','700');
+  g.append('g').attr('transform','translate(0,'+ih+')').call(d3.axisBottom(x).tickValues([0,5,9,13,16]).tickFormat(function(d){ return logLabels[d]; }))
+    .selectAll('text').attr('font-family','DM Mono').attr('font-size','8px').attr('fill','var(--ink-mute)');
+  g.append('g').call(d3.axisLeft(y).ticks(3).tickFormat(function(d){ return (d/1000).toFixed(1)+'k'; }))
+    .selectAll('text').attr('font-family','DM Mono').attr('font-size','8px').attr('fill','var(--ink-mute)');
+  g.append('text').attr('x',iw-2).attr('y',-2).text('点赞数 →').attr('text-anchor','end')
+    .attr('font-family','DM Mono').attr('font-size','8px').attr('fill','var(--ink-mute)');
+})();
+
+// --- Top users ---
+(function(){
+  var cell = document.getElementById('chart-users');
+  var W = cell.clientWidth, H = cell.clientHeight;
+  var m = {top:4, right:24, bottom:12, left:36}, iw = W-m.left-m.right, ih = H-m.top-m.bottom;
+  var svg = d3.select(cell).append('svg').attr('viewBox','0 0 '+W+' '+H).attr('preserveAspectRatio','xMidYMid meet');
+  var g = svg.append('g').attr('transform','translate('+m.left+','+m.top+')');
+  var users = USERS.slice(0,10).reverse();
+  var maxN = d3.max(users,function(d){ return d.n; });
+  var y = d3.scaleBand().domain(d3.range(10)).range([0,ih]).padding(0.2);
+  var x = d3.scaleLinear().domain([0,maxN*1.12]).range([0,iw]);
+  g.selectAll('rect').data(users).enter().append('rect')
+    .attr('x',0).attr('y',function(d,i){ return y(i); })
+    .attr('width',function(d){ return x(d.n); }).attr('height',y.bandwidth())
+    .attr('fill','var(--c-rose)').attr('opacity',0.65).attr('rx',1.5);
+  g.selectAll('text.label').data(users).enter().append('text')
+    .attr('x',function(d){ return x(d.n)+6; }).attr('y',function(d,i){ return y(i)+y.bandwidth()/2+1; })
+    .text(function(d){ return (d.n/10000).toFixed(1)+'万条'; })
+    .attr('font-family','DM Mono').attr('font-size','9px').attr('fill','var(--ink-soft)').attr('dy','0.35em');
+  g.selectAll('text.rank').data(users).enter().append('text')
+    .attr('x',-6).attr('y',function(d,i){ return y(i)+y.bandwidth()/2+1; })
+    .text(function(d,i){ return '#'+(10-i); })
+    .attr('font-family','DM Mono').attr('font-size','9px').attr('fill','var(--ink-mute)').attr('text-anchor','end').attr('dy','0.35em');
+  // Secondary info: songs count
+  g.selectAll('text.songs').data(users).enter().append('text')
+    .attr('x',function(d){ return x(d.n)+6; }).attr('y',function(d,i){ return y(i)+y.bandwidth()-3; })
+    .text(function(d){ return d.songs+'首歌'; })
+    .attr('font-family','DM Mono').attr('font-size','7px').attr('fill','var(--ink-mute)').attr('dy','0.35em');
+})();
+
+// --- Top 5 quoted comments ---
+(function(){
+  var strip = document.getElementById('top-quotes');
+  TOP5.forEach(function(q){
+    var card = document.createElement('div'); card.className = 'stats-quote-card';
+    card.innerHTML = '<div class="qc-likes">'+q.likes+' 赞</div><div class="qc-text">'+q.text+'</div><div class="qc-song">'+q.song+'</div>';
+    strip.appendChild(card);
+  });
+})();
+})();
+</script>
+</section>
+
+
+<div class="divider">
+  <div class="line"></div>
+  <span>&#9650; 继续向下 &#9650;</span>
+  <div class="line"></div>
+</div>
+
+<!-- ============ PAGE 3: 人们在说什么 · 词云与高频词 ============ -->
 <section class="page" id="page-words">
 <style>
 #page-words {
@@ -1097,11 +1312,38 @@ body::after {
 #page-words .w-tooltip.on { opacity: 1; }
 #page-words .w-tooltip .wt-word { font-size: 18px; font-weight: 700; margin-bottom: 2px; }
 #page-words .w-tooltip .wt-info { font-size: 11px; color: var(--ink-mute); }
+
+/* Hot vs Normal contrast */
+#page-words .words-contrast { margin-top: 36px; padding-top: 28px; border-top: 1px solid rgba(42,34,48,0.14); }
+#page-words .words-contrast-title { text-align: center; margin-bottom: 18px; }
+#page-words .words-contrast-title h2 { font: 700 clamp(20px,2vw,28px) "Noto Serif SC", serif; color: var(--ink); letter-spacing: -0.01em; }
+#page-words .words-contrast-title .dek { font: italic clamp(12px,1vw,15px) "Cormorant Garamond", "Noto Serif SC", serif; color: var(--ink-soft); margin-top: 4px; }
+#page-words .words-contrast-panels { display: flex; gap: 28px; }
+#page-words .words-contrast-panel { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+#page-words .words-contrast-panel .cp-label { text-align: center; font: 700 12px "DM Mono", monospace; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 12px; }
+#page-words .words-contrast-panel.hot .cp-label { color: var(--c-rose); }
+#page-words .words-contrast-panel.normal .cp-label { color: var(--ink-mute); }
+#page-words .words-contrast-cloud { flex: 1; position: relative; min-height: 280px; }
+#page-words .words-contrast-cloud svg { width: 100%; height: 100%; }
+#page-words .words-diverge { margin-top: 28px; }
+#page-words .words-diverge-title { font: 700 12px "DM Mono", monospace; letter-spacing: 0.16em; color: var(--ink-soft); text-transform: uppercase; margin-bottom: 12px; text-align: center; }
+#page-words .words-diverge-chart { height: 340px; position: relative; }
+#page-words .words-diverge-chart svg { width: 100%; height: 100%; }
+#page-words .words-contrast-insight { margin-top: 16px; padding: 14px 18px; border-left: 3px solid var(--c-rose); background: rgba(214,121,161,0.04); border-radius: 0 4px 4px 0; }
+#page-words .words-contrast-insight p { font: 400 14px/1.65 "Noto Serif SC", serif; color: var(--ink-soft); margin: 0; }
+#page-words .words-contrast-insight p b { color: var(--ink); }
+#page-words .diverge-bar-hot { fill: var(--c-rose); opacity: 0.82; }
+#page-words .diverge-bar-normal { fill: var(--ink-mute); opacity: 0.55; }
+#page-words .diverge-label { font: 500 12px "Noto Serif SC", serif; }
+#page-words .diverge-label.hot { fill: var(--c-rose); }
+#page-words .diverge-label.normal { fill: var(--ink-soft); }
+#page-words .diverge-axis { font: 400 9px "DM Mono", monospace; fill: var(--ink-mute); }
+#page-words .diverge-center { stroke: rgba(42,34,48,0.18); stroke-width: 1; }
 </style>
 
 <div class="words-masthead">
-  <div class="left">薛 之 谦 · 文 本 层 · 章 二</div>
-  <div class="right">第 二 页 · 词 云 与 高 频 词</div>
+  <div class="left">薛 之 谦 · 文 本 层 · 章 三</div>
+  <div class="right">第 三 页 · 词 云 与 高 频 词</div>
 </div>
 
 <div class="words-title">
@@ -1124,10 +1366,37 @@ body::after {
     </div>
   </div>
 </div>
+<!-- Hot vs Normal contrast -->
+<div class="words-contrast">
+  <div class="words-contrast-title">
+    <h2>被赞的评论在说什么，零赞的评论又<span style="font-family:'Ma Shan Zheng','Noto Serif SC',serif;font-weight:400;color:var(--c-plum);">在</span>说什么？</h2>
+    <div class="dek">从 40 万条抽样按点赞中位数（=1）分组：热门评论 21.1 万条，普通评论 18.9 万条</div>
+  </div>
+  <div class="words-contrast-panels">
+    <div class="words-contrast-panel hot">
+      <div class="cp-label">热门评论 &#183; 被看见的声音</div>
+      <div class="words-contrast-cloud" id="contrast-cloud-hot"></div>
+    </div>
+    <div class="words-contrast-panel normal">
+      <div class="cp-label">普通评论 &#183; 被淹没的声音</div>
+      <div class="words-contrast-cloud" id="contrast-cloud-normal"></div>
+    </div>
+  </div>
+  <div class="words-diverge">
+    <div class="words-diverge-title">哪些词区分了"被看见"和"被淹没"？</div>
+    <div class="words-diverge-chart" id="words-diverge-chart"></div>
+  </div>
+  <div class="words-contrast-insight" id="words-contrast-insight">
+    <p><b>发现：</b>热门评论中"喜欢"是普通评论的 2.2 倍——人们点赞的是共鸣和认同。普通评论中"快乐""生日""日快"合计近 4.2 万次，是沉默的大多数在完成"生日快乐"的仪式打卡。"湖泊"一词仅在普通评论中出现——不被看见的评论，反而保留了最诗意的词汇。</p>
+  </div>
+</div>
+
 <div class="w-tooltip" id="w-tooltip"><div class="wt-word"></div><div class="wt-info"></div></div>
 
 <script>
 (function(){
+var HN = {"hot":[["喜欢",20440],["薛之",16360],["之谦",16324],["一个",16095],["我们",14602],["你的",13190],["没有",12822],["自己",12532],["什么",12471],["的人",12249],["真的",12157],["我的",11642],["首歌",11501],["的歌",10685],["这首",10666],["知道",9995],["是我",9866],["快乐",9229],["还是",9152],["时候",9077],["不是",8858],["老薛",8433],["现在",8311],["个人",7460],["哈哈",7433],["可以",7373],["就是",7332],["生日",7180],["的时",6978],["好听",6823],["一样",6681],["因为",6554],["日快",6149],["不会",6098],["爱你",6020],["我不",5701],["希望",5675],["怎么",5641],["其实",5607],["一直",5206],["我也",5164],["好的",5110],["大哭",5092],["也不",5088],["爱心",5071],["都是",5039],["那么",4983],["只是",4974],["一起",4915],["是你",4863]],"normal":[["薛之",17443],["之谦",17365],["快乐",15257],["生日",13637],["日快",12990],["喜欢",9221],["我们",8256],["哈哈",7695],["我的",7652],["你的",7281],["什么",6924],["一个",6868],["自己",6400],["没有",6253],["啊啊",5861],["谦薛",5827],["真的",5685],["是我",5643],["的人",5523],["老薛",5119],["多多",4874],["知道",4669],["可以",4630],["不是",4587],["还是",4436],["现在",4420],["的歌",4183],["来了",4106],["好听",3984],["世界",3801],["时候",3785],["湖泊",3712],["首歌",3689],["爱你",3684],["就是",3606],["怎么",3568],["我也",3538],["一样",3532],["不会",3483],["这首",3395],["流泪",3209],["加油",3182],["永远",3151],["好的",3080],["个人",3076],["希望",2995],["我不",2979],["大哭",2835],["的时",2825],["因为",2812]],"hN":210566,"nN":189434};
+
 var FREQ = {
   adjectives: [{"word":"快乐","freq":91404},{"word":"幸福","freq":89164},{"word":"认真","freq":79033},{"word":"突然","freq":76760},{"word":"温柔","freq":73486},{"word":"努力","freq":70550},{"word":"遗憾","freq":55277},{"word":"美好","freq":48384},{"word":"孤独","freq":34720},{"word":"优秀","freq":34255},{"word":"重要","freq":32418},{"word":"厉害","freq":27245},{"word":"简单","freq":26806},{"word":"悲伤","freq":25094},{"word":"唯一","freq":24638},{"word":"痛苦","freq":23453},{"word":"珍惜","freq":23170},{"word":"不同","freq":22955},{"word":"确实","freq":22816},{"word":"卑微","freq":21106},{"word":"沉默","freq":21010},{"word":"幸运","freq":20955},{"word":"惊喜","freq":19830},{"word":"容易","freq":19476},{"word":"自由","freq":19386},{"word":"浪漫","freq":19175},{"word":"勇敢","freq":18448},{"word":"最爱","freq":18443},{"word":"平安","freq":17994},{"word":"坚定","freq":17344}],
   verbs: [{"word":"喜欢","freq":723811},{"word":"希望","freq":207374},{"word":"离开","freq":86243},{"word":"循环","freq":78937},{"word":"期待","freq":74875},{"word":"遇见","freq":73481},{"word":"分手","freq":68984},{"word":"告诉","freq":63316},{"word":"想起","freq":56741},{"word":"听歌","freq":53950},{"word":"需要","freq":51507},{"word":"分开","freq":51390},{"word":"哀伤","freq":51198},{"word":"失去","freq":49328},{"word":"想要","freq":48099},{"word":"放弃","freq":47085},{"word":"相信","freq":46820},{"word":"值得","freq":46410},{"word":"选择","freq":39724},{"word":"忘记","freq":39721},{"word":"错过","freq":39554},{"word":"认识","freq":37379},{"word":"成为","freq":37354},{"word":"支持","freq":36637},{"word":"继续","freq":36157},{"word":"愿意","freq":36139},{"word":"回忆","freq":35750},{"word":"放下","freq":35484},{"word":"坚持","freq":34218},{"word":"存在","freq":33482}],
@@ -1269,8 +1538,136 @@ window.addEventListener('resize', function(){
   resizeTimer = setTimeout(function(){
     var words = getWords(activePOS);
     drawCloud(words);
+    drawContrastClouds();
+    drawDivergingBars();
   }, 300);
 });
+
+// ── HOT vs NORMAL CONTRAST ──
+
+function buildCloudWords(list, total) {
+  return list.map(function(d){
+    return { word: d[0], freq: d[1], r: Math.max(8, Math.sqrt(d[1]) * 1.45) };
+  });
+}
+
+var contrastHotWords = buildCloudWords(HN.hot, HN.hN);
+var contrastNormalWords = buildCloudWords(HN.normal, HN.nN);
+
+function drawContrastClouds() {
+  ['hot','normal'].forEach(function(side){
+    var el = document.getElementById('contrast-cloud-' + side);
+    if (!el) return;
+    var W = el.clientWidth, H = el.clientHeight;
+    if (W < 10 || H < 10) return;
+    el.innerHTML = '';
+    var svg = d3.select(el).append('svg').attr('viewBox', [0,0,W,H]);
+    var words = side === 'hot' ? contrastHotWords : contrastNormalWords;
+    var fillColor = side === 'hot' ? '#D679A1' : '#8C8594';
+    var maxR = d3.max(words, function(d){ return d.r; });
+
+    var sim = d3.forceSimulation(words)
+      .force('x', d3.forceX(W/2).strength(0.03))
+      .force('y', d3.forceY(H/2).strength(0.03))
+      .force('collide', d3.forceCollide().radius(function(d){ return d.r + 2; }).iterations(3))
+      .stop();
+
+    for (var i = 0; i < 120; i++) sim.tick();
+
+    var g = svg.append('g');
+    g.selectAll('circle').data(words).join('circle')
+      .attr('cx', function(d){ return d.x; })
+      .attr('cy', function(d){ return d.y; })
+      .attr('r', function(d){ return d.r; })
+      .attr('fill', fillColor)
+      .attr('opacity', function(d){ return 0.28 + (d.r / maxR) * 0.62; });
+
+    g.selectAll('text').data(words.filter(function(d){ return d.r > maxR * 0.35; })).join('text')
+      .attr('x', function(d){ return d.x; })
+      .attr('y', function(d){ return d.y; })
+      .attr('text-anchor', 'middle')
+      .attr('dy', '0.35em')
+      .attr('fill', 'var(--ink)')
+      .style('font-family', '"Noto Serif SC", serif')
+      .style('font-size', function(d){ return Math.max(10, d.r * 0.55) + 'px'; })
+      .style('pointer-events', 'none')
+      .text(function(d){ return d.word; });
+  });
+}
+
+function drawDivergingBars() {
+  var el = document.getElementById('words-diverge-chart');
+  if (!el) return;
+  var W = el.clientWidth, H = el.clientHeight;
+  if (W < 10 || H < 10) return;
+
+  // Build shared word map and compute log ratio
+  var hotMap = {}, normalMap = {};
+  HN.hot.forEach(function(d){ hotMap[d[0]] = d[1]; });
+  HN.normal.forEach(function(d){ normalMap[d[0]] = d[1]; });
+
+  var shared = [];
+  Object.keys(hotMap).forEach(function(w){
+    if (normalMap[w]) {
+      var hr = hotMap[w] / HN.hN, nr = normalMap[w] / HN.nN;
+      shared.push({ word: w, ratio: hr / nr, hotF: hotMap[w], normF: normalMap[w] });
+    }
+  });
+  shared.sort(function(a,b){ return b.ratio - a.ratio; });
+
+  var topN = 18;
+  var bars = shared.slice(0, topN).concat(shared.slice(-topN));
+  // Deduplicate (in case top and bottom overlap)
+  var seen = {};
+  bars = bars.filter(function(d){ if (seen[d.word]) return false; seen[d.word] = true; return true; });
+  bars.sort(function(a,b){ return b.ratio - a.ratio; });
+
+  var maxAbs = d3.max(bars, function(d){ return Math.abs(Math.log2(d.ratio)); });
+  var margin = { top: 8, right: 20, bottom: 8, left: 60 };
+  var innerW = W - margin.left - margin.right, innerH = H - margin.top - margin.bottom;
+
+  el.innerHTML = '';
+  var svg = d3.select(el).append('svg').attr('viewBox', [0,0,W,H]);
+  var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+  var barH = Math.min(14, (innerH / bars.length) - 2);
+  var xScale = d3.scaleLinear().domain([-maxAbs, maxAbs]).range([0, innerW]);
+  var yScale = d3.scaleBand().domain(bars.map(function(d){ return d.word; })).range([0, innerH]).padding(0.15);
+
+  // Center line
+  var cx = xScale(0);
+  g.append('line').attr('x1', cx).attr('x2', cx).attr('y1', 0).attr('y2', innerH)
+    .attr('stroke', 'rgba(42,34,48,0.14)').attr('stroke-width', 0.5);
+
+  // Bars
+  g.selectAll('rect').data(bars).join('rect')
+    .attr('x', function(d){ return d.ratio >= 1 ? cx : xScale(Math.log2(d.ratio)); })
+    .attr('y', function(d){ return yScale(d.word); })
+    .attr('width', function(d){ return Math.abs(xScale(Math.log2(d.ratio)) - cx); })
+    .attr('height', barH)
+    .attr('fill', function(d){ return d.ratio >= 1 ? '#D679A1' : '#A599AB'; })
+    .attr('opacity', function(d){ return 0.55 + Math.abs(Math.log2(d.ratio)) / maxAbs * 0.4; });
+
+  // Labels
+  g.selectAll('text.label').data(bars).join('text')
+    .attr('class', 'diverge-label')
+    .attr('x', function(d){ return d.ratio >= 1 ? xScale(Math.log2(d.ratio)) - 4 : xScale(Math.log2(d.ratio)) + 4; })
+    .attr('y', function(d){ return yScale(d.word) + barH/2; })
+    .attr('dy', '0.35em')
+    .attr('text-anchor', function(d){ return d.ratio >= 1 ? 'end' : 'start'; })
+    .attr('fill', 'var(--ink)')
+    .style('font-size', '11px')
+    .text(function(d){ return d.word; });
+
+  // Axis labels
+  g.append('text').attr('x', cx - 6).attr('y', innerH + 14).attr('text-anchor', 'end')
+    .attr('fill', 'var(--ink-mute)').style('font', '9px "DM Mono", monospace').text('← 零赞更多');
+  g.append('text').attr('x', cx + 6).attr('y', innerH + 14).attr('text-anchor', 'start')
+    .attr('fill', 'var(--ink-mute)').style('font', '9px "DM Mono", monospace').text('有赞更多 →');
+}
+
+drawContrastClouds();
+drawDivergingBars();
 
 })();
 </script>
@@ -1282,7 +1679,7 @@ window.addEventListener('resize', function(){
   <div class="line"></div>
 </div>
 
-<!-- ============ PAGE 3: 情绪温度 · BERT 情感分析 ============ -->
+<!-- ============ PAGE 4: 情绪温度 · BERT 情感分析 ============ -->
 <section class="page" id="page-sentiment">
 <style>
 #page-sentiment {
@@ -1322,16 +1719,43 @@ window.addEventListener('resize', function(){
 
 #page-sentiment .sent-tooltip { position: fixed; z-index: 50; padding: 10px 14px; border: 1px solid rgba(42,34,48,0.16); background: rgba(255,255,255,0.96); box-shadow: 0 6px 20px rgba(42,34,48,0.10); border-radius: 4px; font: 13px "Noto Serif SC", serif; color: var(--ink); pointer-events: none; opacity: 0; transition: opacity 0.14s; }
 #page-sentiment .sent-tooltip.on { opacity: 1; }
+
+/* Donut + examples */
+#page-sentiment .sent-summary { display: flex; gap: 24px; align-items: center; margin-bottom: 16px; }
+#page-sentiment .sent-donut-wrap { width: 200px; height: 200px; flex-shrink: 0; position: relative; }
+#page-sentiment .sent-donut-wrap svg { width: 100%; height: 100%; }
+#page-sentiment .sent-donut-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; pointer-events: none; }
+#page-sentiment .sent-donut-center .dc-num { font: 700 28px "DM Mono", monospace; color: var(--ink); line-height: 1; }
+#page-sentiment .sent-donut-center .dc-label { font: 400 10px "Noto Serif SC", serif; color: var(--ink-mute); margin-top: 2px; }
+#page-sentiment .sent-legend { display: flex; flex-direction: column; gap: 8px; flex: 1; }
+#page-sentiment .sent-legend .sl-row { display: flex; align-items: center; gap: 10px; }
+#page-sentiment .sent-legend .sl-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+#page-sentiment .sent-legend .sl-label { font: 500 13px "Noto Serif SC", serif; color: var(--ink); }
+#page-sentiment .sent-legend .sl-pct { font: 400 13px "DM Mono", monospace; color: var(--ink-soft); margin-left: auto; }
+#page-sentiment .sent-quotes { display: flex; gap: 14px; margin-top: 18px; flex-shrink: 0; }
+#page-sentiment .sent-quote-card { flex: 1; padding: 12px 14px; background: rgba(255,255,255,0.5); border: 1px solid rgba(42,34,48,0.07); border-radius: 3px; }
+#page-sentiment .sent-quote-card .sq-tag { display: inline-block; padding: 2px 8px; border-radius: 2px; font: 400 10px "DM Mono", monospace; letter-spacing: 0.1em; margin-bottom: 6px; }
+#page-sentiment .sent-quote-card .sq-tag.pos { background: rgba(214,121,161,0.12); color: var(--c-plum); }
+#page-sentiment .sent-quote-card .sq-tag.neg { background: rgba(90,85,100,0.08); color: var(--ink-soft); }
+#page-sentiment .sent-quote-card .sq-tag.mix { background: rgba(184,164,201,0.12); color: var(--c-lilac); }
+#page-sentiment .sent-quote-card .sq-text { font: 400 13px/1.65 "Noto Serif SC", serif; color: var(--ink); }
+#page-sentiment .sent-quote-card .sq-likes { font: 400 10px "DM Mono", monospace; color: var(--ink-mute); margin-top: 4px; }
 </style>
 
 <div class="sent-masthead">
-  <div class="left">薛 之 谦 · 情 感 层 · 章 三</div>
-  <div class="right">第 三 页 · BERT 情 感 分 析</div>
+  <div class="left">薛 之 谦 · 情 感 层 · 章 四</div>
+  <div class="right">第 四 页 · BERT 情 感 分 析</div>
 </div>
 
 <div class="sent-title">
   <h1>评论里的<span class="accent">情绪</span>，并不均匀</h1>
   <div class="dek">基于 BERT 语义模型对 25.7 万条 v3 样本的情绪强度与主观性评分 · 分数越高表示情绪表达越强烈</div>
+</div>
+
+<!-- Sentiment distribution donut -->
+<div class="sent-summary">
+  <div class="sent-donut-wrap" id="sent-donut"></div>
+  <div class="sent-legend" id="sent-legend"></div>
 </div>
 
 <div class="sent-charts">
@@ -1344,6 +1768,9 @@ window.addEventListener('resize', function(){
     <div class="sent-chart-wrap" id="sent-hour-chart"></div>
   </div>
 </div>
+
+<!-- Example comments -->
+<div class="sent-quotes" id="sent-quotes"></div>
 
 <div class="sent-insights">
   <div class="sent-insight-card">
@@ -1409,6 +1836,59 @@ var HOUR_DATA = [
   {hour:22,n:17661,emotion:0.073,subjectivity:0.436,avg_len:40.9,long_rate:0.200},
   {hour:23,n:18249,emotion:0.071,subjectivity:0.442,avg_len:41.4,long_rate:0.210}
 ];
+
+var SENT_DIST = [
+  {label:'中性/弱情绪', pct:51.3, n:128413, color:'#B3A9B8'},
+  {label:'积极', pct:32.0, n:80096, color:'#D679A1'},
+  {label:'消极', pct:11.7, n:29357, color:'#8B7E92'},
+  {label:'混合情绪', pct:4.9, n:12377, color:'#B8A4C9'}
+];
+var SENT_EX = [
+  {tag:'pos',tagLabel:'积极',text:'真的很开心啊，马上要做一个成功率超级低的心脏手术，打开网易云就看到老薛发歌了。希望自己能活着回来听下一首❤️ 这个世界，真好，我还想再看看。',likes:'447,038 赞'},
+  {tag:'pos',tagLabel:'积极',text:'你有这种期待 我有这种打算 但是 天外来物 不算大招吗...',likes:'409,306 赞 · 薛之谦本人'},
+  {tag:'neg',tagLabel:'消极',text:'疯了！全世界都能看到薛之谦。去理发，放的他的歌：去吃火锅，他的歌：去超市吧，还是他的歌...',likes:'479,565 赞'},
+  {tag:'neg',tagLabel:'消极',text:'看灵感了 疫情 mv也不好拍 看情况吧',likes:'261,031 赞'},
+  {tag:'mix',tagLabel:'混合',text:'开始慢慢懂爱情，却开始害怕听情歌。',likes:'357,413 赞'},
+  {tag:'mix',tagLabel:'混合',text:'那年夏天，因为一些事吵得很凶，分手，删了一切却始终想知道她最近怎么样...后来，我在她的红心找到这首歌，我知道，她还爱着我。',likes:'235,100 赞'}
+];
+
+// ── SENTIMENT DONUT ──
+(function(){
+  var el = document.getElementById('sent-donut');
+  if (!el) return;
+  var W = 200, H = 200, R = 88, innerR = 52;
+  var svg = d3.select(el).append('svg').attr('viewBox','0 0 '+W+' '+H);
+  var g = svg.append('g').attr('transform','translate('+W/2+','+H/2+')');
+  var pie = d3.pie().value(function(d){ return d.n; }).sort(null);
+  var arc = d3.arc().innerRadius(innerR).outerRadius(R).cornerRadius(2);
+  var arcs = g.selectAll('path').data(pie(SENT_DIST)).join('path')
+    .attr('d', arc)
+    .attr('fill', function(d){ return d.data.color; })
+    .attr('stroke', 'var(--paper)').attr('stroke-width', 2)
+    .attr('opacity', 0.88);
+
+  // Center text
+  var center = document.createElement('div');
+  center.className = 'sent-donut-center';
+  center.innerHTML = '<div class="dc-num">25万</div><div class="dc-label">BERT 分析样本</div>';
+  el.appendChild(center);
+
+  // Legend
+  var legendEl = document.getElementById('sent-legend');
+  SENT_DIST.forEach(function(d){
+    var row = document.createElement('div'); row.className = 'sl-row';
+    row.innerHTML = '<span class="sl-dot" style="background:'+d.color+'"></span><span class="sl-label">'+d.label+'</span><span class="sl-pct">'+d.pct+'% · '+(d.n/10000).toFixed(1)+'万</span>';
+    legendEl.appendChild(row);
+  });
+
+  // Example quotes
+  var quotesEl = document.getElementById('sent-quotes');
+  SENT_EX.forEach(function(q){
+    var card = document.createElement('div'); card.className = 'sent-quote-card';
+    card.innerHTML = '<div class="sq-tag '+q.tag+'">'+q.tagLabel+'</div><div class="sq-text">'+q.text+'</div><div class="sq-likes">'+q.likes+'</div>';
+    quotesEl.appendChild(card);
+  });
+})();
 
 // ── YEAR CHART (dual-axis: emotion line + subjectivity dashed line) ──
 (function(){
@@ -1515,7 +1995,7 @@ var HOUR_DATA = [
   <div class="line"></div>
 </div>
 
-<!-- ============ PAGE 4: 评论文化河流图 (1920×1080) ============ -->
+<!-- ============ PAGE 5: 评论文化河流图 (1920×1080) ============ -->
 <section class="page" id="page-genealogy" style="padding:0; min-height:100vh; overflow:hidden;">
   <iframe
     src="./comment-culture-river.html"
@@ -1531,7 +2011,7 @@ var HOUR_DATA = [
   <div class="line"></div>
 </div>
 
-<!-- ============ PAGE 5: daily comment particle migration ============ -->
+<!-- ============ PAGE 6: daily comment particle migration ============ -->
 <section class="page" id="page-day-migration" aria-label="daily comment particle migration">
   <div class="day-bg" aria-hidden="true"></div>
   <div class="day-copy">
@@ -1552,7 +2032,7 @@ var HOUR_DATA = [
   <div class="line"></div>
 </div>
 
-<!-- ============ PAGE 6: 四种听众 · 用户画像 ============ -->
+<!-- ============ PAGE 7: 四种听众 · 用户画像 ============ -->
 <section class="page-data" id="page-personas">
 <style>
 #page-personas {
@@ -1765,7 +2245,7 @@ function pos(e){
   <div class="line"></div>
 </div>
 
-<!-- ============ PAGE 7: 一句暗语 · 评论暗语溯源 ============ -->
+<!-- ============ PAGE 8: 一句暗语 · 评论暗语溯源 ============ -->
 <section id="page-peace-meme">
   <div class="pm-top-bar">
     <div class="pm-title-block">
