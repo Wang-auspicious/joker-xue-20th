@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一句话怎么飞了十一年 — 世界和平传播史</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Mono:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style>
+:root{--paper:#F4EFEA;--ink:#2A2230;--amber:#C2622A;--amber-light:#E8905A}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--paper);color:var(--ink);font-family:'Noto Serif SC',serif;-webkit-font-smoothing:antialiased}
+#app{display:flex;flex-direction:column;width:100%;height:100vh}
+
+/* ── Top bar ── */
+.top-bar{flex:0 0 72px;display:flex;align-items:center;padding:0 48px;border-bottom:1px solid rgba(42,34,48,.14)}
+.top-bar h1{font-size:24px;font-weight:900;letter-spacing:1px;color:var(--ink);flex:1}
+.top-bar .sub{font:700 11px 'DM Mono',monospace;color:#8B7D72;letter-spacing:.8px;text-transform:uppercase}
+
+/* ── Three columns ── */
+.main{flex:1;display:flex;overflow:hidden}
+.col-l{flex:0 0 30%;display:flex;flex-direction:column;justify-content:center;padding:0 0 0 56px;border-right:1px solid rgba(42,34,48,.10)}
+.col-m{flex:0 0 40%;position:relative;overflow:hidden}
+.col-r{flex:0 0 30%;display:flex;flex-direction:column;border-left:1px solid rgba(42,34,48,.10);overflow:hidden}
+
+/* ── Left column ── */
+.col-l .eyebrow{font:700 10px 'DM Mono',monospace;color:var(--amber);letter-spacing:.3em;text-transform:uppercase;margin-bottom:18px}
+.col-l .hero-quote{font-family:'Noto Serif SC',serif;font-size:28px;font-weight:700;line-height:1.45;color:var(--ink);margin-bottom:20px;letter-spacing:.02em;max-width:420px}
+.col-l .hero-quote .mark{color:var(--amber)}
+.col-l .hero-meta{font:400 13px 'Noto Sans SC',sans-serif;color:#5B4F5E;margin-bottom:6px}
+.col-l .hero-meta b{font-weight:700;color:var(--ink)}
+.col-l .hero-likes{font:700 28px 'DM Mono',monospace;color:var(--amber);margin-bottom:28px}
+.col-l .hero-note{font:400 13px/1.7 'Noto Serif SC',serif;color:#8A7E8E;max-width:380px;border-top:1px solid rgba(42,34,48,.10);padding-top:18px}
+.col-l .hero-note em{font-style:normal;color:var(--amber);font-weight:700}
+
+/* ── Middle column ── */
+.col-m svg{width:100%;height:100%;display:block}
+.col-m .cursor-line{stroke:var(--amber);stroke-width:1.5;stroke-dasharray:4 4;pointer-events:none}
+.col-m .cursor-handle{cursor:ew-resize}
+.col-m .song-label{font:400 11px 'Noto Sans SC',sans-serif;fill:#5B4F5E}
+.col-m .dot{fill:var(--amber);pointer-events:all;cursor:pointer}
+.col-m .dot.dim{opacity:.08}
+.col-m .dot.glow{filter:drop-shadow(0 0 6px rgba(194,98,42,.7))}
+
+/* ── Right column ── */
+.col-r .r-header{flex:0 0 auto;padding:28px 28px 12px}
+.col-r .r-header h3{font:700 10px 'DM Mono',monospace;color:var(--amber);letter-spacing:.3em;text-transform:uppercase;margin-bottom:4px}
+.col-r .r-header .count{font:400 12px 'Noto Sans SC',sans-serif;color:#8A7E8E}
+.col-r .r-list{flex:1;overflow-y:auto;padding:0 28px 28px}
+.col-r .r-list::-webkit-scrollbar{width:3px}
+.col-r .r-list::-webkit-scrollbar-thumb{background:rgba(42,34,48,.12);border-radius:2px}
+
+.variant-card{padding:14px 0;border-bottom:1px solid rgba(42,34,48,.07);cursor:pointer;transition:background .15s}
+.variant-card:hover{background:rgba(194,98,42,.04)}
+.variant-card.highlight{background:rgba(194,98,42,.08)}
+.variant-card .v-text{font:400 13px/1.55 'Noto Serif SC',serif;color:var(--ink);margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.variant-card .v-meta{display:flex;justify-content:space-between;align-items:center}
+.variant-card .v-song{font:700 11px 'Noto Serif SC',serif;color:#5B4F5E}
+.variant-card .v-date{font:400 10px 'DM Mono',monospace;color:#8A7E8E}
+.variant-card .v-likes{font:700 10px 'DM Mono',monospace;color:var(--amber)}
+
+/* ── Bottom bar ── */
+.bot-bar{flex:0 0 36px;display:flex;align-items:center;padding:0 48px;border-top:1px solid rgba(42,34,48,.10);font:400 11px 'DM Mono',monospace;color:#8B7D72}
+.bot-bar .play-btn{cursor:pointer;margin-right:16px;font:700 12px 'DM Mono',monospace;color:var(--amber);background:none;border:1px solid var(--amber);padding:2px 12px;border-radius:3px;transition:all .15s}
+.bot-bar .play-btn:hover{background:var(--amber);color:#FFF}
+.bot-bar .progress{flex:1;font:400 10px 'DM Mono',monospace}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="top-bar">
+    <h1>一句话怎么飞了十一年</h1>
+    <div class="sub">世界和平 · 母题传播史 · 20,598 次 · 跨 45 首歌</div>
+  </div>
+
+  <div class="main">
+    <!-- Left: Origin -->
+    <div class="col-l" id="col-left">
+      <div class="eyebrow">零号 · 2015 年 那条评论</div>
+      <div class="hero-quote">"那年认真过的雪…如今精分中的薛…<span class="mark">他的心愿是…世界和平</span>……"</div>
+      <div class="hero-meta"><b>《认真的雪》</b> · 2015 年 7 月 9 日 12:04</div>
+      <div class="hero-likes">82,401 赞</div>
+      <div class="hero-note">从此，「世界和平」不再只是薛之谦的一句口头禅。它变成了一种<em>评论暗语</em>——在 <em>45</em> 首歌的评论区里，被重复了 <em>20,598</em> 次，持续 <em>11 年</em>。</div>
+    </div>
+
+    <!-- Middle: Diffusion -->
+    <div class="col-m" id="col-mid">
+      <svg id="diffusion-svg"></svg>
+    </div>
+
+    <!-- Right: Variants -->
+    <div class="col-r" id="col-right">
+      <div class="r-header">
+        <h3>它的 23 个孩子</h3>
+        <div class="count">精选变体评论</div>
+      </div>
+      <div class="r-list" id="variant-list"></div>
+    </div>
+  </div>
+
+  <div class="bot-bar">
+    <button class="play-btn" id="play-btn">▶ 播放</button>
+    <span class="progress" id="progress-label">2015-01</span>
+  </div>
+</div>
+
+
+<script>
+/* ═══════════════════════════════════════════
+   RENDER ENGINE
+   ═══════════════════════════════════════════ */
+(async function() {
+  // ── Fetch full dataset ──
+  const resp = await fetch('wp_timeline.json');
+  const TIMELINE_DATA = await resp.json();
+  // ── Sort songs by first appearance ──
+  const rawSongs = TIMELINE_DATA.songs;
+  rawSongs.sort((a, b) => a.f.localeCompare(b.f));
+
+  // Full month list
+  const months = [];
+  for (let y = 2015; y <= 2026; y++) {
+    const end = y === 2026 ? 5 : 12;
+    for (let m = 1; m <= end; m++) {
+      months.push(y + '-' + String(m).padStart(2, '0'));
+    }
+  }
+  const totalMonths = months.length; // 137
+  const monthIndex = new Map(months.map((m, i) => [m, i]));
+
+  // ── Build dot data: each dot = one song×month with count>0 ──
+  const allDots = [];
+  rawSongs.forEach((song, si) => {
+    Object.entries(song.m).forEach(([ym, count]) => {
+      const mi = monthIndex.get(ym);
+      if (mi == null) return;
+      allDots.push({ songIdx: si, monthIdx: mi, count, song });
+    });
+  });
+
+  const maxCount = Math.max(...allDots.map(d => d.count));
+  const rScale = d3.scaleSqrt().domain([1, maxCount]).range([2.5, 12]);
+
+  // ── SVG setup ──
+  const container = document.getElementById('col-mid');
+  const W = container.clientWidth;
+  const H = container.clientHeight;
+  const svg = d3.select('#diffusion-svg')
+    .attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('preserveAspectRatio', 'xMidYMid meet');
+
+  const margin = { top: 48, right: 8, bottom: 8, left: 80 };
+  const plotW = W - margin.left - margin.right;
+  const plotH = H - margin.top - margin.bottom;
+  const rowH = Math.min(18, plotH / rawSongs.length);
+  const totalRowsH = rowH * rawSongs.length;
+  const yStart = margin.top + (plotH - totalRowsH) / 2;
+
+  const xScale = d3.scaleLinear().domain([0, totalMonths - 1]).range([margin.left, margin.left + plotW]);
+
+  // ── Background grid ──
+  const gridG = svg.append('g').attr('class', 'grid');
+  // Year lines
+  for (let y = 2015; y <= 2026; y++) {
+    const mi = monthIndex.get(y + '-01');
+    if (mi == null) continue;
+    gridG.append('line')
+      .attr('x1', xScale(mi)).attr('x2', xScale(mi))
+      .attr('y1', margin.top).attr('y2', margin.top + plotH)
+      .attr('stroke', 'rgba(42,34,48,.06)').attr('stroke-width', 0.5);
+  }
+  // Song row lines
+  rawSongs.forEach((_, si) => {
+    const yy = yStart + si * rowH + rowH / 2;
+    gridG.append('line')
+      .attr('x1', margin.left).attr('x2', margin.left + plotW)
+      .attr('y1', yy).attr('y2', yy)
+      .attr('stroke', 'rgba(42,34,48,.04)').attr('stroke-width', 0.5);
+  });
+
+  // ── Year labels (top axis) ──
+  const axisG = svg.append('g').attr('class', 'axis');
+  for (let y = 2015; y <= 2026; y++) {
+    const mi = monthIndex.get(y + '-01');
+    if (mi == null) continue;
+    axisG.append('text')
+      .attr('x', xScale(mi)).attr('y', margin.top - 12)
+      .attr('text-anchor', 'middle')
+      .attr('font-family', '"DM Mono",monospace').attr('font-size', 10)
+      .attr('fill', '#8B7D72')
+      .text(y);
+  }
+
+  // ── Song labels (left) ──
+  rawSongs.forEach((song, si) => {
+    const yy = yStart + si * rowH + rowH / 2;
+    svg.append('text')
+      .attr('x', margin.left - 8).attr('y', yy)
+      .attr('text-anchor', 'end').attr('dominant-baseline', 'central')
+      .attr('class', 'song-label')
+      .text(si < 45 ? '《' + song.n + '》' : '')
+      .style('font-size', rowH > 14 ? '11px' : '9px');
+  });
+
+  // ── Render all dots ──
+  const dotG = svg.append('g').attr('class', 'dots');
+  const dotElements = allDots.map(d => {
+    const cx = xScale(d.monthIdx);
+    const cy = yStart + d.songIdx * rowH + rowH / 2;
+    const r = rScale(d.count);
+    const circle = dotG.append('circle')
+      .attr('cx', cx).attr('cy', cy).attr('r', r)
+      .attr('class', 'dot dim')
+      .attr('opacity', 0)
+      .attr('data-month', d.monthIdx)
+      .attr('data-song', d.songIdx);
+    return { el: circle, monthIdx: d.monthIdx, songIdx: d.songIdx, r, d };
+  });
+
+  // ── Time cursor ──
+  const cursorG = svg.append('g').attr('class', 'cursor');
+  const cursorLine = cursorG.append('line')
+    .attr('class', 'cursor-line')
+    .attr('y1', margin.top).attr('y2', margin.top + plotH);
+  const cursorHandle = cursorG.append('rect')
+    .attr('class', 'cursor-handle')
+    .attr('x', -12).attr('y', margin.top - 16)
+    .attr('width', 24).attr('height', 20)
+    .attr('fill', 'transparent')
+    .attr('stroke', 'none');
+
+  let currentMonthIdx = 0;
+  let isPlaying = false;
+  let animation = null;
+
+  function setCursor(mi) {
+    currentMonthIdx = Math.max(0, Math.min(totalMonths - 1, mi));
+    const cx = xScale(currentMonthIdx);
+    cursorLine.attr('x1', cx).attr('x2', cx);
+    cursorHandle.attr('x', cx - 12);
+    document.getElementById('progress-label').textContent = months[currentMonthIdx];
+
+    // Show/hide dots
+    dotElements.forEach(d => {
+      if (d.monthIdx <= currentMonthIdx) {
+        d.el.attr('class', 'dot').attr('opacity', 0.3 + 0.7 * (d.d.count / maxCount));
+      } else {
+        d.el.attr('class', 'dot dim').attr('opacity', 0);
+      }
+    });
+
+    // Highlight dots at current month
+    dotElements.forEach(d => {
+      if (d.monthIdx === currentMonthIdx) {
+        d.el.attr('class', 'dot glow').attr('opacity', 1).attr('r', d.r * 1.3);
+      }
+    });
+  }
+
+  // ── GSAP animation ──
+  const progressObj = { value: 0 };
+
+  function startPlayback() {
+    if (isPlaying) return;
+    isPlaying = true;
+    document.getElementById('play-btn').textContent = '⏸ 暂停';
+    animation = gsap.to(progressObj, {
+      value: totalMonths - 1,
+      duration: totalMonths * 0.3,
+      ease: 'none',
+      onUpdate: () => setCursor(Math.round(progressObj.value)),
+      onComplete: () => {
+        isPlaying = false;
+        document.getElementById('play-btn').textContent = '↻ 重播';
+      }
+    });
+  }
+
+  function pausePlayback() {
+    if (animation) { animation.kill(); animation = null; }
+    isPlaying = false;
+    document.getElementById('play-btn').textContent = '▶ 播放';
+  }
+
+  document.getElementById('play-btn').addEventListener('click', () => {
+    if (isPlaying) { pausePlayback(); }
+    else {
+      if (currentMonthIdx >= totalMonths - 2) {
+        // Reset
+        progressObj.value = 0;
+        setCursor(0);
+        dotElements.forEach(d => { d.el.attr('class', 'dot dim').attr('opacity', 0).attr('r', rScale(d.d.count)); });
+      }
+      startPlayback();
+    }
+  });
+
+  // ── Cursor dragging ──
+  let dragging = false;
+  cursorHandle.on('mousedown', () => { dragging = true; if (isPlaying) pausePlayback(); });
+  svg.on('mousemove', (ev) => {
+    if (!dragging) return;
+    const [mx] = d3.pointer(ev, svg.node());
+    const mi = Math.round(xScale.invert(mx));
+    setCursor(mi);
+  });
+  svg.on('mouseup', () => { dragging = false; });
+  svg.on('mouseleave', () => { dragging = false; });
+
+  // Click on background to jump
+  svg.on('click', (ev) => {
+    if (ev.target !== svg.node() && ev.target.tagName !== 'rect') return;
+    const [mx] = d3.pointer(ev, svg.node());
+    const mi = Math.round(xScale.invert(mx));
+    if (isPlaying) pausePlayback();
+    setCursor(mi);
+  });
+
+  // ── Initial state: show a few early dots so it's not blank ──
+  setCursor(5); // Show up to 2015-06
+
+  // ── Right panel: 23 curated variants ──
+  const variantList = document.getElementById('variant-list');
+  const topVariants = [...rawSongs]
+    .filter(s => s.tl > 5 && s.tc.length > 3)
+    .sort((a, b) => b.tl - a.tl)
+    .slice(0, 23);
+
+  topVariants.forEach((v, vi) => {
+    const card = document.createElement('div');
+    card.className = 'variant-card';
+    card.dataset.songIdx = rawSongs.indexOf(v);
+    card.innerHTML = `
+      <div class="v-text">${v.tc.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
+      <div class="v-meta">
+        <span class="v-song">《${v.n}》</span>
+        <span class="v-date">${(v.tt||'').substring(0,10)}</span>
+        <span class="v-likes">${v.tl.toLocaleString()} 赞</span>
+      </div>`;
+
+    card.addEventListener('mouseenter', () => {
+      card.classList.add('highlight');
+      // Highlight dots for this song
+      const si = rawSongs.indexOf(v);
+      dotElements.forEach(d => {
+        if (d.songIdx === si && d.monthIdx <= currentMonthIdx) {
+          d.el.attr('class', 'dot glow').attr('opacity', 1).attr('r', d.r * 1.25);
+        }
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('highlight');
+      setCursor(currentMonthIdx); // reset all dots
+    });
+
+    variantList.appendChild(card);
+  });
+
+  // ── Dot hover → highlight right panel ──
+  dotElements.forEach(d => {
+    d.el.on('mouseenter', function() {
+      const si = d.songIdx;
+      const cards = variantList.querySelectorAll('.variant-card');
+      cards.forEach(c => {
+        if (parseInt(c.dataset.songIdx) === si) {
+          c.classList.add('highlight');
+          c.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+      d3.select(this).attr('class', 'dot glow').attr('opacity', 1).attr('r', d.r * 1.35);
+    });
+    d.el.on('mouseleave', function() {
+      variantList.querySelectorAll('.variant-card').forEach(c => c.classList.remove('highlight'));
+      if (d.monthIdx <= currentMonthIdx) {
+        d3.select(this).attr('class', 'dot').attr('opacity', 0.3 + 0.7 * (d.d.count / maxCount)).attr('r', d.r);
+      } else {
+        d3.select(this).attr('class', 'dot dim').attr('opacity', 0).attr('r', d.r);
+      }
+    });
+  });
+
+  // ── Responsive resize ──
+  window.addEventListener('resize', () => {
+    const newW = container.clientWidth;
+    const newH = container.clientHeight;
+    svg.attr('viewBox', `0 0 ${newW} ${newH}`);
+  });
+
+  // Update header with actual data
+  document.querySelector('.top-bar .sub').textContent =
+    '世界和平 · 母题传播史 · ' + TIMELINE_DATA.total.toLocaleString() + ' 次 · 跨 ' + rawSongs.length + ' 首歌';
+
+  console.log('Peace Meme ready: ' + allDots.length + ' dots across ' + rawSongs.length + ' songs, ' + totalMonths + ' months');
+})();
+</script>
+</body>
+</html>
