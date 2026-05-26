@@ -1,0 +1,1180 @@
+{
+  "generatedAt": "2026-05-09T08:34:14.300Z",
+  "sourceCsv": "C:/Users/zjz65/PycharmProjects/Homework2/output/xue_comments.csv",
+  "rowsSeen": 5000,
+  "summary": {
+    "songCount": 45,
+    "topCommentAfter5YearsCount": 4,
+    "anyTop10After5YearsCount": 4,
+    "medianDormancyAcrossSongs": 0,
+    "longestDormancySong": {
+      "song": "认真的雪",
+      "dormancyMedianYears": 9,
+      "maxDormancyYears": 10
+    },
+    "quote": "45 首歌里，有 4 首的最高赞评论，写在发行 5 年以后。"
+  },
+  "songs": [
+    {
+      "song": "认真的雪",
+      "album": "未完成的歌",
+      "releaseYear": 2006,
+      "commentCount": 187325,
+      "topCommentYearsAfterRelease": 9,
+      "dormancyMedianYears": 9,
+      "dormancyP75Years": 10,
+      "maxDormancyYears": 10,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 10
+      },
+      "topComments": [
+        {
+          "commentId": "8302654",
+          "user": "emonday",
+          "likes": 303521,
+          "date": "2015-01-06 23:03",
+          "commentYear": 2015,
+          "yearsAfterRelease": 9,
+          "content": "当年读小学，现在念大学，时间算你绝～"
+        },
+        {
+          "commentId": "135640946",
+          "user": "几婷几婷几",
+          "likes": 260597,
+          "date": "2016-03-30 08:27",
+          "commentYear": 2016,
+          "yearsAfterRelease": 10,
+          "content": "那一年薛之谦最火的歌是认真的雪，那一年林俊杰唱着曹操，吴克群唱着将军令，周杰伦唱着听妈妈的话，潘玮柏在反转地球。那一年是2006年，而今年是2016年。"
+        },
+        {
+          "commentId": "123788022",
+          "user": "没见过你的人不会明了--",
+          "likes": 132009,
+          "date": "2016-02-26 10:27",
+          "commentYear": 2016,
+          "yearsAfterRelease": 10,
+          "content": "微博上有个也叫薛之谦的冒充你，每天发段子，你也不管管"
+        },
+        {
+          "commentId": "25627924",
+          "user": "虚度了你的虚度",
+          "likes": 82401,
+          "date": "2015-07-09 12:04",
+          "commentYear": 2015,
+          "yearsAfterRelease": 9,
+          "content": "那年认真过的雪…如今精分中的薛…他的心愿是…世界和平……[心碎]"
+        },
+        {
+          "commentId": "49451320",
+          "user": "阿武隈爱上五十铃",
+          "likes": 59315,
+          "date": "2015-11-26 23:06",
+          "commentYear": 2015,
+          "yearsAfterRelease": 9,
+          "content": "尼玛，你们的故事真他的多，劳资23，除了牵过我妈的手。。。"
+        },
+        {
+          "commentId": "7021344",
+          "user": "装睡的人怎么也叫不醒",
+          "likes": 55472,
+          "date": "2014-12-12 19:56",
+          "commentYear": 2014,
+          "yearsAfterRelease": 8,
+          "content": "这首歌别人唱不来，除了薛之谦"
+        },
+        {
+          "commentId": "6696928",
+          "user": "简亦之",
+          "likes": 42693,
+          "date": "2014-12-04 23:56",
+          "commentYear": 2014,
+          "yearsAfterRelease": 8,
+          "content": "记得初三某天下午，课间趴在栏杆上，看着楼下的同学，忽然的，天空飘下了雪，一片片的。当时，心里不停的回响着这首歌。所以，每次听到这首歌，总会回想起过去的美好，那些我们再也回不去的美好岁月。真的希望，时光不老，我们不散。"
+        },
+        {
+          "commentId": "5634811",
+          "user": "曼煊",
+          "likes": 33141,
+          "date": "2014-11-10 02:05",
+          "commentYear": 2014,
+          "yearsAfterRelease": 8,
+          "content": "是不是怀旧的人，即使不爱了也还是会怀念"
+        },
+        {
+          "commentId": "125290899",
+          "user": "西西里不美丽丶",
+          "likes": 28654,
+          "date": "2016-03-02 18:07",
+          "commentYear": 2016,
+          "yearsAfterRelease": 10,
+          "content": "高一的时候问喜欢的一个女生喜欢什么歌，她说《认真的雪》，于是这首歌我一直听了5年，也追了她5年。今年的2月14号她谈恋爱了，没错，那个男的不是我。我知道我再也没有机会了，可是我真的舍不得删这首歌。"
+        },
+        {
+          "commentId": "71619188",
+          "user": "Silver丶",
+          "likes": 25695,
+          "date": "2016-02-18 09:36",
+          "commentYear": 2016,
+          "yearsAfterRelease": 10,
+          "content": "妈的开头老想检查耳机插好没"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "135640946",
+        "user": "几婷几婷几",
+        "likes": 260597,
+        "date": "2016-03-30 08:27",
+        "commentYear": 2016,
+        "yearsAfterRelease": 10,
+        "content": "那一年薛之谦最火的歌是认真的雪，那一年林俊杰唱着曹操，吴克群唱着将军令，周杰伦唱着听妈妈的话，潘玮柏在反转地球。那一年是2006年，而今年是2016年。"
+      }
+    },
+    {
+      "song": "苏黎世的从前",
+      "album": "你过得好吗",
+      "releaseYear": 2007,
+      "commentCount": 9335,
+      "topCommentYearsAfterRelease": 7,
+      "dormancyMedianYears": 8,
+      "dormancyP75Years": 9,
+      "maxDormancyYears": 9,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 10
+      },
+      "topComments": [
+        {
+          "commentId": "7824604",
+          "user": "小贝的海",
+          "likes": 9811,
+          "date": "2014-12-29 11:00",
+          "commentYear": 2014,
+          "yearsAfterRelease": 7,
+          "content": "苏黎世，真的很美的名字。异域是我的向往，即使很遥远，但我坚信在某个地方，一定也有我的故事，像这样的，或美丽或哀伤。"
+        },
+        {
+          "commentId": "17383877",
+          "user": "西古森",
+          "likes": 8634,
+          "date": "2015-05-06 15:44",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "个人感觉这是薛之谦所有歌里最美的一首歌。"
+        },
+        {
+          "commentId": "47119940",
+          "user": "东北小学霸",
+          "likes": 6739,
+          "date": "2015-11-16 08:02",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "老薛出道前去过瑞士学酒店管理，才有了这首苏黎世的从前，歌词真美，8年前就觉得美，现在依然觉得美"
+        },
+        {
+          "commentId": "166480818",
+          "user": "日四又王木木",
+          "likes": 4073,
+          "date": "2016-06-09 01:36",
+          "commentYear": 2016,
+          "yearsAfterRelease": 9,
+          "content": "因为这首歌特地去了苏黎世，去了瑞士看少女峰 去了列支顿士登盖了纪念章"
+        },
+        {
+          "commentId": "12333218",
+          "user": "Double丶Egg",
+          "likes": 3600,
+          "date": "2015-03-10 22:11",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "为什么你们关注的是苏黎世，而我关注的重点是少女峰……[大笑]"
+        },
+        {
+          "commentId": "194011256",
+          "user": "小糖葫芦_",
+          "likes": 3131,
+          "date": "2016-08-05 07:34",
+          "commentYear": 2016,
+          "yearsAfterRelease": 9,
+          "content": "这首歌写的是他在瑞士的前女友。当时他要回国了，女生去火车站送她。两个人都知道那是彼此最后一次见面了。但两个人就静静的对望着没有说话，好久。然后他上了车，看到她追着火车跑了好久。没有人说分手，却还是分开了。（以上来自大学生来了）"
+        },
+        {
+          "commentId": "31052353",
+          "user": "账号已注销",
+          "likes": 2673,
+          "date": "2015-08-14 17:25",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "耳机里全是他的深情[爱心]"
+        },
+        {
+          "commentId": "9975070",
+          "user": "Tae豆豆",
+          "likes": 2424,
+          "date": "2015-02-03 17:26",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "再听这首歌时，已经将近八年。那年初三，偷偷攒钱买了薛之谦的写真，最后还是被老爸发现。已经过去很久了呢"
+        },
+        {
+          "commentId": "177312878",
+          "user": "清风夜雨Jacky",
+          "likes": 2144,
+          "date": "2016-07-02 14:00",
+          "commentYear": 2016,
+          "yearsAfterRelease": 9,
+          "content": "《苏黎世的从前》，这源于谦谦以前在瑞士苏黎世上酒店管理专业，每年学费很贵20万，家里的钱只够一年，因此他每天乘坐苏黎世最后一班的免费火车到兼职的地方，一直等到早上开始工作，这首歌就是写这段在苏黎世从前的故事。"
+        },
+        {
+          "commentId": "23939492",
+          "user": "staralways",
+          "likes": 1759,
+          "date": "2015-06-27 22:10",
+          "commentYear": 2015,
+          "yearsAfterRelease": 8,
+          "content": "感觉是一个人从一开始低吟到最后哭出来的状态"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "166480818",
+        "user": "日四又王木木",
+        "likes": 4073,
+        "date": "2016-06-09 01:36",
+        "commentYear": 2016,
+        "yearsAfterRelease": 9,
+        "content": "因为这首歌特地去了苏黎世，去了瑞士看少女峰 去了列支顿士登盖了纪念章"
+      }
+    },
+    {
+      "song": "深深爱过你",
+      "album": "深深爱过你",
+      "releaseYear": 2008,
+      "commentCount": 9969,
+      "topCommentYearsAfterRelease": 7,
+      "dormancyMedianYears": 7,
+      "dormancyP75Years": 8,
+      "maxDormancyYears": 15,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 10
+      },
+      "topComments": [
+        {
+          "commentId": "46339184",
+          "user": "阳多秋",
+          "likes": 9122,
+          "date": "2015-11-12 15:18",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "前世版最后一句歌词：请相信我们最后会在一起。 今生版最后一句歌词：哪怕我们最后不能在一起。"
+        },
+        {
+          "commentId": "23396545",
+          "user": "Effy___",
+          "likes": 8788,
+          "date": "2015-06-24 10:06",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "记得好几年前初中的时候，当时我最好的朋友总是唱这首歌给我听，当时她喜欢周杰伦，喜欢李易峰，当时周杰伦还没遇到昆凌，当的李易峰只是加油好男儿里刚刚出来的国民校草。而现在周董结婚了，李易峰彻底火了……可是，我们散了，曾经的友情也跟着消失了。再次听到这首歌竟然还是忍不住难过。"
+        },
+        {
+          "commentId": "9470076",
+          "user": "HatelessOo",
+          "likes": 3647,
+          "date": "2015-01-26 14:16",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "虽然很久很久以前听过这首歌，可是今天听到却被深深地感动了。 [爱心][爱心]"
+        },
+        {
+          "commentId": "16319223",
+          "user": "翟向远",
+          "likes": 2696,
+          "date": "2015-04-26 01:25",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "那年。她拿起话筒在灯红酒绿的霓虹灯中唱起这首歌。那时的她是唱给我听。。歌还在。我还在。而她搁浅在回忆里。"
+        },
+        {
+          "commentId": "24653716",
+          "user": "有梦人生不觉寒",
+          "likes": 2326,
+          "date": "2015-07-02 17:02",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "很赞的声线。一首很温暖但是孽人的歌。款款深情孽了我好多次。虽然我根本不知道什么叫编曲但是我就是感觉这歌曲编曲简直不明觉厉！以前从第一个喜欢的女生身上想到了未来的一切可能。现在想起来觉得很好笑，过去已经成了美好的回忆。但是我还是想说：请记得，我曾深深地爱过你。"
+        },
+        {
+          "commentId": "17409744",
+          "user": "耒阳",
+          "likes": 2062,
+          "date": "2015-05-06 20:22",
+          "commentYear": 2015,
+          "yearsAfterRelease": 7,
+          "content": "薛志谦的歌总让人有一种念旧"
+        },
+        {
+          "commentId": "169246030",
+          "user": "你是年少的欢喜ZZZZZ",
+          "likes": 1991,
+          "date": "2016-06-15 16:07",
+          "commentYear": 2016,
+          "yearsAfterRelease": 8,
+          "content": "前世比今生俏皮 今生比前世深情。同意的请点赞~~~"
+        },
+        {
+          "commentId": "128914298",
+          "user": "不爱塔塔有点难",
+          "likes": 1653,
+          "date": "2016-03-13 00:05",
+          "commentYear": 2016,
+          "yearsAfterRelease": 8,
+          "content": "今天上海来福士广场碰到薛之谦[可爱][可爱]"
+        },
+        {
+          "commentId": "204654703",
+          "user": "Miracle-fsj",
+          "likes": 1406,
+          "date": "2016-08-24 23:40",
+          "commentYear": 2016,
+          "yearsAfterRelease": 8,
+          "content": "最终你会一个人拖着行李箱离开 没人相送也没人等待 一个人带着清冷的空气走过泥泞穿过小巷 路上走着人来来往往 下雨了没人撑伞就只能狼狈躲雨 走累了没人依靠就找个墙角歇息 天气冷了没人叮嘱那自己要裹好大衣 别总等别人来疼你 边走边爱反正人山人海"
+        },
+        {
+          "commentId": "5925503323",
+          "user": "小思叽",
+          "likes": 1362,
+          "date": "2023-06-16 23:08",
+          "commentYear": 2023,
+          "yearsAfterRelease": 15,
+          "content": "演唱会听到的 感觉live版比现场更有感觉 希望其他谦粉有机会真的一定要去听老薛的演唱会！真的不亏 请记得去找老薛"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "5925503323",
+        "user": "小思叽",
+        "likes": 1362,
+        "date": "2023-06-16 23:08",
+        "commentYear": 2023,
+        "yearsAfterRelease": 15,
+        "content": "演唱会听到的 感觉live版比现场更有感觉 希望其他谦粉有机会真的一定要去听老薛的演唱会！真的不亏 请记得去找老薛"
+      }
+    },
+    {
+      "song": "未完成的歌",
+      "album": "未完成的歌",
+      "releaseYear": 2009,
+      "commentCount": 12479,
+      "topCommentYearsAfterRelease": 6,
+      "dormancyMedianYears": 6,
+      "dormancyP75Years": 7,
+      "maxDormancyYears": 7,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 2,
+        "late": 8
+      },
+      "topComments": [
+        {
+          "commentId": "16397705",
+          "user": "屿田啊",
+          "likes": 23201,
+          "date": "2015-04-26 22:36",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "其实一直觉得薛之谦特别有才，为什么不能大火大热，记得以前百听不厌认真的雪，每年冬天下雪的时候他就开玩笑说自己会比较火。早知道自己就写认真的初夏秋冬好了，真的是萌萌哒"
+        },
+        {
+          "commentId": "20179900",
+          "user": "谭小怪咖",
+          "likes": 16755,
+          "date": "2015-05-31 09:35",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "突然又再次爱上了薛之谦，虽然他的情歌总结起来就是：论一个备胎的自我修养~~"
+        },
+        {
+          "commentId": "43713721",
+          "user": "你是水果味儿的",
+          "likes": 14528,
+          "date": "2015-10-30 15:23",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "离个婚他去了半壁江山，净身出户，都快破产了。给房给钱还给写歌！男人做到这份上，够好了！薛之谦，“一个二线段子手，四线歌手，十八线演员”出道十几年，微博上过两次热门，第一次，”薛之谦精分“，第二次，”薛之谦离婚”。主持人问他：“你怎么跑去演戏了？“我想红，这样就有更多人听我的歌\"。"
+        },
+        {
+          "commentId": "6700853",
+          "user": "偏见的bongbong熊",
+          "likes": 7461,
+          "date": "2014-12-05 10:42",
+          "commentYear": 2014,
+          "yearsAfterRelease": 5,
+          "content": "这小子长得真像我高中暗恋的男生。高二下他转学去广州了[流泪]"
+        },
+        {
+          "commentId": "124468213",
+          "user": "innatu1_",
+          "likes": 6549,
+          "date": "2016-02-28 14:30",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "看了他择偶标准，肤白不需要，家境好不需要，知识渊博不需要，门当户对不需要，身材火辣不需要等等，因为他都有。他只要单纯，善良，爱小动物…这么一来，情敌多好多…"
+        },
+        {
+          "commentId": "170913537",
+          "user": "婠音",
+          "likes": 6106,
+          "date": "2016-06-19 08:06",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "火星情报局《薛之谦被讽人红歌不红》那期 应采儿说了一句“你好好一个歌手怎么变成这样” 这句话我看到真的特别难受 薛这十年所经历的 他为了挣钱做音乐去做谐星 为了让观众笑像个小丑一样 他为音乐付出了多少不了解他的人却只奇怪他好好一个歌手怎么变成了这样[心碎]"
+        },
+        {
+          "commentId": "7983165",
+          "user": "山的海的那边有一只小洛卡",
+          "likes": 4699,
+          "date": "2014-12-31 23:30",
+          "commentYear": 2014,
+          "yearsAfterRelease": 5,
+          "content": "真的是被埋没的歌！！好听。"
+        },
+        {
+          "commentId": "10019601",
+          "user": "_zeelom",
+          "likes": 3696,
+          "date": "2015-02-04 11:38",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "他的歌有种能够重复的魅力。"
+        },
+        {
+          "commentId": "8705373",
+          "user": "小小小个",
+          "likes": 3134,
+          "date": "2015-01-13 22:12",
+          "commentYear": 2015,
+          "yearsAfterRelease": 6,
+          "content": "为什么听他的歌会莫名的感动，总会一遍又一遍的重复，舍不得，，，"
+        },
+        {
+          "commentId": "149004816",
+          "user": "i音乐狂人",
+          "likes": 2423,
+          "date": "2016-05-02 22:56",
+          "commentYear": 2016,
+          "yearsAfterRelease": 7,
+          "content": "大学的时候，薛之谦去我们学校开演唱会，是中国移动校园宣传办的演唱会，当时我是冲着许飞去的，不怎么认识薛之谦，只觉得舞台上唱这首歌的他好深情。四年后的我是如此的欣赏这个歌手，总是后悔认识他太晚了点！"
+        }
+      ],
+      "farthestComment": {
+        "commentId": "124468213",
+        "user": "innatu1_",
+        "likes": 6549,
+        "date": "2016-02-28 14:30",
+        "commentYear": 2016,
+        "yearsAfterRelease": 7,
+        "content": "看了他择偶标准，肤白不需要，家境好不需要，知识渊博不需要，门当户对不需要，身材火辣不需要等等，因为他都有。他只要单纯，善良，爱小动物…这么一来，情敌多好多…"
+      }
+    },
+    {
+      "song": "天外来物",
+      "album": "天外来物",
+      "releaseYear": 2020,
+      "commentCount": 442057,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "演员",
+      "album": "绅士",
+      "releaseYear": 2015,
+      "commentCount": 318502,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "我好像在哪见过你",
+      "album": "初学者",
+      "releaseYear": 2016,
+      "commentCount": 301762,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "其实",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 266273,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "你还要我怎样",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 224182,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "像风一样",
+      "album": "渡",
+      "releaseYear": 2017,
+      "commentCount": 223243,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "刚刚好",
+      "album": "初学者",
+      "releaseYear": 2016,
+      "commentCount": 197915,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "木偶人",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 186347,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "绅士",
+      "album": "绅士",
+      "releaseYear": 2015,
+      "commentCount": 183426,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "陪你去流浪",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 176310,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "那是你离开北京的生活",
+      "album": "怪咖",
+      "releaseYear": 2018,
+      "commentCount": 170462,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "意外",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 153726,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "怪咖",
+      "album": "怪咖",
+      "releaseYear": 2018,
+      "commentCount": 140818,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "这么久没见",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 132708,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "变废为宝",
+      "album": "无数",
+      "releaseYear": 2022,
+      "commentCount": 102104,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "方圆几里",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 98371,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "哑巴",
+      "album": "怪咖",
+      "releaseYear": 2018,
+      "commentCount": 96715,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "笑场",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 94863,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "小尖尖",
+      "album": "天外来物",
+      "releaseYear": 2020,
+      "commentCount": 92115,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "丑八怪",
+      "album": "意外",
+      "releaseYear": 2013,
+      "commentCount": 78108,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "念",
+      "album": "守村人",
+      "releaseYear": 2024,
+      "commentCount": 77704,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "迟迟",
+      "album": "天外来物",
+      "releaseYear": 2020,
+      "commentCount": 66738,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "野心",
+      "album": "天外来物",
+      "releaseYear": 2020,
+      "commentCount": 65764,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "聊表心意",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 65585,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "下雨了",
+      "album": "绅士",
+      "releaseYear": 2015,
+      "commentCount": 63374,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "尘",
+      "album": "尘",
+      "releaseYear": 2019,
+      "commentCount": 49830,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "崇拜",
+      "album": "守村人",
+      "releaseYear": 2023,
+      "commentCount": 47218,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "凤毛麟角",
+      "album": "无数",
+      "releaseYear": 2022,
+      "commentCount": 41299,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "无数",
+      "album": "无数",
+      "releaseYear": 2022,
+      "commentCount": 41097,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "关于你",
+      "album": "无数",
+      "releaseYear": 2022,
+      "commentCount": 38880,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "AI",
+      "album": "守村人",
+      "releaseYear": 2024,
+      "commentCount": 38812,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "跃",
+      "album": "跃",
+      "releaseYear": 2025,
+      "commentCount": 37856,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "租购",
+      "album": "守村人",
+      "releaseYear": 2024,
+      "commentCount": 30502,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "违背的青春",
+      "album": "怪咖",
+      "releaseYear": 2018,
+      "commentCount": 29747,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "花儿和少年",
+      "album": "初学者",
+      "releaseYear": 2016,
+      "commentCount": 26851,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "银河少年",
+      "album": "守村人",
+      "releaseYear": 2023,
+      "commentCount": 23343,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "顽疾",
+      "album": "顽疾",
+      "releaseYear": 2025,
+      "commentCount": 11753,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "霸王别姬",
+      "album": "霸王别姬",
+      "releaseYear": 2025,
+      "commentCount": 11566,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "伏笔",
+      "album": "几个薛之谦",
+      "releaseYear": 2012,
+      "commentCount": 11460,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "我的雅典娜",
+      "album": "未完成的歌",
+      "releaseYear": 2009,
+      "commentCount": 6966,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    },
+    {
+      "song": "湖泊",
+      "album": "湖泊",
+      "releaseYear": 2025,
+      "commentCount": 6127,
+      "topCommentYearsAfterRelease": 0,
+      "dormancyMedianYears": 0,
+      "dormancyP75Years": 0,
+      "maxDormancyYears": 0,
+      "delayBuckets": {
+        "instant": 0,
+        "mid": 0,
+        "late": 0
+      },
+      "topComments": [],
+      "farthestComment": null
+    }
+  ]
+}
